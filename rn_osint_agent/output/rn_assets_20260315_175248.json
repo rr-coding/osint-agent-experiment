@@ -1,0 +1,228 @@
+[
+  {
+    "name": "HMS Dragon",
+    "type": "ship",
+    "class": "Type 45 destroyer",
+    "location_description": "Sailing from Portsmouth to the Eastern Mediterranean to protect Cyprus",
+    "latitude": 34.5,
+    "longitude": 33.0,
+    "confidence_score": 0.55,
+    "confidence_rationale": "The description indicates HMS Dragon is transiting from Portsmouth to the Eastern Mediterranean to protect Cyprus. The vessel could be anywhere along the route, but the stated destination and purpose (protecting Cyprus) suggests the Eastern Mediterranean near Cyprus as the likely operational area. I've placed the approximate position south of Cyprus in the Eastern Mediterranean, which is a typical patrol area for RN assets assigned to Cyprus protection. Confidence is moderate as 'sailing to' implies transit and the exact position along the route is unknown, but the destination area is reasonably well-defined.",
+    "source_urls": [
+      "https://www.navylookout.com/type-45-destroyer-to-be-sent-to-the-eastern-mediterranean/",
+      "https://www.navylookout.com/middle-east-in-flames-where-is-the-royal-navy/"
+    ],
+    "date_observed": "2026-03-15",
+    "last_updated": "2026-03-15T17:52:47.548947Z"
+  },
+  {
+    "name": "HMNB Portsmouth",
+    "type": "base",
+    "class": null,
+    "location_description": "Portsmouth, departure point for HMS Dragon",
+    "latitude": 50.7984,
+    "longitude": -1.1082,
+    "confidence_score": 0.98,
+    "confidence_rationale": "HMNB Portsmouth is a well-known Royal Navy base with precisely known coordinates located in Portsmouth, Hampshire, UK. It is one of the three operating bases of the Royal Navy.",
+    "source_urls": [
+      "https://www.navylookout.com/type-45-destroyer-to-be-sent-to-the-eastern-mediterranean/"
+    ],
+    "date_observed": "2026-03-15",
+    "last_updated": "2026-03-15T17:52:47.552693Z"
+  },
+  {
+    "name": "HMS Anson",
+    "type": "submarine",
+    "class": "Astute-class",
+    "location_description": "Australia (east of Suez)",
+    "latitude": -33.87,
+    "longitude": 151.21,
+    "confidence_score": 0.45,
+    "confidence_rationale": "HMS Anson (Astute-class submarine) has been deployed to Australia, likely in connection with AUKUS submarine cooperation. The most probable port of call is HMAS Kuttabul/Fleet Base East in Sydney, or potentially HMAS Stirling (Fleet Base West) near Perth. Without a specific port named, 'deployed to Australia' is a broad description. Using Sydney as a reasonable default given its prominence as a naval hub for visiting RN submarines, but confidence is moderate-low as the exact location within Australia is unspecified.",
+    "source_urls": [
+      "https://www.navylookout.com/middle-east-in-flames-where-is-the-royal-navy/"
+    ],
+    "date_observed": "2026-03-15",
+    "last_updated": "2026-03-15T17:52:47.555395Z"
+  },
+  {
+    "name": "HMS Duncan",
+    "type": "ship",
+    "class": "Type 45 destroyer",
+    "location_description": "Home waters; recently completed FOST and exercise Sharpshooter, immediately available",
+    "latitude": 50.3714,
+    "longitude": -4.1872,
+    "confidence_score": 0.9,
+    "confidence_rationale": "The description states HMS Duncan recently completed FOST (Flag Officer Sea Training) at Devonport, which is the well-known Royal Navy base HMNB Devonport in Plymouth, UK. FOST is conducted from Devonport and ships completing FOST typically remain in or near Devonport. The coordinates correspond to Devonport Naval Base. 'Immediately available' and 'home waters' reinforce the ship being alongside or in the vicinity of Devonport.",
+    "source_urls": [
+      "https://www.navylookout.com/middle-east-in-flames-where-is-the-royal-navy/"
+    ],
+    "date_observed": "2026-03-15",
+    "last_updated": "2026-03-15T17:52:47.563959Z"
+  },
+  {
+    "name": "HMS Dauntless",
+    "type": "ship",
+    "class": "Type 45 destroyer",
+    "location_description": "Entered planned 3-month Fleet Time Support period (after working with FS Charles de Gaulle carrier strike group in mid-February)",
+    "latitude": null,
+    "longitude": null,
+    "confidence_score": null,
+    "confidence_rationale": null,
+    "source_urls": [
+      "https://www.navylookout.com/middle-east-in-flames-where-is-the-royal-navy/"
+    ],
+    "date_observed": "2026-03-15",
+    "last_updated": "2026-03-15T17:52:05.642566Z"
+  },
+  {
+    "name": "HMS Defender",
+    "type": "ship",
+    "class": "Type 45 destroyer",
+    "location_description": "In major refit",
+    "latitude": null,
+    "longitude": null,
+    "confidence_score": null,
+    "confidence_rationale": null,
+    "source_urls": [
+      "https://www.navylookout.com/middle-east-in-flames-where-is-the-royal-navy/"
+    ],
+    "date_observed": "2026-03-15",
+    "last_updated": "2026-03-15T17:52:05.644848Z"
+  },
+  {
+    "name": "HMS Diamond",
+    "type": "ship",
+    "class": "Type 45 destroyer",
+    "location_description": "In major refit",
+    "latitude": null,
+    "longitude": null,
+    "confidence_score": null,
+    "confidence_rationale": null,
+    "source_urls": [
+      "https://www.navylookout.com/middle-east-in-flames-where-is-the-royal-navy/"
+    ],
+    "date_observed": "2026-03-15",
+    "last_updated": "2026-03-15T17:52:05.645378Z"
+  },
+  {
+    "name": "HMS Daring",
+    "type": "ship",
+    "class": "Type 45 destroyer",
+    "location_description": "Regenerating; expected to rejoin fleet later this year",
+    "latitude": null,
+    "longitude": null,
+    "confidence_score": null,
+    "confidence_rationale": null,
+    "source_urls": [
+      "https://www.navylookout.com/middle-east-in-flames-where-is-the-royal-navy/"
+    ],
+    "date_observed": "2026-03-15",
+    "last_updated": "2026-03-15T17:52:05.646142Z"
+  },
+  {
+    "name": "HMS St Albans",
+    "type": "ship",
+    "class": "Type 23 frigate",
+    "location_description": "Deployed on Towed Array Sonar Patrol in the Atlantic or High North region",
+    "latitude": 63.0,
+    "longitude": -10.0,
+    "confidence_score": 0.45,
+    "confidence_rationale": "HMS St Albans is described as on Towed Array Sonar Patrol in the 'Atlantic or High North region.' This is a classic Royal Navy anti-submarine warfare tasking, typically conducted in the GIUK (Greenland-Iceland-UK) Gap or Norwegian Sea area to monitor submarine activity. The description covers a broad area but the mention of 'High North' and towed array patrol narrows it somewhat to the North Atlantic / GIUK Gap region. Coordinates placed approximately in the GIUK Gap area as the most likely patrol zone. Confidence is moderate-low due to the broad area described and the 'or' qualifier between Atlantic and High North.",
+    "source_urls": [
+      "https://www.navylookout.com/middle-east-in-flames-where-is-the-royal-navy/"
+    ],
+    "date_observed": "2026-03-15",
+    "last_updated": "2026-03-15T17:52:47.557312Z"
+  },
+  {
+    "name": "HMS Somerset",
+    "type": "ship",
+    "class": "Type 23 frigate",
+    "location_description": "Active, due to sail from Plymouth",
+    "latitude": 50.371,
+    "longitude": -4.142,
+    "confidence_score": 0.92,
+    "confidence_rationale": "The description states the vessel is due to sail from Plymouth, which corresponds to HMNB Devonport, the Royal Navy base in Plymouth, Devon. This is a specific named port with well-known coordinates. The ship is currently alongside or in the vicinity of Devonport prior to sailing.",
+    "source_urls": [
+      "https://www.navylookout.com/middle-east-in-flames-where-is-the-royal-navy/"
+    ],
+    "date_observed": "2026-03-15",
+    "last_updated": "2026-03-15T17:52:47.561979Z"
+  },
+  {
+    "name": "HMS Portland",
+    "type": "ship",
+    "class": "Type 23 frigate",
+    "location_description": "Stuck in Devonport with a defect since January",
+    "latitude": 50.3838,
+    "longitude": -4.1858,
+    "confidence_score": 0.95,
+    "confidence_rationale": "Devonport is HMNB Devonport, a well-known Royal Navy base in Plymouth, UK. The description explicitly names the base and states the ship has been stuck there with a defect since January, indicating it is alongside at the naval dockyard. Coordinates correspond to the Devonport Dockyard area.",
+    "source_urls": [
+      "https://www.navylookout.com/middle-east-in-flames-where-is-the-royal-navy/"
+    ],
+    "date_observed": "2026-01-15",
+    "last_updated": "2026-03-15T17:52:47.559847Z"
+  },
+  {
+    "name": "HMS Sutherland",
+    "type": "ship",
+    "class": "Type 23 frigate",
+    "location_description": "Slow progress regenerating after LIFEX refit",
+    "latitude": null,
+    "longitude": null,
+    "confidence_score": null,
+    "confidence_rationale": null,
+    "source_urls": [
+      "https://www.navylookout.com/middle-east-in-flames-where-is-the-royal-navy/"
+    ],
+    "date_observed": "2026-03-15",
+    "last_updated": "2026-03-15T17:52:05.649827Z"
+  },
+  {
+    "name": "HMS Kent",
+    "type": "ship",
+    "class": "Type 23 frigate",
+    "location_description": "Completing a major refit",
+    "latitude": null,
+    "longitude": null,
+    "confidence_score": null,
+    "confidence_rationale": null,
+    "source_urls": [
+      "https://www.navylookout.com/middle-east-in-flames-where-is-the-royal-navy/"
+    ],
+    "date_observed": "2026-03-15",
+    "last_updated": "2026-03-15T17:52:05.651038Z"
+  },
+  {
+    "name": "HMS Iron Duke",
+    "type": "ship",
+    "class": "Type 23 frigate",
+    "location_description": "Unclear if will return to sea as planned this month following a maintenance period",
+    "latitude": null,
+    "longitude": null,
+    "confidence_score": null,
+    "confidence_rationale": null,
+    "source_urls": [
+      "https://www.navylookout.com/middle-east-in-flames-where-is-the-royal-navy/"
+    ],
+    "date_observed": "2026-03-15",
+    "last_updated": "2026-03-15T17:52:05.651850Z"
+  },
+  {
+    "name": "HMS Prince of Wales",
+    "type": "ship",
+    "class": "Queen Elizabeth-class carrier",
+    "location_description": "Mentioned in context of carriers",
+    "latitude": null,
+    "longitude": null,
+    "confidence_score": null,
+    "confidence_rationale": null,
+    "source_urls": [
+      "https://www.navylookout.com/middle-east-in-flames-where-is-the-royal-navy/"
+    ],
+    "date_observed": "2026-03-15",
+    "last_updated": "2026-03-15T17:52:05.653145Z"
+  }
+]

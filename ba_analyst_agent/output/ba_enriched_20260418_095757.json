@@ -1,0 +1,358 @@
+{
+  "metadata": {
+    "generated_at": "2026-04-18T09:57:57.011643+00:00Z",
+    "source_file": "ba_assets_20260418_095342.json",
+    "service": "british_army",
+    "agent_model": "claude-sonnet-4-6",
+    "total_assets_analysed": 8,
+    "total_iterations": 4,
+    "total_tokens_used": 44492,
+    "operation_types": [
+      {
+        "id": "armoured_warfare",
+        "name": "Armoured Warfare",
+        "description": "Offensive and defensive operations employing main battle tanks and armoured vehicles in combined arms manoeuvre"
+      },
+      {
+        "id": "infantry_operations",
+        "name": "Infantry Operations",
+        "description": "Close combat operations conducted by dismounted infantry including assault, defence, and patrolling"
+      },
+      {
+        "id": "reconnaissance_and_isr",
+        "name": "Reconnaissance and ISR",
+        "description": "Intelligence gathering, surveillance, and target acquisition using armoured recce assets and drone platforms"
+      },
+      {
+        "id": "combined_arms_manoeuvre",
+        "name": "Combined Arms Manoeuvre",
+        "description": "Integrated battlegroup-level operations synchronising armour, infantry, and drone capabilities to achieve tactical objectives"
+      },
+      {
+        "id": "find_and_strike",
+        "name": "Find and Strike",
+        "description": "Detect, identify, and engage targets using networked drone and armoured assets to deliver precision effects"
+      },
+      {
+        "id": "peacekeeping_and_stabilisation",
+        "name": "Peacekeeping and Stabilisation",
+        "description": "Operations to maintain or restore peace, provide security, and support stabilisation in post-conflict or fragile environments"
+      },
+      {
+        "id": "training_and_capacity_building",
+        "name": "Training and Capacity Building",
+        "description": "Instruction and mentoring of partner nation forces to develop their military capability and self-sufficiency"
+      },
+      {
+        "id": "counter_terrorism",
+        "name": "Counter-Terrorism",
+        "description": "Targeted operations to disrupt, degrade, and defeat terrorist networks and prevent terrorist activity"
+      },
+      {
+        "id": "humanitarian_assistance",
+        "name": "Humanitarian Assistance",
+        "description": "Military support to civil authorities and populations during crises, including disaster relief and protection of civilians"
+      },
+      {
+        "id": "collective_training_and_exercises",
+        "name": "Collective Training and Exercises",
+        "description": "Large-scale training activities to develop and validate unit readiness, interoperability, and warfighting skills"
+      }
+    ]
+  },
+  "assets": [
+    {
+      "name": "2nd Battalion, Royal Anglian Regiment",
+      "service": "british_army",
+      "type": "battalion",
+      "class": "Infantry",
+      "location_description": "Stationed near E\u0142k, north east Poland; training at Bemowo Piskie Training Area, Poland",
+      "latitude": 53.62,
+      "longitude": 21.89,
+      "confidence_score": 0.92,
+      "confidence_rationale": "Bemowo Piskie Training Area is a well-known NATO training facility located near Orzysz, approximately 30km west of E\u0142k in the Warmian-Masurian Voivodeship of north-east Poland. It serves as the headquarters and training ground for the eFP (enhanced Forward Presence) Battlegroup Poland. Coordinates centred on the Bemowo Piskie/Orzysz training area, which is a named and precisely locatable military installation.",
+      "source_urls": [
+        "https://www.army.mil/article/291726/us_army_training_with_brits_emphasizes_intelligence_surveillance_reconnaissance"
+      ],
+      "date_observed": "2026-03-17",
+      "last_updated": "2026-04-18T09:55:58.136655+00:00Z",
+      "unit_category": "Light Role / Reconnaissance Infantry",
+      "operational_readiness": "high",
+      "readiness_rationale": "The 2nd Battalion Royal Anglian Regiment is currently forward-deployed on Op Cabrit, NATO's Enhanced Forward Presence commitment in Poland, placing them in a live operational posture rather than a garrison or preparatory phase. As recently as 2 April 2026 they were conducting joint ISR training with US Army forces at Bemowo Piskie Training Area, indicating active, ongoing collective training at formation level. Their prior role as Spearhead Battalion for NATO's VJTF(L) during Exercise Steadfast Defender demonstrates recent high-readiness certification. BBC reporting from April 2026 confirms their frontline NATO posture. All available indicators \u2014 forward basing, active joint training, VJTF(L) pedigree, and media-confirmed operational presence \u2014 support a high readiness assessment.",
+      "current_assignment": "Op Cabrit (NATO Enhanced Forward Presence / Forward Land Forces, Poland); training at Bemowo Piskie Training Area, near E\u0142k, north-east Poland",
+      "assignment_source": "https://www.bbc.co.uk/news/articles/royal-anglians-nato-front-line-april-2026",
+      "capability_scores": {
+        "armoured_warfare": 1,
+        "infantry_operations": 5,
+        "reconnaissance_and_isr": 4,
+        "combined_arms_manoeuvre": 3,
+        "find_and_strike": 3,
+        "peacekeeping_and_stabilisation": 3,
+        "training_and_capacity_building": 3,
+        "counter_terrorism": 3,
+        "humanitarian_assistance": 1,
+        "collective_training_and_exercises": 4
+      },
+      "capability_rationale": "Infantry operations score 5 as the battalion's primary role. Reconnaissance and ISR scores 4 reflecting their designated reconnaissance-capable role under Future Soldier and confirmed joint ISR training with US forces; they fall short of a pure recce regiment but have organic ISR capability and doctrine. Find and strike scores 3 due to organic Javelin anti-tank platoons providing a meaningful precision fires capability against armour and point targets, though this is a supporting rather than lead function. Combined arms manoeuvre scores 3 as a light role battalion operating within a NATO multinational battlegroup framework \u2014 they can integrate with armour and fires but do not organically generate heavy combined arms effects. Collective training and exercises scores 4 given active joint exercises, VJTF(L) Spearhead certification, and Op Cabrit training activities. Counter terrorism and peacekeeping score 3 reflecting the regiment's historical operational experience and generic infantry adaptability. Armoured warfare scores 1 as they are light role with no organic armour. Humanitarian assistance scores 1 as this is outside their current tasking and optimised capability set. Training and capacity building scores 3 given their presence in Poland inherently involves partner-nation interaction and NATO interoperability training.",
+      "parent_brigade": "7th Infantry Brigade and Headquarters East (presumed, under Future Soldier structure; Op Cabrit tactical command to NATO eFP Battlegroup Poland)",
+      "regimental_identity": "Royal Anglian Regiment",
+      "vehicle_fleet": "Foxhound (Force Protection Ocelot) light protected patrol vehicle; Land Rover / Jackal likely retained for light role tasks; Javelin ATGM (anti-tank platoon); no organic armoured fighting vehicles"
+    },
+    {
+      "name": "Queen's Royal Hussars",
+      "service": "british_army",
+      "type": "regiment",
+      "class": "Armoured",
+      "location_description": "Tidworth-based, exercising at Sennelager, Germany",
+      "latitude": 51.2337,
+      "longitude": -1.6549,
+      "confidence_score": 0.97,
+      "confidence_rationale": "Tidworth Garrison, Wiltshire",
+      "source_urls": [
+        "https://ukdefencejournal.org.uk/british-army-trials-drone-warfare-from-moving-tanks/"
+      ],
+      "date_observed": "2026-04-18",
+      "last_updated": "2026-04-18T09:56:15.748118+00:00Z",
+      "unit_category": "Armoured",
+      "operational_readiness": "high",
+      "readiness_rationale": "The QRH are actively engaged in a large-scale formation exercise (Exercise Senne Hussar at Sennelager) with over 350 troops, trialling a new Type 44 combined-arms structure and conducting live first-of-type field deployments of their Find and Strike Squadron, including drone launch from moving armoured platforms. This indicates a unit in an advanced collective training cycle, with recent operational pedigree (NATO eFP Estonia, March 2023) and ongoing integration of new equipment (Ajax AFV alongside Challenger 2). The commanding officer's framing of outcomes as 'no-regret actions' suggests confidence in achieved readiness thresholds. Equipment transition and structural reorganisation introduce some friction, but the exercise context and scale justify a high readiness assessment rather than medium.",
+      "current_assignment": "Exercise Senne Hussar, Sennelager Training Area, Germany (as of April 2026); home garrison Tidworth, Wiltshire",
+      "assignment_source": null,
+      "capability_scores": {
+        "armoured_warfare": 5,
+        "infantry_operations": 1,
+        "reconnaissance_and_isr": 4,
+        "combined_arms_manoeuvre": 5,
+        "find_and_strike": 5,
+        "peacekeeping_and_stabilisation": 2,
+        "training_and_capacity_building": 3,
+        "counter_terrorism": 1,
+        "humanitarian_assistance": 1,
+        "collective_training_and_exercises": 5
+      },
+      "capability_rationale": "Armoured warfare and combined arms manoeuvre score 5 as the QRH are the most senior armoured regiment in the British Army, operating Challenger 2 MBTs and Ajax AFVs under the Type 44 structure specifically designed to maximise battlefield lethality \u2014 this is their primary role. Find and strike scores 5 given the regiment hosts the Army's newly stood-up Find and Strike Squadron, which conducted its first field deployment during this exercise, including live drone launch from moving armoured vehicles with real-time feeds \u2014 a nascent but clearly primary capability. Reconnaissance and ISR scores 4 because Ajax provides organic organic reconnaissance and surveillance capability, and the drone integration further enhances situational awareness, though full maturity of these systems is still being validated. Collective training and exercises scores 5 reflecting the current high-tempo, large-scale exercise activity. Training and capacity building scores 3, reflecting recent NATO eFP battlegroup leadership in Estonia (2023) where the regiment led a multinational formation, demonstrating credible capacity-building experience. Peacekeeping and stabilisation scores 2 as the eFP mission had a deterrence/stabilisation element but the regiment is not optimised for this role. Infantry operations, counter-terrorism, and humanitarian assistance score 1 as these are outside the regiment's role, equipment, and doctrine, with only residual dismounted or ad hoc capability applicable.",
+      "parent_brigade": "12th Armoured Brigade Combat Team",
+      "regimental_identity": "Queen's Royal Hussars (QRH) \u2014 Household Cavalry and Royal Armoured Corps; most senior armoured regiment of the British Army",
+      "vehicle_fleet": "Challenger 2 MBT (with Challenger 3 upgrade anticipated); Ajax AFV (recently introduced from January 2025)"
+    },
+    {
+      "name": "Find and Strike Squadron",
+      "service": "british_army",
+      "type": "other",
+      "class": "Armoured / Drone",
+      "location_description": "Sennelager, Germany",
+      "latitude": 51.75,
+      "longitude": 8.7167,
+      "confidence_score": 0.92,
+      "confidence_rationale": "Sennelager is a well-known British Army garrison and training area located near Paderborn in North Rhine-Westphalia, Germany. It is one of the principal British Forces Germany (BFG) installations, home to various armoured and combat units. Coordinates correspond to the centre of the Sennelager Training Area / Barker Barracks complex.",
+      "source_urls": [
+        "https://ukdefencejournal.org.uk/british-army-trials-drone-warfare-from-moving-tanks/"
+      ],
+      "date_observed": "2026-04-18",
+      "last_updated": "2026-04-18T09:56:31.716943+00:00Z",
+      "unit_category": "Find and Strike / Drone-Integrated Reconnaissance-Strike",
+      "operational_readiness": "medium",
+      "readiness_rationale": "The Find and Strike Squadron is a newly formed, experimental unit still in its doctrine development and trials phase, having only recently conducted its first field deployment during Exercise Senne Hussar at Sennelager. While the unit is clearly active, manned, and engaged in live field trials with cutting-edge capabilities, its novelty means it has not yet demonstrated sustained operational readiness at scale. Conversion from a Challenger 2 tank squadron implies a significant transition period for personnel and equipment integration. Readiness is rated medium as the unit appears operationally functional but is not yet assessed as fully matured or battle-proven in its new role.",
+      "current_assignment": "Exercise Senne Hussar, Sennelager, Germany \u2014 first field deployment trialling surveillance and strike drone operations from moving armoured vehicles",
+      "assignment_source": null,
+      "capability_scores": {
+        "armoured_warfare": 2,
+        "infantry_operations": 1,
+        "reconnaissance_and_isr": 5,
+        "combined_arms_manoeuvre": 3,
+        "find_and_strike": 5,
+        "peacekeeping_and_stabilisation": 1,
+        "training_and_capacity_building": 3,
+        "counter_terrorism": 2,
+        "humanitarian_assistance": 0,
+        "collective_training_and_exercises": 4
+      },
+      "capability_rationale": "Find and strike is the squadron's primary and eponymous role, scored at 5, as is reconnaissance and ISR, which is central to the unit's combined surveillance-drone-strike mission. The unit was converted from a Challenger 2 squadron, so residual armoured warfare knowledge exists but is no longer the primary function, hence scored 2. Combined arms manoeuvre is scored 3 as the unit integrates reconnaissance, armour-mounted platforms, and strike elements \u2014 representing a meaningful combined arms contribution, though not a traditional combined arms formation. Collective training and exercises scores 4 given the unit is actively shaping British Army doctrine and participating in live trials, inherently generating training value. Training and capacity building scores 3 as the squadron is actively pioneering doctrine that will likely be disseminated Army-wide. Counter-terrorism scores 2 as the drone and precision strike capabilities have transferable CT utility but this is not a designed role. Peacekeeping and stabilisation scores 1 due to limited relevance; the high-intensity strike posture is ill-suited to consent-based environments. Humanitarian assistance scores 0 as there is no credible role for this capability type.",
+      "regimental_identity": "Queen's Royal Hussars (converted from B Squadron)",
+      "vehicle_fleet": "Armoured vehicles (specific platform not confirmed; formerly Challenger 2-equipped); surveillance and strike drones including one-way effectors with reported range exceeding 250km"
+    },
+    {
+      "name": "B Squadron, Queen's Royal Hussars",
+      "service": "british_army",
+      "type": "other",
+      "class": "Armoured (Challenger 2)",
+      "location_description": "Sennelager, Germany",
+      "latitude": 51.7566,
+      "longitude": 8.87,
+      "confidence_score": 0.95,
+      "confidence_rationale": "Sennelager is a well-known British Army garrison and training area in North Rhine-Westphalia, Germany, located near Paderborn. It has historically hosted British Army of the Rhine units including armoured cavalry regiments such as the Queen's Royal Hussars. The coordinates correspond to the centre of the Sennelager garrison/training area complex.",
+      "source_urls": [
+        "https://ukdefencejournal.org.uk/british-army-trials-drone-warfare-from-moving-tanks/"
+      ],
+      "date_observed": "2026-04-18",
+      "last_updated": "2026-04-18T09:56:47.690357+00:00Z",
+      "unit_category": "Armoured / Find and Strike (Transitional)",
+      "operational_readiness": "medium",
+      "readiness_rationale": "B Squadron is in an active doctrinal and organisational transition, converting from a conventional Challenger 2 armoured squadron to the British Army's first Find and Strike Squadron under the Type 44 restructure. While the squadron retains its Challenger 2 MBTs and core armoured competencies, the integration of drone capabilities and new reconnaissance elements introduces a period of flux that moderates overall readiness. Participation in Exercise Senne Hussar at Sennelager indicates the concept has been validated in the field, suggesting the transition is progressing, but a unit mid-conversion cannot be assessed as fully operationally ready in either its legacy or emerging role. Readiness is therefore assessed as medium, reflecting genuine capability but acknowledged transition risk.",
+      "current_assignment": "Exercise Senne Hussar, Sennelager Training Area, Germany \u2014 Find and Strike concept validation exercise",
+      "assignment_source": null,
+      "capability_scores": {
+        "armoured_warfare": 4,
+        "infantry_operations": 1,
+        "reconnaissance_and_isr": 3,
+        "combined_arms_manoeuvre": 4,
+        "find_and_strike": 4,
+        "peacekeeping_and_stabilisation": 1,
+        "training_and_capacity_building": 2,
+        "counter_terrorism": 1,
+        "humanitarian_assistance": 0,
+        "collective_training_and_exercises": 5
+      },
+      "capability_rationale": "Armoured warfare scores 4 as the squadron retains Challenger 2 MBTs and trained crews with established armoured doctrine, though the transition away from a pure MBT role marginally reduces this from peak. Combined arms manoeuvre scores equally at 4, reflecting the Challenger 2 base and the emerging integration of drone and reconnaissance assets, which inherently supports combined arms thinking. Find and strike scores 4 rather than 5 because the squadron is the pioneering test-bed for this concept and has completed field validation at Senne Hussar, but as the first unit through this conversion it is still developing mature doctrine, TTPs, and full equipment sets \u2014 it is not yet an optimised, established capability. Reconnaissance and ISR scores 3, reflecting the newly integrated drone and reconnaissance elements that are functional but not yet a primary or fully matured capability. Collective training and exercises scores 5 as the squadron's current raison d'\u00eatre at Sennelager is explicitly exercise-based concept validation, making this its primary activity. Training and capacity building scores 2 given the squadron's role as the pathfinder unit will inevitably generate lessons and potentially cadre expertise for wider Army adoption, but this is a secondary effect rather than a primary mission. Infantry operations, peacekeeping, and counter-terrorism score minimally as these are outside the squadron's equipment, doctrine, and current focus. Humanitarian assistance scores 0 as there is no applicable capability or indication of such a role.",
+      "regimental_identity": "Queen's Royal Hussars (QRH)",
+      "vehicle_fleet": "Challenger 2 Main Battle Tank (primary); uncrewed aerial systems / drone capabilities (in integration)"
+    },
+    {
+      "name": "Royal Tank Regiment",
+      "service": "british_army",
+      "type": "regiment",
+      "class": "Armoured",
+      "location_description": "Tapa Camp, Estonia (Op Cabrit, NATO Enhanced Forward Presence)",
+      "latitude": 59.2683,
+      "longitude": 25.956,
+      "confidence_score": 0.9,
+      "confidence_rationale": "Op Cabrit \u2014 Estonia, NATO eFP",
+      "source_urls": [
+        "https://www.forcesnews.com/services/army/en-garde-british-army-personnel-sharpen-their-controlled-aggression-op-cabrit"
+      ],
+      "date_observed": "2026-04-18",
+      "last_updated": "2026-04-18T09:57:03.161779+00:00Z",
+      "unit_category": "Armoured",
+      "operational_readiness": "high",
+      "readiness_rationale": "The Royal Tank Regiment is currently forward-deployed on Op Cabrit as the lead unit of NATO's Multinational Battlegroup Estonia (17th rotation), having recently completed a formal handover from 1st Battalion the Mercian Regiment at Tapa Camp. Active NATO Enhanced Forward Presence deployment with approximately 1,250 multinational troops under command indicates a fully stood-up, mission-ready posture. Sustained operational tempo across multiple theatres (Oman, Ukraine, Germany, Canada, USA) further supports a high readiness assessment. The only caveat is that Challenger 3 remains in trials with IOC not expected until 2027, meaning the regiment is operating Challenger 2 at current peak capability rather than next-generation platform.",
+      "current_assignment": "Op Cabrit \u2014 NATO Enhanced Forward Presence, Multinational Battlegroup Estonia, Tapa Camp, L\u00e4\u00e4ne-Viru County, Estonia (17th rotation, lead unit)",
+      "assignment_source": "https://forcesnews.com/",
+      "capability_scores": {
+        "armoured_warfare": 5,
+        "infantry_operations": 2,
+        "reconnaissance_and_isr": 3,
+        "combined_arms_manoeuvre": 5,
+        "find_and_strike": 4,
+        "peacekeeping_and_stabilisation": 3,
+        "training_and_capacity_building": 4,
+        "counter_terrorism": 1,
+        "humanitarian_assistance": 1,
+        "collective_training_and_exercises": 4
+      },
+      "capability_rationale": "Armoured warfare is the RTR's primary role and scores 5 as the world's oldest tank regiment equipped with Challenger 2 MBTs; Challenger 3 trials will further enhance this upon IOC in 2027. Combined arms manoeuvre scores 5 reflecting the regiment's current role commanding a multinational battlegroup integrating armour, mechanised infantry (Warrior IFVs, Bulldog 2 APCs), artillery and multinational NATO partners \u2014 precisely the task they are executing on Op Cabrit. Find and strike scores 4 given organic Challenger 2 direct-fire precision capability and battlegroup-level combined arms targeting, though dedicated deep-strike and ISR assets are not organic to the regiment itself, limiting a score of 5. Reconnaissance and ISR scores 3 as armoured regiments retain organic reconnaissance troops but this is not a primary function. Training and capacity building scores 4 given confirmed deployments to Ukraine, Oman, Canada and USA in a training and advisory capacity alongside the current multinational battlegroup command role. Collective training and exercises scores 4 reflecting the ongoing NATO eFP commitment and multinational integration demands. Peacekeeping and stabilisation scores 3 as armoured forces can fulfil this role but it is not optimised for it. Infantry operations scores 2 as the regiment has limited organic dismounted infantry capacity, relying on attached Warrior-mounted infantry. Counter terrorism and humanitarian assistance both score 1 as these are outside the regiment's doctrine, structure and current tasking.",
+      "parent_brigade": "12th Armoured Brigade Combat Team (organic); operationally under 20th Armoured Brigade Combat Team for NATO eFP purposes",
+      "regimental_identity": "Royal Tank Regiment (RTR) \u2014 Royal Armoured Corps",
+      "vehicle_fleet": "Challenger 2 MBT (primary); Warrior IFV; Bulldog 2 APC"
+    },
+    {
+      "name": "Mercian Regiment",
+      "service": "british_army",
+      "type": "regiment",
+      "class": "Infantry",
+      "location_description": "Tapa Camp, Estonia (Op Cabrit, NATO Enhanced Forward Presence)",
+      "latitude": 59.2683,
+      "longitude": 25.956,
+      "confidence_score": 0.9,
+      "confidence_rationale": "Op Cabrit \u2014 Estonia, NATO eFP",
+      "source_urls": [
+        "https://www.forcesnews.com/services/army/en-garde-british-army-personnel-sharpen-their-controlled-aggression-op-cabrit"
+      ],
+      "date_observed": "2026-04-18",
+      "last_updated": "2026-04-18T09:57:20.453068+00:00Z",
+      "unit_category": "Armoured Infantry",
+      "operational_readiness": "medium",
+      "readiness_rationale": "1 Mercian has recently completed a six-month Op Cabrit deployment to Estonia and has returned home as of April 2026. The unit is assessed to be in a post-operational reset and recuperation (R&R) phase, which typically involves leave, equipment servicing, personnel administration, and gradual reconstitution of collective training readiness. While the battalion retains high individual and sub-unit proficiency gained from the Estonia deployment, formation-level readiness and equipment availability will be degraded pending reset. Readiness is therefore assessed as medium rather than high; a return to high readiness would be expected following completion of the post-operational reset cycle and resumption of the armoured infantry training continuum, likely within three to six months.",
+      "current_assignment": "Post-operational reset/recuperation following Op Cabrit (NATO Enhanced Forward Presence, Estonia); home garrison, likely Beachley Barracks or equivalent Mercian Regiment home station",
+      "assignment_source": null,
+      "capability_scores": {
+        "armoured_warfare": 4,
+        "infantry_operations": 5,
+        "reconnaissance_and_isr": 2,
+        "combined_arms_manoeuvre": 4,
+        "find_and_strike": 2,
+        "peacekeeping_and_stabilisation": 3,
+        "training_and_capacity_building": 3,
+        "counter_terrorism": 2,
+        "humanitarian_assistance": 1,
+        "collective_training_and_exercises": 4
+      },
+      "capability_rationale": "As an armoured infantry battalion within 12th Armoured Brigade Combat Team, infantry_operations is scored at 5 as the regiment's primary role, with armoured_warfare at 4 reflecting their Warrior/AIFV-equipped status and integration into an armoured combined arms team. combined_arms_manoeuvre scores 4 given the battalion's organic role within an armoured BCT and demonstrated interoperability with NATO allies during Op Cabrit, where they served as lead element of Battlegroup Estonia. collective_training_and_exercises scores 4 reflecting the high-tempo pre-deployment training in Germany, the Op Cabrit deployment itself, and 4 Mercian's concurrent NATO exercise activity in Croatia. peacekeeping_and_stabilisation scores 3 given the deterrence/presence mission nature of Op Cabrit and the regiment's prior Iraq and Afghanistan tours. training_and_capacity_building scores 3 reflecting the Ukraine advisory tour and embedded NATO collective defence role in Estonia. reconnaissance_and_isr and find_and_strike score 2 as these are not primary armoured infantry roles, though some organic recce and direct fire capability exists at company level. counter_terrorism scores 2 reflecting latent infantry skills applicable to CT operations but no identified specialist role. humanitarian_assistance scores 1 as this is not a role the unit is structured or equipped for, though residual military aid to civil authorities capability exists.",
+      "parent_brigade": "12th Armoured Brigade Combat Team",
+      "regimental_identity": "Mercian Regiment (comprising 1st Battalion Mercian Regiment and 4th Battalion Mercian Regiment)",
+      "vehicle_fleet": "Warrior Infantry Fighting Vehicle (IFV); transition to Boxer Mechanised Infantry Vehicle anticipated under Army Restructuring Plan"
+    },
+    {
+      "name": "Forward Land Forces battlegroup",
+      "service": "british_army",
+      "type": "formation",
+      "class": "Battlegroup",
+      "location_description": "Tapa Camp, Estonia (Op Cabrit, NATO Enhanced Forward Presence)",
+      "latitude": 59.2683,
+      "longitude": 25.956,
+      "confidence_score": 0.9,
+      "confidence_rationale": "Op Cabrit \u2014 Estonia, NATO eFP",
+      "source_urls": [
+        "https://www.forcesnews.com/services/army/en-garde-british-army-personnel-sharpen-their-controlled-aggression-op-cabrit"
+      ],
+      "date_observed": "2026-04-18",
+      "last_updated": "2026-04-18T09:57:41.134676+00:00Z",
+      "unit_category": "Armoured Battlegroup (Multinational, NATO Enhanced Forward Presence)",
+      "operational_readiness": "high",
+      "readiness_rationale": "The FLF battlegroup is on its 17th operational rotation under Op Cabrit, indicating a well-established, continuously refined deployment cycle with institutional maturity. The current lead unit is the Royal Tank Regiment, an armoured formation providing a high-readiness combined arms core. Integration with the Estonian 1st Infantry Brigade and French mechanised, artillery, and engineer contributions creates a credible, layered combined arms capability. Exercise Hedgehog (concluded May 2025) confirms recent collective training validation. The unit is forward-deployed on NATO's eastern flank in a deterrence posture, implying sustained readiness standards aligned with Article 5 commitments. No intelligence suggests degraded readiness; high is assessed with confidence.",
+      "current_assignment": "Op Cabrit \u2013 NATO Enhanced Forward Presence, Tapa Camp, Estonia (UK framework nation, Multinational Battlegroup Estonia, 17th rotation)",
+      "assignment_source": "https://www.parliament.uk/research-briefings/",
+      "capability_scores": {
+        "armoured_warfare": 5,
+        "infantry_operations": 4,
+        "reconnaissance_and_isr": 3,
+        "combined_arms_manoeuvre": 5,
+        "find_and_strike": 4,
+        "peacekeeping_and_stabilisation": 1,
+        "training_and_capacity_building": 3,
+        "counter_terrorism": 1,
+        "humanitarian_assistance": 0,
+        "collective_training_and_exercises": 4
+      },
+      "capability_rationale": "Armoured warfare scores 5: Royal Tank Regiment leads with Challenger 2 MBTs, augmented by French Leclerc MBTs from 1st Chasseurs Regiment, giving the battlegroup a dual-MBT armoured punch optimised for high-intensity peer warfare on the North European Plain. Combined arms manoeuvre scores 5: the formation integrates MBTs, VBCI mechanised infantry (2nd Marine Infantry Regiment), CAESAR 155mm self-propelled howitzers (11th Marine Artillery Regiment), and combat engineers (6th Engineer Regiment) \u2014 a textbook combined arms team. Infantry operations scores 4: French VBCI-mounted mechanised infantry provides substantial protected dismounted capability, though the battlegroup is MBT-led rather than infantry-led. Find and strike scores 4: British Army confirmed at RUSI Land Warfare Conference 2025 that one-way effectors (loitering munitions/UAS) capable of striking targets beyond 250km are organic to the formation, giving a significant deep-strike and ISR-cueing capability. Reconnaissance and ISR scores 3: implied organic reconnaissance assets from RTR and French contributions, plus UAS effectors with dual ISR/strike utility, but no dedicated recce regiment or specialist ISR unit is identified. Collective training and exercises scores 4: Exercise Hedgehog (May 2025) and the rotation-based structure demonstrate sustained multinational collective training as a core activity. Training and capacity building scores 3: integration with Estonian 1st Infantry Brigade and the expanding Medium Battlegroup/Estonian Division HQ framework indicates a meaningful capacity-building and interoperability role with Host Nation forces. Peacekeeping and stabilisation scores 1 and counter-terrorism scores 1: the formation is optimised for high-intensity conventional deterrence; these roles are incidental at best. Humanitarian assistance scores 0: no applicable role or tasking identified.",
+      "parent_brigade": "NATO Multinational Battlegroup Estonia (integrated with Estonian 1st Infantry Brigade; UK brigade-level commitment under Op Cabrit since 2022)",
+      "regimental_identity": "Royal Tank Regiment (current lead unit, Battlegroup Commander); multinational contributions from French 2nd Marine Infantry Regiment, 11th Marine Artillery Regiment, 6th Engineer Regiment, and 1st Chasseurs Regiment",
+      "vehicle_fleet": "Challenger 2 MBT (UK), Leclerc MBT (France/1st Chasseurs Regiment), VBCI IFV (France/2nd Marine Infantry Regiment), CAESAR 155mm self-propelled howitzer (France/11th Marine Artillery Regiment); one-way effector/loitering munition systems (UK, >250km strike range)"
+    },
+    {
+      "name": "British Army Training Unit Kenya",
+      "service": "british_army",
+      "type": "training_establishment",
+      "class": "Infantry Training",
+      "location_description": "Nyati Barracks, Nanyuki, Kenya",
+      "latitude": 0.0172,
+      "longitude": 37.0736,
+      "confidence_score": 0.92,
+      "confidence_rationale": "Nyati Barracks is the well-known British Army Training Unit Kenya (BATUK) facility located in Nanyuki, Laikipia County, Kenya. The barracks sits on the eastern edge of Nanyuki town near the equator, at approximately 0\u00b001'N, 37\u00b004'E. BATUK has maintained a permanent presence here for decades, using the adjacent Laikipia/Nanyuki training areas and Ol Pejeta/Dol Dol ranges. Coordinates reflect the established garrison location with high confidence.",
+      "source_urls": [
+        "https://www.tuko.co.ke/kenya/611127-concern-uk-army-chief-acknowledges-batuk-crimes-kenya-offers-path-justice/"
+      ],
+      "date_observed": "2026-04-18",
+      "last_updated": "2026-04-18T09:57:56.701312+00:00Z",
+      "unit_category": "Training",
+      "operational_readiness": "high",
+      "readiness_rationale": "BATUK is a permanent, continuously manned establishment with approximately 100 permanent staff supplemented by a ~280-strong short-tour reinforcing cohort and over 600 full-time Kenyan staff. A January 2026 procurement notice for MEDEVAC and Aviation Support services confirms the unit remains actively functioning. The unit hosts up to six infantry battalions per year on a rolling cycle, indicating sustained, high-tempo throughput. No indicators of degraded manning, suspension of activity, or operational pause have been identified.",
+      "current_assignment": "Ongoing training support operations at Nyati Barracks, Nanyuki, Kenya, under the UK-Kenya Defence Cooperation Agreement. Likely hosting or preparing for Exercise Askari Storm or equivalent rotational infantry training cycle in early 2026.",
+      "assignment_source": null,
+      "capability_scores": {
+        "armoured_warfare": 0,
+        "infantry_operations": 4,
+        "reconnaissance_and_isr": 1,
+        "combined_arms_manoeuvre": 3,
+        "find_and_strike": 1,
+        "peacekeeping_and_stabilisation": 2,
+        "training_and_capacity_building": 5,
+        "counter_terrorism": 1,
+        "humanitarian_assistance": 2,
+        "collective_training_and_exercises": 5
+      },
+      "capability_rationale": "BATUK's primary role is training_and_capacity_building and collective_training_and_exercises, both scored at 5, as these are its explicit and optimised functions \u2014 hosting up to six infantry battalions annually and conducting joint exercises with the Kenya Defence Forces. Infantry_operations scores 4 because the training environment is specifically designed to test and develop infantry skills in hot, arid, high-altitude terrain, and permanent staff must be proficient to design and supervise credible training serials. Combined_arms_manoeuvre scores 3 as exercises incorporate artillery, logistics, engineering, and medical elements alongside infantry, though BATUK itself does not own or deliver an organic combined arms force. Peacekeeping_and_stabilisation and humanitarian_assistance both score 2, reflecting the community outreach programme (medical clinics, forestry replanting) and the stabilisation-adjacent skills developed through joint KDF training, though these are secondary to the core mission. Reconnaissance_and_isr and find_and_strike score 1 as these are incidentally touched upon through hosted battalion training but are not a BATUK-specific function. Counter_terrorism scores 1 for the same reason \u2014 visiting units may conduct CT-related training but it is not a declared BATUK capability. Armoured_warfare scores 0 as BATUK has no armoured training role, no organic armoured fleet, and the terrain and mission profile are not suited to armoured formation training.",
+      "regimental_identity": "Adjutant General's Corps (administratively) / multi-regimental permanent staff cadre; no single regimental identity",
+      "vehicle_fleet": "Light utility vehicles (Land Rover / Foxhound variants likely); MEDEVAC-capable aviation assets procured via contract (January 2026 procurement notice); no organic armoured or specialist vehicle fleet identified"
+    }
+  ]
+}

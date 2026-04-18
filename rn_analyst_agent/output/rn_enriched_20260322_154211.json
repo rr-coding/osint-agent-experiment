@@ -1,0 +1,625 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-22T15:42:10.755186+00:00Z",
+    "source_file": "rn_assets_20260322_152824.json",
+    "agent_model": "claude-opus-4-6",
+    "total_assets_analysed": 17,
+    "total_iterations": 8,
+    "total_tokens_used": 148696,
+    "operation_types": [
+      {
+        "id": "carrier_strike",
+        "name": "Carrier Strike",
+        "description": "Power projection through carrier-based fixed-wing and rotary aviation operations, enabling strike, air superiority, and expeditionary warfare from Queen Elizabeth-class carriers"
+      },
+      {
+        "id": "air_defence",
+        "name": "Air Defence",
+        "description": "Protecting the fleet, task group, and littoral areas from air and missile threats using shipborne sensors and weapons systems, principally the Type 45 destroyer's Sea Viper system"
+      },
+      {
+        "id": "anti_submarine_warfare",
+        "name": "Anti-Submarine Warfare",
+        "description": "Detection, tracking, and neutralisation of hostile submarine threats using the Type 26 frigate, Type 23 frigate, and Astute-class submarine operating in coordinated ASW screens"
+      },
+      {
+        "id": "maritime_patrol_and_surveillance",
+        "name": "Maritime Patrol and Surveillance",
+        "description": "Persistent monitoring of exclusive economic zones, overseas territories, and strategic waterways conducted primarily by River-class offshore patrol vessels and fast patrol boats"
+      },
+      {
+        "id": "forward_presence_and_engagement",
+        "name": "Forward Presence and Engagement",
+        "description": "Maintaining a visible and enduring Royal Navy presence in key regions such as the Indo-Pacific, Caribbean, and Gulf through permanently deployed offshore patrol vessels and frigates"
+      },
+      {
+        "id": "fishery_protection_and_ez_enforcement",
+        "name": "Fishery Protection and EEZ Enforcement",
+        "description": "Enforcement of fishing regulations, sovereignty patrols, and policing of UK territorial waters and exclusive economic zones, primarily tasked to River-class OPVs and fast patrol boats"
+      },
+      {
+        "id": "anti_surface_warfare",
+        "name": "Anti-Surface Warfare",
+        "description": "Engagement and defeat of hostile surface vessels using a combination of ship-launched missiles, naval gunfire, and submarine-launched torpedoes or missiles from escorts and the Astute-class boat"
+      },
+      {
+        "id": "task_group_escort",
+        "name": "Task Group Escort and Force Protection",
+        "description": "Providing layered defensive screens for high-value units such as carriers during transit and operations, involving destroyers, frigates, and submarines operating in coordinated formations"
+      },
+      {
+        "id": "covert_intelligence_gathering",
+        "name": "Covert Intelligence Gathering",
+        "description": "Clandestine surveillance, signals intelligence collection, and underwater reconnaissance missions conducted by the Astute-class submarine operating independently in denied or sensitive areas"
+      },
+      {
+        "id": "base_port_operations_and_fleet_support",
+        "name": "Base Port Operations and Fleet Support",
+        "description": "Sustaining fleet readiness through dockyard maintenance, logistics staging, crew training, ammunition storage, and submarine support across the three naval bases at Portsmouth, Devonport, and Clyde"
+      }
+    ]
+  },
+  "assets": [
+    {
+      "name": "HMS Dragon",
+      "type": "ship",
+      "class": "Type 45 destroyer",
+      "location_description": "Departed UK heading to Eastern Mediterranean",
+      "latitude": 36.0,
+      "longitude": -5.0,
+      "confidence_score": 0.35,
+      "confidence_rationale": "HMS Dragon has departed the UK heading to the Eastern Mediterranean. The transit route from the UK (likely Portsmouth) to the Eastern Mediterranean passes through the English Channel, Bay of Biscay, and Strait of Gibraltar. Since the description says 'departed' (suggesting early in the transit) and heading toward the Eastern Mediterranean, a reasonable mid-estimate would place the vessel in the vicinity of the Strait of Gibraltar or western Mediterranean. I've estimated coordinates near the Strait of Gibraltar (~36.0\u00b0N, ~5.0\u00b0W) as a likely position for a vessel that has departed but not yet arrived at the Eastern Mediterranean. Confidence is low due to the vagueness of the transit stage.",
+      "source_urls": [
+        "https://www.navylookout.com"
+      ],
+      "date_observed": "2026-03-10",
+      "last_updated": "2026-03-22T15:35:17.943389+00:00Z",
+      "unit_category": "destroyer",
+      "operational_readiness": "high",
+      "readiness_rationale": "HMS Dragon has departed the UK and is actively transiting to the Eastern Mediterranean, indicating she has completed any maintenance or pre-deployment work-up and is in a deployable, operational state. The intelligence context describes her as 'operationally deployed and at sea.' The broader context of a stretched surface fleet further suggests the Royal Navy would not deploy a Type 45 unless she were at full operational capability. While no specific readiness certification (e.g., FOST assessment) is cited, active deployment to a strategically significant theatre is strong evidence of high readiness.",
+      "current_assignment": "Deployed from the UK to the Eastern Mediterranean, likely for standing NATO commitments, carrier escort duties, or independent forward presence operations. No specific task group or named operation identified.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 2,
+        "air_defence": 5,
+        "anti_submarine_warfare": 2,
+        "maritime_patrol_and_surveillance": 3,
+        "forward_presence_and_engagement": 4,
+        "fishery_protection_and_ez_enforcement": 1,
+        "anti_surface_warfare": 3,
+        "task_group_escort": 5,
+        "covert_intelligence_gathering": 1,
+        "base_port_operations_and_fleet_support": 0
+      },
+      "capability_rationale": "HMS Dragon's primary design role is area air defence, hence the maximum score of 5 for air_defence. The Sea Viper system (Sampson radar + Aster 15/30 missiles) makes her one of NATO's most capable air defence platforms, and this capability directly translates to a score of 5 for task_group_escort, as Type 45s are purpose-built to provide an air defence umbrella for carrier strike groups or task forces. Forward presence and engagement scores 4 because a destroyer deploying independently to the Eastern Mediterranean serves as a highly credible symbol of national power projection and diplomatic signalling, though this is a secondary role to her air defence mission. Anti_surface_warfare scores 3: the 4.5-inch Mk 8 gun and embarked Wildcat helicopter (capable of carrying Sea Venom anti-ship missiles) provide a moderate anti-surface capability, but Type 45s lack a dedicated ship-launched anti-ship missile system (e.g., Harpoon has been retired from most Type 45s). Maritime patrol and surveillance scores 3 owing to the powerful Sampson radar providing excellent wide-area situational awareness and air/surface track compilation, plus helicopter-based surveillance, though she is not optimised for persistent patrol tasking. Anti_submarine_warfare scores only 2: the Type 45 can embark a Merlin HM2 ASW helicopter (a potent ASW asset), but the ship herself has limited hull-mounted sonar capability and no towed array, making her reliant on the helicopter for any meaningful ASW contribution. Carrier_strike scores 2 as she contributes to carrier strike only as an escort providing air defence rather than strike capacity herself; the 4.5-inch gun offers limited naval gunfire support. Fishery protection scores 1\u2014she could theoretically perform this role but is vastly over-specified for it and unlikely to be tasked. Covert intelligence gathering scores 1; while all warships conduct passive SIGINT/ELINT collection as a matter of course, a large destroyer is not suited to covert operations. Base port operations scores 0 as she is deployed at sea."
+    },
+    {
+      "name": "HMS Tyne",
+      "type": "ship",
+      "class": null,
+      "location_description": "Deployed to English Channel to monitor Russian landing ships",
+      "latitude": 50.2,
+      "longitude": -1.0,
+      "confidence_score": 0.55,
+      "confidence_rationale": "The English Channel stretches between southern England and northern France. Its approximate centre lies around 50.2\u00b0N, 1.0\u00b0W. HMS Tyne, a River-class offshore patrol vessel, was deployed to monitor Russian naval vessels transiting the Channel. Russian landing ships passing through the Dover Strait/central Channel area is a well-documented occurrence, so the mid-Channel position is a reasonable estimate for the patrol area.",
+      "source_urls": [
+        "https://www.navylookout.com"
+      ],
+      "date_observed": "2026-03-22",
+      "last_updated": "2026-03-22T15:35:35.143243+00:00Z",
+      "unit_category": "patrol_vessel",
+      "operational_readiness": "high",
+      "readiness_rationale": "HMS Tyne is confirmed actively deployed in the English Channel as of March 2026, having been tasked twice in three days to shadow Russian naval vessels. The Royal Navy's own reporting confirms she 'utilised powerful sensors and radars' during these operations, indicating all key surveillance systems are functional. She is operating with embarked/supporting aviation (815 NAS Wildcat) and coordinating with other assets (HMS Cutlass). All evidence points to a fully operational vessel conducting her primary mission set at tempo. No maintenance issues, crew shortages, or capability degradation noted.",
+      "current_assignment": "Deployed to the English Channel on sovereignty patrol and foreign warship escort duties, specifically shadowing Russian Navy Ropucha-class landing ship Aleksandr Otrakovsky and merchant vessel Sparta IV. Operating in concert with an 815 NAS Wildcat helicopter and HMS Cutlass.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 0,
+        "air_defence": 0,
+        "anti_submarine_warfare": 0,
+        "maritime_patrol_and_surveillance": 5,
+        "forward_presence_and_engagement": 4,
+        "fishery_protection_and_ez_enforcement": 5,
+        "anti_surface_warfare": 1,
+        "task_group_escort": 1,
+        "covert_intelligence_gathering": 2,
+        "base_port_operations_and_fleet_support": 1
+      },
+      "capability_rationale": "HMS Tyne is a Batch 1 River-class OPV optimised for two primary roles: maritime patrol/surveillance and fishery protection/EEZ enforcement \u2014 both scored 5. Her radar and sensor suite, confirmed operational in the current tasking, makes her highly effective at tracking and reporting on vessel movements in UK waters. Forward presence and engagement scores 4 as she routinely represents UK sovereignty by escorting foreign warships through home waters, though she lacks the combat systems and diplomatic weight of a frigate or destroyer for overseas forward presence. Anti-surface warfare scores only 1; the 20mm cannon and GPMGs provide minimal self-defence capability but no credible anti-ship strike capacity (no missiles, no medium-calibre gun). Covert intelligence gathering scores 2; while her surveillance sensors can collect useful ELINT/visual intelligence on transiting Russian warships (as demonstrated), she is not a dedicated SIGINT/ELINT platform. Task group escort scores 1 \u2014 she could physically accompany a group but lacks the air defence, ASW, and combat systems to provide meaningful protection. She has no anti-submarine warfare capability (score 0), no air defence systems beyond small arms (score 0), and no role in carrier strike operations (score 0). Base port/fleet support scores 1 as she could theoretically support harbour duties but this is not her role."
+    },
+    {
+      "name": "HMS Cutlass",
+      "type": "ship",
+      "class": null,
+      "location_description": "Deployed from Gibraltar to monitor Russian vessels in English Channel",
+      "latitude": 36.1408,
+      "longitude": -5.3536,
+      "confidence_score": 0.97,
+      "confidence_rationale": "Gibraltar \u2014 Royal Navy facility",
+      "source_urls": [
+        "https://www.navylookout.com"
+      ],
+      "date_observed": "2026-03-22",
+      "last_updated": "2026-03-22T15:35:53.783492+00:00Z",
+      "unit_category": "patrol_vessel",
+      "operational_readiness": "high",
+      "readiness_rationale": "HMS Cutlass was operationally active as recently as 20 March 2026 (2 days ago), successfully dispatched to track the sanctioned Russian tanker MV Deyna through the Strait of Gibraltar. She also supported HMS Tyne earlier in March 2026 monitoring Russian vessels in the English Channel. This sustained tempo of tasking across multiple operations within the same month strongly indicates high operational readiness. Her permanent basing at Gibraltar with a small crew of six facilitates rapid generation for short-notice missions, consistent with the report describing her as 'the only British vessel available to assist with the mission'.",
+      "current_assignment": "Recently completed tracking of sanctioned Russian oil tanker MV Deyna through the Strait of Gibraltar on 20 March 2026, providing real-time tracking data, movement patterns, and high-resolution imagery to French naval forces. Likely returned to Gibraltar Squadron duties including sovereignty protection and coastal security patrols in British Gibraltar Territorial Waters.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 0,
+        "air_defence": 0,
+        "anti_submarine_warfare": 0,
+        "maritime_patrol_and_surveillance": 5,
+        "forward_presence_and_engagement": 4,
+        "fishery_protection_and_ez_enforcement": 3,
+        "anti_surface_warfare": 1,
+        "task_group_escort": 1,
+        "covert_intelligence_gathering": 3,
+        "base_port_operations_and_fleet_support": 1
+      },
+      "capability_rationale": "HMS Cutlass is a 62ft fast patrol boat with a crew of six, armed only with three GPMGs, and a top speed of ~41 knots. Maritime patrol and surveillance (5): This is her primary role and was directly demonstrated in the MV Deyna tracking mission, where she provided real-time tracking data, movement patterns, and high-resolution imagery \u2014 classic ISR patrol outputs. Her speed and small profile make her well-suited to shadow and monitor vessels of interest. Forward presence and engagement (4): Permanently stationed at Gibraltar, she is a visible symbol of British sovereignty and naval presence at a strategically vital chokepoint; this is a core tasking for the Gibraltar Squadron. Fishery protection and EZ enforcement (3): Her speed, patrol capability, and coastal security mandate make her moderately capable for enforcement duties in British Gibraltar Territorial Waters, though her small size and limited armament constrain boarding operations compared to dedicated OPVs. Covert intelligence gathering (3): The Deyna mission demonstrated a de facto intelligence-gathering role \u2014 collecting high-resolution imagery and movement data on a sanctioned vessel and passing it to allied forces. Her small size and speed support discreet shadowing, though she lacks dedicated SIGINT/ELINT suites. Anti-surface warfare (1): Three GPMGs provide only token self-defence capability against surface threats; she has no anti-ship missiles, cannon, or fire-control radar. Task group escort (1): Her speed could theoretically allow her to screen a task group in confined waters, but she lacks sensors, weapons, and endurance for meaningful escort duties. Carrier strike, air defence, and anti-submarine warfare all score 0 as she has no relevant systems whatsoever. Base port operations (1): She could perform harbour duties or local support tasks but this is not her designed role."
+    },
+    {
+      "name": "HMS Active",
+      "type": "ship",
+      "class": "Type 26 frigate",
+      "location_description": "Emerged from assembly hall at shipyard in Rosyth, near Edinburgh",
+      "latitude": 56.0245,
+      "longitude": -3.4355,
+      "confidence_score": 0.97,
+      "confidence_rationale": "Rosyth Dockyard, Firth of Forth",
+      "source_urls": [
+        "https://www.navylookout.com"
+      ],
+      "date_observed": "2026-03-22",
+      "last_updated": "2026-03-22T15:36:09.349366+00:00Z",
+      "unit_category": "frigate",
+      "operational_readiness": "low",
+      "readiness_rationale": "HMS Active has emerged from the assembly hall, indicating she is structurally complete but is now entering the fitting-out phase. She is not yet launched, let alone commissioned. Type 26 frigates typically require 2-3 years of fitting out, basin trials, sea trials, and acceptance after rollout. She has no crew embarked in an operational sense, her combat systems are unlikely to be installed or integrated, and she cannot be tasked to any operational duty. The intelligence context explicitly states she is NOT operationally ready. Note: the stated location of Rosyth is inconsistent with Type 26 construction, which occurs at BAE Systems Govan/Scotstoun on the Clyde; the vessel may have been moved to Rosyth for outfitting at Babcock's facility, or the location data may be erroneous. Regardless, her construction status renders her operationally unavailable.",
+      "current_assignment": "Under construction / fitting out at shipyard. Not yet commissioned into Royal Navy service.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 0,
+        "air_defence": 0,
+        "anti_submarine_warfare": 0,
+        "maritime_patrol_and_surveillance": 0,
+        "forward_presence_and_engagement": 0,
+        "fishery_protection_and_ez_enforcement": 0,
+        "anti_surface_warfare": 0,
+        "task_group_escort": 0,
+        "covert_intelligence_gathering": 0,
+        "base_port_operations_and_fleet_support": 0
+      },
+      "capability_rationale": "All capability scores are set to 0 because HMS Active is not yet a commissioned warship and has zero operational capability at this time. She cannot be deployed, sailed, or tasked for any mission. When eventually commissioned, the Type 26 City-class design would warrant high scores in anti_submarine_warfare (5 \u2014 primary role, with Type 2087 towed array sonar, bow-mounted sonar, and Merlin HM2 ASW helicopter), task_group_escort (5 \u2014 designed as the high-end escort for carrier strike and task groups), air_defence (3 \u2014 Sea Ceptor CAMM providing local/point air defence), anti_surface_warfare (3 \u2014 Mk 45 5-inch gun, future potential for strike-length Mk 41 VLS), maritime_patrol_and_surveillance (3 \u2014 advanced sensors and helicopter), forward_presence_and_engagement (3 \u2014 global deployability and mission bay flexibility), and carrier_strike (3 \u2014 as an escort within a carrier strike group). However, none of these capabilities exist until the ship is completed, trialled, accepted, and commissioned. Scoring against current operational reality: all zeros."
+    },
+    {
+      "name": "HMS Prince of Wales",
+      "type": "ship",
+      "class": "Queen Elizabeth-class aircraft carrier",
+      "location_description": "Currently based at Portsmouth; scheduled to lead UK Carrier Strike Group in the North Atlantic",
+      "latitude": 50.7984,
+      "longitude": -1.1082,
+      "confidence_score": 0.97,
+      "confidence_rationale": "Portsmouth Naval Base",
+      "source_urls": [
+        "https://www.navylookout.com"
+      ],
+      "date_observed": "2026-03-22",
+      "last_updated": "2026-03-22T15:36:36.072536+00:00Z",
+      "unit_category": "aircraft_carrier",
+      "operational_readiness": "high",
+      "readiness_rationale": "Intelligence reporting indicates HMS Prince of Wales has assumed the high-readiness carrier role following HMS Queen Elizabeth's entry into extended dry dock at Rosyth. She is nominally at 72-hours notice to sail. The serious propeller shaft coupling failure of August 2022 was addressed during a 9-month dry dock period (Nov 2022\u2013Jul 2023) with both shafts replaced with a new design. Subsequent return to service and assumption of high-readiness duties suggests successful sea trials and work-up. Her scheduled assignment to lead the UK Carrier Strike Group in the North Atlantic further corroborates that she has been assessed as operationally ready by Fleet Command. As the sole operational carrier and current fleet flagship, she would be receiving priority for crew manning, stores, and air group allocation. No current reporting suggests any new material defects or readiness degradation.",
+      "current_assignment": "Based at HMNB Portsmouth at high readiness (nominally 72-hour notice to sail); scheduled to lead the UK Carrier Strike Group deployment in the North Atlantic. Likely conducting or preparing for Operational Sea Training (OST) and CSG work-up activities.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 5,
+        "air_defence": 4,
+        "anti_submarine_warfare": 3,
+        "maritime_patrol_and_surveillance": 4,
+        "forward_presence_and_engagement": 5,
+        "fishery_protection_and_ez_enforcement": 0,
+        "anti_surface_warfare": 3,
+        "task_group_escort": 1,
+        "covert_intelligence_gathering": 1,
+        "base_port_operations_and_fleet_support": 2
+      },
+      "capability_rationale": "CARRIER_STRIKE (5): This is the primary role of the Queen Elizabeth-class. The embarked air group of F-35B Lightning II stealth fighters provides fifth-generation strike capability at range. The 65,000-tonne platform with ski-jump is purpose-built for power projection. AIR_DEFENCE (4): F-35B provides a potent outer air battle capability with advanced sensors (AN/APG-81 AESA radar, DAS) and beyond-visual-range engagement. However, the ship itself relies on Phalanx CIWS for close-in self-defence and is dependent on escort vessels (Type 45 destroyers) for area air defence, preventing a score of 5. ANTI_SUBMARINE_WARFARE (3): Embarked Merlin HM2 helicopters provide capable ASW with dipping sonar, sonobuoys, and Sting Ray torpedoes. However, the carrier itself lacks hull-mounted sonar or towed arrays and is an ASW-supported rather than ASW-primary platform. The score reflects the organic rotary-wing contribution. MARITIME_PATROL_AND_SURVEILLANCE (4): The combination of F-35B (with exceptional sensor fusion including EO/IR, AESA radar, and data-link sharing) and Merlin/Wildcat helicopters with Crowsnest AEW capability provides wide-area surveillance. The ship's own sensors and the ability to act as a command hub for ISR fusion justify a strong score. FORWARD_PRESENCE_AND_ENGAGEMENT (5): A 65,000-tonne aircraft carrier is the ultimate expression of forward presence and strategic signalling. As fleet flagship and CSG lead, she is optimised for this role. A North Atlantic NATO deployment is a textbook forward presence mission. FISHERY_PROTECTION_AND_EZ_ENFORCEMENT (0): Entirely inappropriate for this role; no capability or doctrine for constabulary maritime tasks. ANTI_SURFACE_WARFARE (3): F-35B can employ Paveway IV and potentially SPEAR 3 against surface targets. Wildcat helicopters can carry Sea Venom/Martlet anti-ship missiles. However, the ship carries no organic anti-ship missiles itself and relies on the air group and escorts for ASuW. TASK_GROUP_ESCORT (1): The carrier is the protected unit, not the escort. While she contributes to the group's overall sensor picture, she does not perform escort functions. Minimal score reflects incidental contribution only. COVERT_INTELLIGENCE_GATHERING (1): A 65,000-tonne carrier is inherently non-covert. F-35B has exceptional SIGINT/ELINT collection capability which provides some intelligence-gathering capacity, but the platform itself is not suited to covert operations. BASE_PORT_OPERATIONS_AND_FLEET_SUPPORT (2): As fleet flagship at Portsmouth she has a command and coordination role, but she is not an auxiliary or support vessel. Limited score reflects her role as a command platform rather than a logistics or support asset."
+    },
+    {
+      "name": "HMS Queen Elizabeth",
+      "type": "ship",
+      "class": "Queen Elizabeth-class aircraft carrier",
+      "location_description": "Completing dry dock work at Babcock Dockyard, Rosyth, Scotland",
+      "latitude": 56.0245,
+      "longitude": -3.4355,
+      "confidence_score": 0.97,
+      "confidence_rationale": "Rosyth Dockyard, Firth of Forth",
+      "source_urls": [
+        "https://www.navylookout.com"
+      ],
+      "date_observed": "2026-03-22",
+      "last_updated": "2026-03-22T15:36:50.721285+00:00Z",
+      "unit_category": "aircraft_carrier",
+      "operational_readiness": "low",
+      "readiness_rationale": "HMS Queen Elizabeth has been out of operational service since early 2024, when she was withdrawn from NATO exercise Steadfast Defender due to propeller shaft coupling corrosion. She has been in dry dock at Rosyth undergoing expanded maintenance including full replacement of both propeller shafts, hull certification, and deck landing aids work. As of March 2026, she is described as 'completing dry dock work', suggesting the end of maintenance may be approaching, but she remains non-operational. Even upon exiting dry dock, she will require basin trials, sea trials, and a full operational work-up (typically several months for a carrier) before she can be considered mission-capable. She has been effectively unavailable for approximately two years. Readiness is assessed as low, not medium, because she is still physically in dry dock and has not yet commenced any post-refit sea trials.",
+      "current_assignment": "Extended dry dock maintenance period at Babcock Dockyard, Rosyth, Scotland \u2014 completing propeller shaft replacement, hull certification, and deck landing aids work",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 0,
+        "air_defence": 0,
+        "anti_submarine_warfare": 0,
+        "maritime_patrol_and_surveillance": 0,
+        "forward_presence_and_engagement": 0,
+        "fishery_protection_and_ez_enforcement": 0,
+        "anti_surface_warfare": 0,
+        "task_group_escort": 0,
+        "covert_intelligence_gathering": 0,
+        "base_port_operations_and_fleet_support": 1
+      },
+      "capability_rationale": "All operational capability scores are set to 0 because HMS Queen Elizabeth is currently in dry dock and completely unable to conduct any maritime operations. When operational, the Queen Elizabeth-class is the Royal Navy's primary carrier strike platform (carrier_strike: 5), with strong air defence capability via embarked F-35B Lightning II and organic radar/command systems (air_defence: 4), moderate anti-surface warfare through embarked air wing (anti_surface_warfare: 3), and significant forward presence value (forward_presence_and_engagement: 5). She carries Merlin HM2 helicopters giving moderate ASW capability (anti_submarine_warfare: 2-3) and good maritime patrol coverage (maritime_patrol_and_surveillance: 3). However, none of these capabilities are currently available. The sole score of 1 for base_port_operations_and_fleet_support reflects that the ship, while in dry dock, is at least contributing to fleet regeneration and her crew may be supporting dockyard liaison and training activities, representing minimal but non-zero fleet support value."
+    },
+    {
+      "name": "HMS Anson",
+      "type": "submarine",
+      "class": "Astute-class",
+      "location_description": "Arrived at HMAS Stirling, Western Australia, as part of AUKUS Submarine Rotational Force-West",
+      "latitude": -32.2372,
+      "longitude": 115.6831,
+      "confidence_score": 0.95,
+      "confidence_rationale": "HMAS Stirling is a well-known Royal Australian Navy base located on Garden Island, near Rockingham, Western Australia. It is the designated facility for AUKUS Submarine Rotational Force-West (SRF-West). Coordinates correspond to the naval base's position.",
+      "source_urls": [
+        "https://www.navylookout.com"
+      ],
+      "date_observed": "2026-02-01",
+      "last_updated": "2026-03-22T15:38:28.301820+00:00Z",
+      "unit_category": "submarine_fleet",
+      "operational_readiness": "low",
+      "readiness_rationale": "HMS Anson is currently undergoing a Submarine Maintenance Period (SMP) at HMAS Stirling, Western Australia, which directly reduces her operational readiness. She is not deployed on patrol or tasked for operational missions. The intelligence context explicitly states her readiness is reduced during the SMP. Additionally, she completed an 8,200 nautical mile non-stop transit from Gibraltar, which would typically necessitate maintenance and crew rest. While she retains her inherent capabilities as an Astute-class SSN, she cannot be considered operationally available until the SMP is complete. The duration of the SMP is not specified, but maintenance periods for nuclear submarines typically span weeks to months. Rated 'low' rather than 'medium' because the maintenance is actively underway and she is confirmed not operationally deployable at this time.",
+      "current_assignment": "Undergoing Submarine Maintenance Period (SMP) at HMAS Stirling, Western Australia, as part of AUKUS Submarine Rotational Force-West (SRF-West). This includes the first-ever maintenance of a UK nuclear-powered submarine in Australia, with multinational personnel from the RN, SDA, RAN, ASC Pty Ltd, and Pearl Harbor Naval Shipyard. Combined AUKUS Pillar I and Pillar II activities are expected, including interoperability testing of the C2 Robotics Speartooth Large Uncrewed Underwater Vehicle (LUUV) with HMS Anson. Two RAN officers are embedded aboard.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 0,
+        "air_defence": 0,
+        "anti_submarine_warfare": 5,
+        "maritime_patrol_and_surveillance": 3,
+        "forward_presence_and_engagement": 4,
+        "fishery_protection_and_ez_enforcement": 0,
+        "anti_surface_warfare": 5,
+        "task_group_escort": 3,
+        "covert_intelligence_gathering": 5,
+        "base_port_operations_and_fleet_support": 2
+      },
+      "capability_rationale": "Scores reflect the inherent capabilities of an Astute-class SSN at full operational capacity, not her current reduced readiness state during SMP. ANTI_SUBMARINE_WARFARE (5): Primary role of the Astute-class. The Thales Sonar 2076 suite is described as one of the world's most capable submarine sonar systems, and Spearfish heavyweight torpedoes are optimised for ASW engagements. This is a core design mission. ANTI_SURFACE_WARFARE (5): Astute-class carries Tomahawk TLAM for land-attack and Spearfish torpedoes effective against surface vessels. The TLAM capability gives her significant anti-surface and strike reach. Rated as primary role. COVERT_INTELLIGENCE_GATHERING (5): Nuclear-powered submarines are optimised for extended covert operations. The Sonar 2076 suite provides exceptional passive sensing. Intelligence gathering is explicitly listed as a core Astute-class mission. FORWARD_PRESENCE_AND_ENGAGEMENT (4): Her current AUKUS SRF-West deployment to Australia is itself a significant forward presence and engagement mission, demonstrating Indo-Pacific commitment and alliance interoperability. Scored strong rather than primary because this is an enabling rather than core warfighting function. MARITIME_PATROL_AND_SURVEILLANCE (3): Submarines can conduct covert surveillance and patrol, but their inability to communicate freely while submerged and limited surface awareness compared to aircraft/surface ships moderates this score. Sonar 2076 provides excellent acoustic surveillance. TASK_GROUP_ESCORT (3): Astute-class can screen a task group against submarine and surface threats, but submarines operate independently and are not optimised for the close-escort role that frigates/destroyers perform. Moderate capability. BASE_PORT_OPERATIONS_AND_FLEET_SUPPORT (2): Limited applicability; however, her current SMP and the AUKUS maintenance milestone activity contribute modestly to this category as she is enabling allied base infrastructure development and multinational workforce integration. CARRIER_STRIKE (0): No aviation capability; while Tomahawk provides land-attack strike, this category refers to carrier-based aviation strike operations. AIR_DEFENCE (0): Submarines have no air defence capability. FISHERY_PROTECTION_AND_EZ_ENFORCEMENT (0): Not applicable to a nuclear attack submarine; this role is for patrol vessels and offshore patrol ships. Note: HMS Anson is confirmed as the sole operational RN SSN, which has significant strategic implications for Royal Navy force generation and global commitments, particularly given rising tensions with Russia cited in the intelligence context."
+    },
+    {
+      "name": "HMS Tamar",
+      "type": "ship",
+      "class": null,
+      "location_description": "Permanently deployed to the Indo-Pacific region, typically operating from Singapore",
+      "latitude": 1.2966,
+      "longitude": 103.7764,
+      "confidence_score": 0.82,
+      "confidence_rationale": "HMS Tamar is permanently forward-deployed to the Indo-Pacific region and typically operates from Changi Naval Base in Singapore. The coordinates correspond to the Changi Naval Base area. While the vessel patrols widely across the Indo-Pacific, Singapore serves as her primary operating base and most likely location at any given time.",
+      "source_urls": [
+        "https://www.navylookout.com"
+      ],
+      "date_observed": "2026-03-22",
+      "last_updated": "2026-03-22T15:38:44.997687+00:00Z",
+      "unit_category": "patrol_vessel",
+      "operational_readiness": "high",
+      "readiness_rationale": "HMS Tamar is now in her 5th year of forward deployment to the Indo-Pacific, operating from Singapore, and intelligence indicates she remains operationally active as of 2025-2026. She has been conducting gunnery exercises on Pacific patrol and experimenting with new roles such as underwater infrastructure protection. The sustained deployment tempo and continued exercise activity strongly suggest high operational readiness. There is no reporting of mechanical issues, refit periods, or crew shortages, though the extended deployment length (5+ years) does introduce some uncertainty regarding material condition and crew fatigue.",
+      "current_assignment": "Long-term forward deployment to the Indo-Pacific region, operating from Singapore. Conducting maritime patrol, regional partner engagement, gunnery exercises, and experimental underwater infrastructure protection operations. Currently in her 5th year of permanent forward presence.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 0,
+        "air_defence": 0,
+        "anti_submarine_warfare": 0,
+        "maritime_patrol_and_surveillance": 4,
+        "forward_presence_and_engagement": 5,
+        "fishery_protection_and_ez_enforcement": 4,
+        "anti_surface_warfare": 1,
+        "task_group_escort": 1,
+        "covert_intelligence_gathering": 2,
+        "base_port_operations_and_fleet_support": 1
+      },
+      "capability_rationale": "HMS Tamar is a Batch 2 River-class OPV optimised for forward presence and engagement \u2014 this is explicitly her primary mission, being the first permanent RN presence in the Indo-Pacific since 1997. Scored 5 accordingly. Maritime patrol and surveillance scores 4: the class is designed for long-range patrol with capable sensors, and this is a core daily tasking, though she lacks the advanced sensor suite of a frigate or destroyer. Fishery protection and EZ enforcement scores 4: this is a bread-and-butter OPV role and the Batch 2 class is well-suited, though her current tasking is focused on broader regional engagement rather than dedicated fishery patrol. Anti-surface warfare scores only 1: the 30mm cannon and GPMGs provide minimal offensive capability against surface combatants; she has no anti-ship missiles or significant combat systems. Task group escort scores 1: she could physically accompany a task group (and was expected to support CSG deployments) but contributes negligible defensive capability. Covert intelligence gathering scores 2: her persistent presence in strategically sensitive waters (including the South China Sea) and engagement operations provide passive intelligence collection opportunities, though she has no specialist SIGINT/ELINT fit reported. Carrier strike, air defence, and ASW all score 0: she has no relevant weapons systems, sensors, or capabilities for these roles \u2014 no SAMs, no sonar, no torpedo systems, no strike weapons. The flight deck can operate Wildcat or Merlin helicopters which could theoretically extend some capability, but the lack of a hangar severely limits sustained aviation operations. Base port/fleet support scores 1: she can provide minimal logistics support but this is not a designed role."
+    },
+    {
+      "name": "HMS Spey",
+      "type": "ship",
+      "class": null,
+      "location_description": "Permanently deployed to the Indo-Pacific region alongside HMS Tamar",
+      "latitude": 1.27,
+      "longitude": 103.84,
+      "confidence_score": 0.4,
+      "confidence_rationale": "HMS Spey is permanently forward-deployed to the Indo-Pacific region alongside HMS Tamar as part of the Royal Navy's persistent presence. The ships are based out of various ports across the Indo-Pacific but frequently operate from Singapore (Changi Naval Base / Sembawang) as a key logistics hub. Without a specific current port call or operating area, Singapore is used as the approximate centre of their forward-deployment hub. The Indo-Pacific is a vast region, so confidence is moderate-low.",
+      "source_urls": [
+        "https://www.navylookout.com"
+      ],
+      "date_observed": "2026-03-22",
+      "last_updated": "2026-03-22T15:39:00.977374+00:00Z",
+      "unit_category": "patrol_vessel",
+      "operational_readiness": "high",
+      "readiness_rationale": "HMS Spey has been continuously forward deployed to the Indo-Pacific since September 2021, a period exceeding 4 years, and intelligence from April 2025 confirms active participation in a 16-day combined exercise with Commonwealth allies in the South China Sea. The sustained operational tempo \u2014 maritime security patrols, partner engagement exercises, and freedom of navigation operations \u2014 indicates she remains fully mission-capable. No reports of mechanical issues, refit, or return to home port have been identified. While such an extended deployment could raise questions about material condition, the continued active tasking and exercise participation strongly suggest high readiness for her designated role.",
+      "current_assignment": "Long-term forward deployment to the Indo-Pacific region conducting maritime security patrols, partner nation engagement exercises, freedom of navigation operations, and combined exercises with Commonwealth allies (most recently in the South China Sea with Malaysian and Singaporean forces, April 2025).",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 0,
+        "air_defence": 0,
+        "anti_submarine_warfare": 0,
+        "maritime_patrol_and_surveillance": 4,
+        "forward_presence_and_engagement": 5,
+        "fishery_protection_and_ez_enforcement": 4,
+        "anti_surface_warfare": 1,
+        "task_group_escort": 1,
+        "covert_intelligence_gathering": 1,
+        "base_port_operations_and_fleet_support": 1
+      },
+      "capability_rationale": "HMS Spey is a Batch 2 River-class OPV optimised for presence, patrol, and engagement rather than high-intensity warfighting. FORWARD PRESENCE AND ENGAGEMENT (5): This is her primary role \u2014 she has been forward deployed for over 4 years conducting partner engagement, combined exercises, and flag-showing across the entire Indo-Pacific theatre. MARITIME PATROL AND SURVEILLANCE (4): At 90m and ~2,000 tonnes with good endurance, she is well-suited for extended maritime patrol and surveillance, though she lacks the advanced sensor suites of frigates or destroyers. FISHERY PROTECTION AND EZ ENFORCEMENT (4): The Batch 2 River class was originally designed for constabulary duties including fishery protection and EEZ enforcement; her 30mm cannon and GPMGs are appropriate for this role. ANTI_SURFACE_WARFARE (1): The 30mm DS30M cannon provides only a minimal self-defence capability against surface threats; she has no anti-ship missiles or heavyweight weapons. TASK GROUP ESCORT (1): She could nominally accompany a task group but contributes negligible combat capability to escort operations. COVERT INTELLIGENCE GATHERING (1): While any deployed warship collects some intelligence through routine observation, she has no known specialist SIGINT/ELINT fits or covert capability. BASE PORT OPERATIONS AND FLEET SUPPORT (1): She can provide minimal support functions but this is not her role. CARRIER STRIKE, AIR DEFENCE, and ASW (all 0): She has no aircraft strike capability, no air defence systems beyond small arms, and no sonar or ASW weapons \u2014 these missions are entirely outside her capability envelope."
+    },
+    {
+      "name": "HMS Forth",
+      "type": "ship",
+      "class": null,
+      "location_description": "Forward-deployed to the Falkland Islands",
+      "latitude": -51.693,
+      "longitude": -57.777,
+      "confidence_score": 0.9,
+      "confidence_rationale": "Falkland Islands",
+      "source_urls": [
+        "https://www.navylookout.com"
+      ],
+      "date_observed": "2026-03-22",
+      "last_updated": "2026-03-22T15:39:18.158759+00:00Z",
+      "unit_category": "patrol_vessel",
+      "operational_readiness": "low",
+      "readiness_rationale": "HMS Forth is currently in transit back to the UK after more than six years of continuous forward deployment in the Falkland Islands (January 2020 \u2013 January 2026), covering 155,000 nautical miles. After such an extended period of operations without returning to the UK, the vessel will almost certainly require a significant maintenance period, hull survey, refit/upkeep, and full crew rotation. Until she arrives and completes post-deployment maintenance, her operational readiness should be assessed as low. There is no indication she has been assigned to any new tasking, and the Royal Navy's own messaging focused on her 'heading back' rather than being redeployed. This assessment is inferred from standard naval practice following long deployments rather than a specific intelligence report on her material condition.",
+      "current_assignment": "In transit returning to the UK from the Falkland Islands following relief by HMS Medway in January 2026. Expected to enter a maintenance/upkeep period upon arrival.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 0,
+        "air_defence": 0,
+        "anti_submarine_warfare": 0,
+        "maritime_patrol_and_surveillance": 4,
+        "forward_presence_and_engagement": 4,
+        "fishery_protection_and_ez_enforcement": 5,
+        "anti_surface_warfare": 1,
+        "task_group_escort": 1,
+        "covert_intelligence_gathering": 1,
+        "base_port_operations_and_fleet_support": 1
+      },
+      "capability_rationale": "As a Batch 2 River-class OPV, HMS Forth is purpose-built for constabulary maritime operations: fishery protection and exclusive economic zone enforcement is her primary role (score 5), as demonstrated by her six-year Falklands patrol. She scores highly for maritime patrol and surveillance (4) given her endurance, sensors, and ability to maintain a persistent patrol presence over large sea areas, and for forward presence and engagement (4), a role she fulfilled continuously in the South Atlantic. Her armament is limited to a 30mm DS30M Mk2 cannon and GPMGs, giving her only minimal anti-surface warfare capability (1) \u2014 sufficient against very small threats but negligible against any warship. She has no air defence radar or missile systems (0), no ASW sonar or weapons (0), and no role in carrier strike (0). Her flight deck can support helicopter operations but she has no hangar, limiting her utility for task group escort (1) to only the most permissive environments. Covert intelligence gathering scores 1 \u2014 while any naval vessel collects some intelligence, she has no specialist SIGINT/ELINT fit publicly known. Base port/fleet support scores 1 as she can provide limited logistic support or act as a platform of opportunity but this is not a designed role. Note: all capability scores reflect the class design at full readiness; her current low readiness state means effective capability is further reduced until post-deployment maintenance is completed."
+    },
+    {
+      "name": "HMS Medway",
+      "type": "ship",
+      "class": null,
+      "location_description": "Forward-deployed in the Caribbean",
+      "latitude": 15.5,
+      "longitude": -61.0,
+      "confidence_score": 0.5,
+      "confidence_rationale": "HMS Medway is a Royal Navy Batch 2 River-class offshore patrol vessel permanently forward-deployed to the Caribbean to support British Overseas Territories. The Caribbean Sea's approximate centre is used as the coordinate estimate. The vessel frequently operates around the British Overseas Territories in the region (e.g., Cayman Islands, British Virgin Islands, Turks and Caicos) and may also use facilities in Cura\u00e7ao or other partner nations. Without a specific port or tasking location, the general centre of the Eastern Caribbean is provided.",
+      "source_urls": [
+        "https://www.navylookout.com"
+      ],
+      "date_observed": "2026-03-22",
+      "last_updated": "2026-03-22T15:39:33.331212+00:00Z",
+      "unit_category": "patrol_vessel",
+      "operational_readiness": "high",
+      "readiness_rationale": "HMS Medway arrived in the Falkland Islands in January 2026 to relieve HMS Forth, meaning she is only approximately two months into her forward deployment as of the assessment date. Pre-deployment maintenance and operational work-up would have been completed prior to the transatlantic/South Atlantic transit. Multiple credible sources (Forces News, UK Defence Journal, Mercopress, Navy Leaders) confirm the handover at East Cove Military Port in January 2026. A freshly deployed vessel replacing another on a standing tasking is assessed as high readiness with good confidence.",
+      "current_assignment": "Forward-deployed as the Royal Navy's permanent patrol vessel in the Falkland Islands and wider South Atlantic, having replaced HMS Forth in January 2026. Tasked with sovereignty patrol, fishery protection, and enforcement of the Falkland Islands Exclusive Economic Zone.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 0,
+        "air_defence": 0,
+        "anti_submarine_warfare": 0,
+        "maritime_patrol_and_surveillance": 5,
+        "forward_presence_and_engagement": 5,
+        "fishery_protection_and_ez_enforcement": 5,
+        "anti_surface_warfare": 1,
+        "task_group_escort": 1,
+        "covert_intelligence_gathering": 1,
+        "base_port_operations_and_fleet_support": 0
+      },
+      "capability_rationale": "As a Batch 2 River-class OPV (90m, ~2,000 tonnes), HMS Medway is purpose-built for long-endurance, low-intensity patrol and constabulary duties \u2014 hence the maximum scores for maritime_patrol_and_surveillance, forward_presence_and_engagement, and fishery_protection_and_ez_enforcement, which are her primary designed roles and exactly what she is tasked with in the Falklands. Her armament (30mm DS30M Mk2 cannon and GPMGs) provides only a minimal anti-surface capability against small craft or lightly armed vessels, insufficient for meaningful engagement against warships \u2014 scored 1. The flight deck (no hangar) allows helicopter operations for surveillance and boarding support but does not confer ASW, air defence, or strike capability. She carries no sonar, torpedo systems, anti-air missiles, or anti-ship missiles, so carrier_strike, air_defence, and anti_submarine_warfare are all scored 0. Task_group_escort is scored 1: she could physically accompany a task group but lacks the sensors and weapons to contribute meaningfully to group defence. Covert_intelligence_gathering is scored 1: she has basic navigational and communications sensors and may conduct incidental ELINT/observation, but she is not optimised or equipped for dedicated intelligence collection. Base_port_operations scored 0 as she is a deployable vessel, not a support facility."
+    },
+    {
+      "name": "HMS Trent",
+      "type": "ship",
+      "class": null,
+      "location_description": "Deployed on operations in the Mediterranean and West Africa; last reported position North East Atlantic Ocean",
+      "latitude": 30.0,
+      "longitude": -15.0,
+      "confidence_score": 0.4,
+      "confidence_rationale": "HMS Trent is an OPV frequently deployed on Mediterranean and West African operations. The last reported position is the 'North East Atlantic Ocean,' which is a broad area. Given her typical patrol pattern transiting between the Mediterranean (via Gibraltar) and the Gulf of Guinea, and the descriptor 'North East Atlantic,' this suggests a position likely off the coast of Northwest Africa or near the Canary Islands/Madeira region. The coordinates 30.0N, 15.0W represent an approximate centre of the NE Atlantic consistent with her operational areas, roughly between Gibraltar and the West African coast.",
+      "source_urls": [
+        "https://www.navylookout.com"
+      ],
+      "date_observed": "2026-03-09",
+      "last_updated": "2026-03-22T15:39:51.656478+00:00Z",
+      "unit_category": "patrol_vessel",
+      "operational_readiness": "high",
+      "readiness_rationale": "HMS Trent completed planned maintenance and capability upgrades in early 2025, returning to sea in mid-May 2025. As of the assessment date (March 2026), she has been operationally active for approximately 10 months since that refit. Her last reported position in the North East Atlantic Ocean, consistent with transit between her forward deployment areas (Mediterranean, West Africa), indicates she is actively deployed rather than in port or undergoing maintenance. The MOD confirmed her return to operational status in April/May 2025 written responses. Forward-deployed Batch 2 River-class OPVs typically maintain extended deployment cycles from Gibraltar, and all evidence suggests she is fully operational.",
+      "current_assignment": "Forward deployed from Gibraltar conducting maritime security operations across the Mediterranean and West African waters, including counter-piracy, counter-smuggling, and regional engagement patrols. Currently positioned in the North East Atlantic Ocean, likely transiting between operational areas or returning toward the Mediterranean/Gibraltar.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 0,
+        "air_defence": 0,
+        "anti_submarine_warfare": 0,
+        "maritime_patrol_and_surveillance": 4,
+        "forward_presence_and_engagement": 5,
+        "fishery_protection_and_ez_enforcement": 4,
+        "anti_surface_warfare": 1,
+        "task_group_escort": 1,
+        "covert_intelligence_gathering": 1,
+        "base_port_operations_and_fleet_support": 1
+      },
+      "capability_rationale": "HMS Trent is a Batch 2 River-class OPV (~2,000 tonnes, 90m) specifically designed for forward presence and constabulary maritime operations, making forward_presence_and_engagement her primary role (5). Her extended deployments to the Gulf of Guinea, Mediterranean, and Caribbean with regional partner training and engagement are the core of her tasking. Maritime_patrol_and_surveillance scores highly (4) as the Batch 2 Rivers are purpose-built for sustained patrol operations with good endurance and sea-keeping, equipped with appropriate sensors for surface surveillance, and she routinely conducts counter-piracy and counter-smuggling patrols. Fishery_protection_and_ez_enforcement (4) reflects her class's direct lineage from fishery protection vessels and her full capability for constabulary boarding operations, supported by embarked Royal Marines from 42 Commando. Anti_surface_warfare scores only 1; her 30mm DS30M cannon and GPMGs provide a basic self-defence and light enforcement capability but she lacks anti-ship missiles or a meaningful combat suite. Task_group_escort (1) reflects that while she could nominally screen a convoy or contribute to a task group in a low-threat environment, she lacks the sensors, weapons, and combat management systems for meaningful escort duties. Carrier_strike (0), air_defence (0), and anti_submarine_warfare (0) are entirely outside her capability \u2014 she has no relevant weapons or sensor systems for these roles. Covert_intelligence_gathering (1) is minimal; she may gather some signals or observational intelligence during patrols but is not configured or tasked for dedicated intelligence collection. Base_port_operations_and_fleet_support (1) is minimal as she is a deployed warship, not a support or base asset, though she can provide limited logistics support to embarked forces."
+    },
+    {
+      "name": "HMS Kent",
+      "type": "ship",
+      "class": null,
+      "location_description": "Undergoing planned deep maintenance at HMNB Devonport",
+      "latitude": 50.3714,
+      "longitude": -4.1872,
+      "confidence_score": 0.99,
+      "confidence_rationale": "HMNB Devonport \u2014 fixed base location",
+      "source_urls": [
+        "https://www.navylookout.com"
+      ],
+      "date_observed": "2026-03-22",
+      "last_updated": "2026-03-22T15:40:05.378268+00:00Z",
+      "unit_category": "frigate",
+      "operational_readiness": "low",
+      "readiness_rationale": "HMS Kent is currently undergoing planned deep maintenance at HMNB Devonport. Deep maintenance periods for Type 23 frigates typically last many months to over a year and involve extensive hull work, machinery overhaul, and combat system upgrades. During this period the ship is non-operational: she cannot be deployed, tasked, or generate any warfighting capability. The intelligence context explicitly states she is NOT operationally available. Additionally, at 26 years old (commissioned 2000), she is an aging platform in a class being progressively replaced by Type 26 and Type 31 frigates, which may imply maintenance is more complex or extended. Readiness is assessed as low with high confidence.",
+      "current_assignment": "Undergoing planned deep maintenance at HMNB Devonport",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 0,
+        "air_defence": 0,
+        "anti_submarine_warfare": 0,
+        "maritime_patrol_and_surveillance": 0,
+        "forward_presence_and_engagement": 0,
+        "fishery_protection_and_ez_enforcement": 0,
+        "anti_surface_warfare": 0,
+        "task_group_escort": 0,
+        "covert_intelligence_gathering": 0,
+        "base_port_operations_and_fleet_support": 1
+      },
+      "capability_rationale": "All operational capability scores are set to 0 because HMS Kent is in deep maintenance and cannot deploy or perform any mission. When operational, a Type 23 frigate would score highly in anti-submarine warfare (primary role, equipped with Type 2087 towed array sonar, Type 2050 hull-mounted sonar, and Merlin HM2 ASW helicopter \u2014 would normally be 5), task group escort (4-5, a core Type 23 role for carrier strike group or task group protection), air defence (3, Sea Ceptor provides local/point defence), anti-surface warfare (2-3, depending on whether Harpoon has been retained), maritime patrol and surveillance (3, capable ASW/surface surveillance platform), forward presence and engagement (3, routinely deployed on standing tasks), carrier strike (3, as an escort element), and fishery protection/EZ enforcement (2, capable but over-specified for the role). However, none of these capabilities are available while in deep maintenance. The sole score of 1 for base port operations and fleet support reflects that the ship, while alongside, marginally contributes to fleet support activity at Devonport (e.g., providing training billets, trials platform for maintainers, spare parts management) but this contribution is minimal."
+    },
+    {
+      "name": "HMNB Portsmouth",
+      "type": "base",
+      "class": null,
+      "location_description": "Hampshire, England",
+      "latitude": 50.8,
+      "longitude": -1.1,
+      "confidence_score": 0.95,
+      "confidence_rationale": "HMNB Portsmouth is Her Majesty's Naval Base Portsmouth, a well-known Royal Navy base located in Portsmouth, Hampshire, England. Its coordinates are well-established at approximately 50.80\u00b0N, 1.10\u00b0W.",
+      "source_urls": [
+        "https://www.navylookout.com"
+      ],
+      "date_observed": "2026-03-22",
+      "last_updated": "2026-03-22T15:41:13.791996+00:00Z",
+      "unit_category": "naval_base",
+      "operational_readiness": "high",
+      "readiness_rationale": "HMNB Portsmouth is the principal home port of the Royal Navy's surface fleet and has been in continuous naval service for centuries. Intelligence indicates it currently hosts HMS Prince of Wales at high readiness as fleet flagship, actively supports deployments (HMS Dragon to Eastern Mediterranean, HMS Tyne on Channel patrols), and houses Naval Command Headquarters and FOST certification staff. The breadth of concurrent operations \u2014 carrier strike group generation, destroyer deployments, OPV patrols, and fleet-wide training certification \u2014 indicates a fully operational base at high readiness. No reports of infrastructure degradation or reduced capacity.",
+      "current_assignment": "Serving as the home port and primary operating base for the Royal Navy surface fleet, including fleet generation for the UK Carrier Strike Group (HMS Prince of Wales at high readiness), supporting Type 45 destroyer and OPV deployments, hosting Naval Command Headquarters, and providing FOST deployment certification services.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 5,
+        "air_defence": 4,
+        "anti_submarine_warfare": 3,
+        "maritime_patrol_and_surveillance": 3,
+        "forward_presence_and_engagement": 4,
+        "fishery_protection_and_ez_enforcement": 3,
+        "anti_surface_warfare": 4,
+        "task_group_escort": 4,
+        "covert_intelligence_gathering": 1,
+        "base_port_operations_and_fleet_support": 5
+      },
+      "capability_rationale": "CARRIER_STRIKE (5): Portsmouth is the home port for both Queen Elizabeth-class carriers; HMS Prince of Wales is currently at high readiness for CSG leadership, making carrier strike generation a primary role. AIR_DEFENCE (4): Home base for Type 45 destroyers (the Royal Navy's principal area air defence platforms), providing strong support for air defence task generation, though the base itself is not an air defence weapon system. ANTI_SUBMARINE_WARFARE (3): Moderate \u2014 while ASW-capable frigates and helicopters may transit or be supported, Portsmouth is not the primary ASW-focused base (Devonport hosts the Type 23 fleet); however, FOST certification and logistics support contribute. MARITIME_PATROL_AND_SURVEILLANCE (3): HMS Tyne and other Batch 1 River-class OPVs operate from Portsmouth on Channel patrols, providing moderate capability; however, dedicated maritime patrol aircraft operate from RAF bases. FORWARD_PRESENCE_AND_ENGAGEMENT (4): Strong \u2014 the base generates and sustains forward-deployed units globally (e.g., HMS Dragon to the Eastern Mediterranean) and serves as the fleet's command hub. FISHERY_PROTECTION_AND_EZ_ENFORCEMENT (3): River-class OPVs based at Portsmouth conduct English Channel enforcement duties, giving moderate direct capability in this area. ANTI_SURFACE_WARFARE (4): Strong \u2014 Type 45 destroyers and carrier air wings hosted here carry significant anti-surface capability; the base provides the logistics and command infrastructure to generate these forces. TASK_GROUP_ESCORT (4): Strong \u2014 as the home port for Type 45s and the carrier strike group, Portsmouth is central to generating escort forces for task groups. COVERT_INTELLIGENCE_GATHERING (1): Minimal \u2014 while Naval Command HQ may have intelligence functions, the base is a major surface fleet installation with no identified covert intelligence-gathering role; submarines (the primary covert ISR platforms) are based elsewhere. BASE_PORT_OPERATIONS_AND_FLEET_SUPPORT (5): Primary role \u2014 Portsmouth provides extensive docking, dry dock, maintenance, ammunition handling, logistics, command-and-control, FOST certification, and fleet generation infrastructure. This is the defining function of HMNB Portsmouth."
+    },
+    {
+      "name": "HMNB Devonport",
+      "type": "base",
+      "class": null,
+      "location_description": "Plymouth, England",
+      "latitude": 50.3714,
+      "longitude": -4.1872,
+      "confidence_score": 0.95,
+      "confidence_rationale": "HMNB Devonport, Plymouth",
+      "source_urls": [
+        "https://www.navylookout.com"
+      ],
+      "date_observed": "2026-03-22",
+      "last_updated": "2026-03-22T15:41:32.429596+00:00Z",
+      "unit_category": "naval_base",
+      "operational_readiness": "high",
+      "readiness_rationale": "HMNB Devonport is the largest naval base in Western Europe and remains fully operational as a major fleet support, maintenance, and home port facility. The base's extensive infrastructure (15 dry docks, 25 tidal berths, 5 basins, 4 miles of waterfront) and its operation by Babcock International under TOBA indicate sustained high readiness for its primary role as a base and maintenance hub. Active deep maintenance work (e.g., HMS Kent refit) confirms ongoing operational tempo. However, some hosted platforms (HMS Albion, HMS Bulwark) are in extended readiness or facing decommissioning, which reduces the offensive amphibious capability generated from the base but does not diminish the base's own readiness as an infrastructure asset.",
+      "current_assignment": "Serving as home port and deep maintenance/refit facility for Type 23 frigates, amphibious vessels (in extended readiness), and survey vessels. Currently conducting planned deep maintenance on HMS Kent (Type 23). Also provides nuclear submarine refuelling/defuelling services and supports 3 Commando Brigade operations in the Plymouth area. Preparing infrastructure for future Type 26 frigate basing.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 1,
+        "air_defence": 1,
+        "anti_submarine_warfare": 3,
+        "maritime_patrol_and_surveillance": 2,
+        "forward_presence_and_engagement": 3,
+        "fishery_protection_and_ez_enforcement": 1,
+        "anti_surface_warfare": 2,
+        "task_group_escort": 3,
+        "covert_intelligence_gathering": 2,
+        "base_port_operations_and_fleet_support": 5
+      },
+      "capability_rationale": "Base/port operations and fleet support is scored 5 as this is Devonport's primary role \u2014 it is the Royal Navy's principal maintenance, refit, and fleet generation facility with unmatched dockyard infrastructure in Western Europe. Anti-submarine warfare scores 3 because Devonport is home port to multiple Type 23 frigates (the RN's primary ASW platform) and will host Type 26 frigates optimised for ASW; the base generates and sustains these capabilities. Task group escort scores 3 for the same reason \u2014 Type 23s based here routinely deploy as task group escorts. Forward presence and engagement scores 3 as Devonport-based frigates and amphibious assets (when available) regularly deploy on forward presence tasking, and 3 Commando Brigade provides expeditionary capability. Anti-surface warfare scores 2 as Type 23s carry Harpoon (being phased out) and the base supports surface combatant generation, but this is not the primary optimisation. Maritime patrol and surveillance scores 2 reflecting the survey vessels based here and frigate contributions to maritime awareness. Covert intelligence gathering scores 2 due to nuclear submarine refuelling/defuelling activities and proximity to intelligence-relevant submarine operations, though operational submarine basing is at Clyde. Carrier strike and air defence each score 1 \u2014 the carriers are based at Portsmouth and destroyers primarily at Portsmouth, so Devonport provides only indirect support through fleet maintenance capacity. Fishery protection scores 1 as OPVs are primarily based elsewhere, though Devonport could provide logistic support if needed."
+    },
+    {
+      "name": "HMNB Clyde",
+      "type": "base",
+      "class": null,
+      "location_description": "Faslane, Scotland; home base for the submarine fleet",
+      "latitude": 56.0748,
+      "longitude": -4.804,
+      "confidence_score": 0.97,
+      "confidence_rationale": "HMNB Clyde, Faslane",
+      "source_urls": [
+        "https://www.navylookout.com"
+      ],
+      "date_observed": "2026-03-22",
+      "last_updated": "2026-03-22T15:41:53.833137+00:00Z",
+      "unit_category": "naval_base",
+      "operational_readiness": "high",
+      "readiness_rationale": "HMNB Clyde is the UK's most strategically critical naval installation, sustaining the Continuous At-Sea Deterrent (CASD) without interruption since 1969. The requirement that at least one Vanguard-class SSBN is always on patrol mandates perpetually high operational readiness across base infrastructure, logistics, personnel, and security. The ongoing development as the 'Submarine Centre of Specialisation' and preparations for the Dreadnought-class programme indicate sustained investment and capability. The co-located RNAD Coulport ensures nuclear warhead and Trident D5 missile storage, maintenance, and loading capabilities are immediately available. No intelligence suggests any degradation in base readiness.",
+      "current_assignment": "Home base and operational hub for the entire Royal Navy submarine fleet, including sustaining CASD with Vanguard-class SSBNs carrying Trident nuclear deterrent. Supporting Astute-class SSN operations (including HMS Anson's AUKUS deployment to Australia). Hosting mine countermeasures vessels and Faslane Patrol Boat Squadron. Undergoing infrastructure development as the single integrated submarine operating and support base ahead of Dreadnought-class entry into service.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 0,
+        "air_defence": 1,
+        "anti_submarine_warfare": 5,
+        "maritime_patrol_and_surveillance": 3,
+        "forward_presence_and_engagement": 4,
+        "fishery_protection_and_ez_enforcement": 2,
+        "anti_surface_warfare": 2,
+        "task_group_escort": 1,
+        "covert_intelligence_gathering": 5,
+        "base_port_operations_and_fleet_support": 5
+      },
+      "capability_rationale": "HMNB Clyde's capability scores reflect its primary role as the UK's submarine operating base and nuclear deterrent hub. **Base port operations and fleet support (5):** This is fundamentally a naval base optimised for submarine generation, maintenance, armament loading (via RNAD Coulport), crew support, and fleet sustainment \u2014 the largest single-site employer in Scotland with comprehensive infrastructure. **Anti-submarine warfare (5):** As home to all Royal Navy SSNs (Astute-class) and SSBNs, the base is the primary generator of the UK's undersea warfare capability. Astute-class boats are world-class ASW platforms, and the base provides all training, maintenance, and operational support. **Covert intelligence gathering (5):** Astute-class SSNs are optimised for covert ISR operations, and the base generates and sustains these platforms for global intelligence-gathering missions. The SSBN fleet's CASD patrols also inherently involve covert operations at the highest classification levels. **Forward presence and engagement (4):** The base projects strategic deterrence globally through CASD and deploys SSNs worldwide (e.g., HMS Anson to the Indo-Pacific under AUKUS), enabling sustained forward presence. Scored 4 rather than 5 as forward presence is a downstream effect of submarine deployment rather than the base's direct function. **Maritime patrol and surveillance (3):** The Faslane Patrol Boat Squadron provides local maritime surveillance and patrol, and submarines contribute to wider surveillance. Mine countermeasures vessels based here also conduct area surveillance. Scored moderate as this is a secondary role. **Anti-surface warfare (2):** Astute-class SSNs carry Tomahawk cruise missiles and torpedoes capable of engaging surface targets, but this is not the base's primary focus. Scored limited. **Fishery protection and EZ enforcement (2):** The Faslane Patrol Boat Squadron can contribute to territorial protection and enforcement duties in Scottish waters, but this is a minor secondary role. **Air defence (1):** The base has local force protection measures but no significant air defence systems or assets generating air defence capability for wider operations. **Task group escort (1):** While SSNs can screen task groups, the base itself does not generate escort-optimised surface combatants. Minimal score reflects indirect contribution. **Carrier strike (0):** No carrier strike capability or relevance."
+    },
+    {
+      "name": "HMS Dagger",
+      "type": "ship",
+      "class": null,
+      "location_description": "Permanently based at Gibraltar as part of the Gibraltar Squadron",
+      "latitude": 36.1408,
+      "longitude": -5.3536,
+      "confidence_score": 0.97,
+      "confidence_rationale": "Gibraltar \u2014 Royal Navy facility",
+      "source_urls": [
+        "https://www.navylookout.com"
+      ],
+      "date_observed": "2026-03-22",
+      "last_updated": "2026-03-22T15:42:10.425177+00:00Z",
+      "unit_category": "patrol_vessel",
+      "operational_readiness": "medium",
+      "readiness_rationale": "No direct intelligence on HMS Dagger's specific current status was found in recent searches. However, she is permanently based at Gibraltar alongside her sister ship HMS Cutlass, which was confirmed operationally active as recently as 20 March 2026. The two Cutlass-class boats typically alternate duties to maintain persistent coverage of British Gibraltar Territorial Waters (BGTW). Given that HMS Cutlass was recently active, HMS Dagger may be in a rest/maintenance rotation, but as a permanently stationed asset with a small crew requirement (~6 personnel) and a clear standing tasking, she is likely at reasonable readiness. Defaulting to medium due to the absence of specific confirmation of her current operational status.",
+      "current_assignment": "Permanently assigned to the Gibraltar Squadron for sovereignty protection and coastal security patrols in British Gibraltar Territorial Waters (BGTW), including monitoring vessel movements through the Strait of Gibraltar. Likely alternating patrol duties with HMS Cutlass to maintain persistent coverage.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 0,
+        "air_defence": 0,
+        "anti_submarine_warfare": 0,
+        "maritime_patrol_and_surveillance": 5,
+        "forward_presence_and_engagement": 5,
+        "fishery_protection_and_ez_enforcement": 4,
+        "anti_surface_warfare": 1,
+        "task_group_escort": 1,
+        "covert_intelligence_gathering": 2,
+        "base_port_operations_and_fleet_support": 1
+      },
+      "capability_rationale": "HMS Dagger is a 62ft fast patrol boat optimised for sovereignty protection and coastal surveillance in a confined but strategically vital area. Maritime patrol and surveillance scores 5 as this is her primary designed role \u2014 monitoring BGTW and Strait of Gibraltar traffic, including tracking sanctioned vessels (as demonstrated by her sister ship's recent Russian tanker tracking). Forward presence and engagement also scores 5: the permanent Gibraltar basing is explicitly a sovereignty assertion and forward presence mission in a contested strategic chokepoint. Fishery protection and EZ enforcement scores 4: her speed (41 knots), manoeuvrability, and patrol profile make her well-suited for intercepting and challenging vessels in territorial waters, though her small size and light armament (3x GPMGs) limit sustained enforcement against larger non-compliant vessels. Anti-surface warfare scores only 1: the three GPMGs provide minimal offensive capability against anything beyond very small craft; she has no missiles or heavy weapons. Task group escort scores 1: while she could theoretically provide close escort in littoral waters, she lacks the range, endurance, sensors, and weapons systems for meaningful escort duties. Covert intelligence gathering scores 2: her small profile and high speed allow discreet observation and she operates in an intelligence-rich environment (Strait of Gibraltar), but she has no known specialist SIGINT/ELINT fit and a very small crew limits dedicated intelligence collection. Carrier strike, air defence, and anti-submarine warfare all score 0 as she has no relevant systems whatsoever for these roles."
+    }
+  ]
+}

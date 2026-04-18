@@ -1,0 +1,130 @@
+[
+  {
+    "name": "2nd Battalion, Royal Anglian Regiment",
+    "service": "british_army",
+    "type": "battalion",
+    "class": "Infantry",
+    "location_description": "Stationed near E\u0142k, north east Poland; training at Bemowo Piskie Training Area, Poland",
+    "latitude": 53.62,
+    "longitude": 21.89,
+    "confidence_score": 0.92,
+    "confidence_rationale": "Bemowo Piskie Training Area is a well-known NATO training facility located near Orzysz, approximately 30km west of E\u0142k in the Warmian-Masurian Voivodeship of north-east Poland. It serves as the headquarters and training ground for the eFP (enhanced Forward Presence) Battlegroup Poland. Coordinates centred on the Bemowo Piskie/Orzysz training area, which is a named and precisely locatable military installation.",
+    "source_urls": [
+      "https://www.army.mil/article/291726/us_army_training_with_brits_emphasizes_intelligence_surveillance_reconnaissance"
+    ],
+    "date_observed": "2026-03-17",
+    "last_updated": "2026-04-18T09:51:14.214531+00:00Z"
+  },
+  {
+    "name": "Queen's Royal Hussars",
+    "service": "british_army",
+    "type": "regiment",
+    "class": "Armoured",
+    "location_description": "Tidworth-based, exercising at Sennelager, Germany",
+    "latitude": 51.2337,
+    "longitude": -1.6549,
+    "confidence_score": 0.97,
+    "confidence_rationale": "Tidworth Garrison, Wiltshire",
+    "source_urls": [
+      "https://ukdefencejournal.org.uk/british-army-trials-drone-warfare-from-moving-tanks/"
+    ],
+    "date_observed": "2026-04-18",
+    "last_updated": "2026-04-18T09:51:47.668953+00:00Z"
+  },
+  {
+    "name": "Find and Strike Squadron",
+    "service": "british_army",
+    "type": "other",
+    "class": "Armoured / Drone",
+    "location_description": "Sennelager, Germany",
+    "latitude": 51.75,
+    "longitude": 8.7167,
+    "confidence_score": 0.92,
+    "confidence_rationale": "Sennelager is a well-known British Army garrison and training area located near Paderborn in North Rhine-Westphalia, Germany. It is one of the principal British Forces Germany (BFG) installations, home to various armoured and combat units. Coordinates correspond to the centre of the Sennelager Training Area / Barker Barracks complex.",
+    "source_urls": [
+      "https://ukdefencejournal.org.uk/british-army-trials-drone-warfare-from-moving-tanks/"
+    ],
+    "date_observed": "2026-04-18",
+    "last_updated": "2026-04-18T09:51:51.387781+00:00Z"
+  },
+  {
+    "name": "B Squadron, Queen's Royal Hussars",
+    "service": "british_army",
+    "type": "other",
+    "class": "Armoured (Challenger 2)",
+    "location_description": "Sennelager, Germany",
+    "latitude": 51.7566,
+    "longitude": 8.87,
+    "confidence_score": 0.95,
+    "confidence_rationale": "Sennelager is a well-known British Army garrison and training area in North Rhine-Westphalia, Germany, located near Paderborn. It has historically hosted British Army of the Rhine units including armoured cavalry regiments such as the Queen's Royal Hussars. The coordinates correspond to the centre of the Sennelager garrison/training area complex.",
+    "source_urls": [
+      "https://ukdefencejournal.org.uk/british-army-trials-drone-warfare-from-moving-tanks/"
+    ],
+    "date_observed": "2026-04-18",
+    "last_updated": "2026-04-18T09:51:55.076102+00:00Z"
+  },
+  {
+    "name": "Royal Tank Regiment",
+    "service": "british_army",
+    "type": "regiment",
+    "class": "Armoured",
+    "location_description": "Tapa Camp, Estonia (Op Cabrit, NATO Enhanced Forward Presence)",
+    "latitude": 59.2683,
+    "longitude": 25.956,
+    "confidence_score": 0.9,
+    "confidence_rationale": "Op Cabrit \u2014 Estonia, NATO eFP",
+    "source_urls": [
+      "https://www.forcesnews.com/services/army/en-garde-british-army-personnel-sharpen-their-controlled-aggression-op-cabrit"
+    ],
+    "date_observed": "2026-04-18",
+    "last_updated": "2026-04-18T09:53:33.808282+00:00Z"
+  },
+  {
+    "name": "Mercian Regiment",
+    "service": "british_army",
+    "type": "regiment",
+    "class": "Infantry",
+    "location_description": "Tapa Camp, Estonia (Op Cabrit, NATO Enhanced Forward Presence)",
+    "latitude": 59.2683,
+    "longitude": 25.956,
+    "confidence_score": 0.9,
+    "confidence_rationale": "Op Cabrit \u2014 Estonia, NATO eFP",
+    "source_urls": [
+      "https://www.forcesnews.com/services/army/en-garde-british-army-personnel-sharpen-their-controlled-aggression-op-cabrit"
+    ],
+    "date_observed": "2026-04-18",
+    "last_updated": "2026-04-18T09:53:33.832947+00:00Z"
+  },
+  {
+    "name": "Forward Land Forces battlegroup",
+    "service": "british_army",
+    "type": "formation",
+    "class": "Battlegroup",
+    "location_description": "Tapa Camp, Estonia (Op Cabrit, NATO Enhanced Forward Presence)",
+    "latitude": 59.2683,
+    "longitude": 25.956,
+    "confidence_score": 0.9,
+    "confidence_rationale": "Op Cabrit \u2014 Estonia, NATO eFP",
+    "source_urls": [
+      "https://www.forcesnews.com/services/army/en-garde-british-army-personnel-sharpen-their-controlled-aggression-op-cabrit"
+    ],
+    "date_observed": "2026-04-18",
+    "last_updated": "2026-04-18T09:53:33.849999+00:00Z"
+  },
+  {
+    "name": "British Army Training Unit Kenya",
+    "service": "british_army",
+    "type": "training_establishment",
+    "class": "Infantry Training",
+    "location_description": "Nyati Barracks, Nanyuki, Kenya",
+    "latitude": 0.0172,
+    "longitude": 37.0736,
+    "confidence_score": 0.92,
+    "confidence_rationale": "Nyati Barracks is the well-known British Army Training Unit Kenya (BATUK) facility located in Nanyuki, Laikipia County, Kenya. The barracks sits on the eastern edge of Nanyuki town near the equator, at approximately 0\u00b001'N, 37\u00b004'E. BATUK has maintained a permanent presence here for decades, using the adjacent Laikipia/Nanyuki training areas and Ol Pejeta/Dol Dol ranges. Coordinates reflect the established garrison location with high confidence.",
+    "source_urls": [
+      "https://www.tuko.co.ke/kenya/611127-concern-uk-army-chief-acknowledges-batuk-crimes-kenya-offers-path-justice/"
+    ],
+    "date_observed": "2026-04-18",
+    "last_updated": "2026-04-18T09:53:41.964011+00:00Z"
+  }
+]

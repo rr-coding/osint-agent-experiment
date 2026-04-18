@@ -1,0 +1,257 @@
+[
+  {
+    "name": "HMS Dragon",
+    "type": "ship",
+    "class": "Type 45 destroyer",
+    "location_description": "Departed UK heading to Eastern Mediterranean",
+    "latitude": 36.0,
+    "longitude": -5.0,
+    "confidence_score": 0.35,
+    "confidence_rationale": "HMS Dragon has departed the UK heading to the Eastern Mediterranean. The transit route from the UK (likely Portsmouth) to the Eastern Mediterranean passes through the English Channel, Bay of Biscay, and Strait of Gibraltar. Since the description says 'departed' (suggesting early in the transit) and heading toward the Eastern Mediterranean, a reasonable mid-estimate would place the vessel in the vicinity of the Strait of Gibraltar or western Mediterranean. I've estimated coordinates near the Strait of Gibraltar (~36.0\u00b0N, ~5.0\u00b0W) as a likely position for a vessel that has departed but not yet arrived at the Eastern Mediterranean. Confidence is low due to the vagueness of the transit stage.",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-03-10",
+    "last_updated": "2026-03-22T15:28:24.071619+00:00Z"
+  },
+  {
+    "name": "HMS Tyne",
+    "type": "ship",
+    "class": null,
+    "location_description": "Deployed to English Channel to monitor Russian landing ships",
+    "latitude": 50.2,
+    "longitude": -1.0,
+    "confidence_score": 0.55,
+    "confidence_rationale": "The English Channel stretches between southern England and northern France. Its approximate centre lies around 50.2\u00b0N, 1.0\u00b0W. HMS Tyne, a River-class offshore patrol vessel, was deployed to monitor Russian naval vessels transiting the Channel. Russian landing ships passing through the Dover Strait/central Channel area is a well-documented occurrence, so the mid-Channel position is a reasonable estimate for the patrol area.",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T15:26:39.195076+00:00Z"
+  },
+  {
+    "name": "HMS Cutlass",
+    "type": "ship",
+    "class": null,
+    "location_description": "Deployed from Gibraltar to monitor Russian vessels in English Channel",
+    "latitude": 36.1408,
+    "longitude": -5.3536,
+    "confidence_score": 0.97,
+    "confidence_rationale": "Gibraltar \u2014 Royal Navy facility",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T15:26:39.206743+00:00Z"
+  },
+  {
+    "name": "HMS Active",
+    "type": "ship",
+    "class": "Type 26 frigate",
+    "location_description": "Emerged from assembly hall at shipyard in Rosyth, near Edinburgh",
+    "latitude": 56.0245,
+    "longitude": -3.4355,
+    "confidence_score": 0.97,
+    "confidence_rationale": "Rosyth Dockyard, Firth of Forth",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T15:26:39.219881+00:00Z"
+  },
+  {
+    "name": "HMS Prince of Wales",
+    "type": "ship",
+    "class": "Queen Elizabeth-class aircraft carrier",
+    "location_description": "Currently based at Portsmouth; scheduled to lead UK Carrier Strike Group in the North Atlantic",
+    "latitude": 50.7984,
+    "longitude": -1.1082,
+    "confidence_score": 0.97,
+    "confidence_rationale": "Portsmouth Naval Base",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T15:27:56.329996+00:00Z"
+  },
+  {
+    "name": "HMS Queen Elizabeth",
+    "type": "ship",
+    "class": "Queen Elizabeth-class aircraft carrier",
+    "location_description": "Completing dry dock work at Babcock Dockyard, Rosyth, Scotland",
+    "latitude": 56.0245,
+    "longitude": -3.4355,
+    "confidence_score": 0.97,
+    "confidence_rationale": "Rosyth Dockyard, Firth of Forth",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T15:27:56.341524+00:00Z"
+  },
+  {
+    "name": "HMS Anson",
+    "type": "submarine",
+    "class": "Astute-class",
+    "location_description": "Arrived at HMAS Stirling, Western Australia, as part of AUKUS Submarine Rotational Force-West",
+    "latitude": -32.2372,
+    "longitude": 115.6831,
+    "confidence_score": 0.95,
+    "confidence_rationale": "HMAS Stirling is a well-known Royal Australian Navy base located on Garden Island, near Rockingham, Western Australia. It is the designated facility for AUKUS Submarine Rotational Force-West (SRF-West). Coordinates correspond to the naval base's position.",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-02-01",
+    "last_updated": "2026-03-22T15:28:00.589043+00:00Z"
+  },
+  {
+    "name": "HMS Tamar",
+    "type": "ship",
+    "class": null,
+    "location_description": "Permanently deployed to the Indo-Pacific region, typically operating from Singapore",
+    "latitude": 1.2966,
+    "longitude": 103.7764,
+    "confidence_score": 0.82,
+    "confidence_rationale": "HMS Tamar is permanently forward-deployed to the Indo-Pacific region and typically operates from Changi Naval Base in Singapore. The coordinates correspond to the Changi Naval Base area. While the vessel patrols widely across the Indo-Pacific, Singapore serves as her primary operating base and most likely location at any given time.",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T15:28:04.587055+00:00Z"
+  },
+  {
+    "name": "HMS Spey",
+    "type": "ship",
+    "class": null,
+    "location_description": "Permanently deployed to the Indo-Pacific region alongside HMS Tamar",
+    "latitude": 1.27,
+    "longitude": 103.84,
+    "confidence_score": 0.4,
+    "confidence_rationale": "HMS Spey is permanently forward-deployed to the Indo-Pacific region alongside HMS Tamar as part of the Royal Navy's persistent presence. The ships are based out of various ports across the Indo-Pacific but frequently operate from Singapore (Changi Naval Base / Sembawang) as a key logistics hub. Without a specific current port call or operating area, Singapore is used as the approximate centre of their forward-deployment hub. The Indo-Pacific is a vast region, so confidence is moderate-low.",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T15:28:09.701239+00:00Z"
+  },
+  {
+    "name": "HMS Forth",
+    "type": "ship",
+    "class": null,
+    "location_description": "Forward-deployed to the Falkland Islands",
+    "latitude": -51.693,
+    "longitude": -57.777,
+    "confidence_score": 0.9,
+    "confidence_rationale": "Falkland Islands",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T15:28:09.704554+00:00Z"
+  },
+  {
+    "name": "HMS Medway",
+    "type": "ship",
+    "class": null,
+    "location_description": "Forward-deployed in the Caribbean",
+    "latitude": 15.5,
+    "longitude": -61.0,
+    "confidence_score": 0.5,
+    "confidence_rationale": "HMS Medway is a Royal Navy Batch 2 River-class offshore patrol vessel permanently forward-deployed to the Caribbean to support British Overseas Territories. The Caribbean Sea's approximate centre is used as the coordinate estimate. The vessel frequently operates around the British Overseas Territories in the region (e.g., Cayman Islands, British Virgin Islands, Turks and Caicos) and may also use facilities in Cura\u00e7ao or other partner nations. Without a specific port or tasking location, the general centre of the Eastern Caribbean is provided.",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T15:28:15.469898+00:00Z"
+  },
+  {
+    "name": "HMS Trent",
+    "type": "ship",
+    "class": null,
+    "location_description": "Deployed on operations in the Mediterranean and West Africa; last reported position North East Atlantic Ocean",
+    "latitude": 30.0,
+    "longitude": -15.0,
+    "confidence_score": 0.4,
+    "confidence_rationale": "HMS Trent is an OPV frequently deployed on Mediterranean and West African operations. The last reported position is the 'North East Atlantic Ocean,' which is a broad area. Given her typical patrol pattern transiting between the Mediterranean (via Gibraltar) and the Gulf of Guinea, and the descriptor 'North East Atlantic,' this suggests a position likely off the coast of Northwest Africa or near the Canary Islands/Madeira region. The coordinates 30.0N, 15.0W represent an approximate centre of the NE Atlantic consistent with her operational areas, roughly between Gibraltar and the West African coast.",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-03-09",
+    "last_updated": "2026-03-22T15:28:20.762851+00:00Z"
+  },
+  {
+    "name": "HMS Kent",
+    "type": "ship",
+    "class": null,
+    "location_description": "Undergoing planned deep maintenance at HMNB Devonport",
+    "latitude": 50.3714,
+    "longitude": -4.1872,
+    "confidence_score": 0.99,
+    "confidence_rationale": "HMNB Devonport \u2014 fixed base location",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T15:28:20.776675+00:00Z"
+  },
+  {
+    "name": "HMNB Portsmouth",
+    "type": "base",
+    "class": null,
+    "location_description": "Hampshire, England",
+    "latitude": 50.8,
+    "longitude": -1.1,
+    "confidence_score": 0.95,
+    "confidence_rationale": "HMNB Portsmouth is Her Majesty's Naval Base Portsmouth, a well-known Royal Navy base located in Portsmouth, Hampshire, England. Its coordinates are well-established at approximately 50.80\u00b0N, 1.10\u00b0W.",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T15:28:24.037971+00:00Z"
+  },
+  {
+    "name": "HMNB Devonport",
+    "type": "base",
+    "class": null,
+    "location_description": "Plymouth, England",
+    "latitude": 50.3714,
+    "longitude": -4.1872,
+    "confidence_score": 0.95,
+    "confidence_rationale": "HMNB Devonport, Plymouth",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T15:28:24.049011+00:00Z"
+  },
+  {
+    "name": "HMNB Clyde",
+    "type": "base",
+    "class": null,
+    "location_description": "Faslane, Scotland; home base for the submarine fleet",
+    "latitude": 56.0748,
+    "longitude": -4.804,
+    "confidence_score": 0.97,
+    "confidence_rationale": "HMNB Clyde, Faslane",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T15:28:24.060011+00:00Z"
+  },
+  {
+    "name": "HMS Dagger",
+    "type": "ship",
+    "class": null,
+    "location_description": "Permanently based at Gibraltar as part of the Gibraltar Squadron",
+    "latitude": 36.1408,
+    "longitude": -5.3536,
+    "confidence_score": 0.97,
+    "confidence_rationale": "Gibraltar \u2014 Royal Navy facility",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T15:28:24.069164+00:00Z"
+  }
+]

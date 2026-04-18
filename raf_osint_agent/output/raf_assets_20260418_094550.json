@@ -1,0 +1,131 @@
+[
+  {
+    "name": "RAF Lossiemouth",
+    "service": "royal_air_force",
+    "type": "station",
+    "class": "Typhoon FGR4",
+    "location_description": "Lossiemouth, Scotland",
+    "latitude": 57.7053,
+    "longitude": -3.3389,
+    "confidence_score": 0.97,
+    "confidence_rationale": "RAF Lossiemouth, Moray",
+    "source_urls": [
+      "https://airlive.net/military/2026/04/14/raf-typhoons-and-voyager-refuelling-jet-were-were-scrambled-towards-shetland/",
+      "https://en.wikipedia.org/wiki/Royal_Air_Force"
+    ],
+    "date_observed": "2026-04-18",
+    "last_updated": "2026-04-18T09:45:35.377800+00:00Z"
+  },
+  {
+    "name": "RAF Brize Norton",
+    "service": "royal_air_force",
+    "type": "station",
+    "class": "Voyager",
+    "location_description": "Brize Norton, Oxfordshire",
+    "latitude": 51.7594,
+    "longitude": -1.5834,
+    "confidence_score": 0.97,
+    "confidence_rationale": "RAF Brize Norton, Oxfordshire",
+    "source_urls": [
+      "https://airlive.net/military/2026/04/14/raf-typhoons-and-voyager-refuelling-jet-were-were-scrambled-towards-shetland/"
+    ],
+    "date_observed": "2026-04-14",
+    "last_updated": "2026-04-18T09:45:16.132270+00:00Z"
+  },
+  {
+    "name": "3 (Fighter) Squadron",
+    "service": "royal_air_force",
+    "type": "squadron",
+    "class": "Typhoon",
+    "location_description": "Deploying to Romania for NATO Air Policing mission (Operation Biloxi 2026), Eastern Sentry vigilance activity on NATO's eastern flank",
+    "latitude": 44.5225,
+    "longitude": 26.104,
+    "confidence_score": 0.62,
+    "confidence_rationale": "Asset is 3 (Fighter) Squadron deploying to Romania for a NATO Air Policing mission. Romania hosts NATO enhanced Air Policing at Mihail Kog\u0103lniceanu Air Base (near Constan\u021ba) and C\u00e2mpia Turzii (Cluj area). Mihail Kog\u0103lniceanu (LRCK, ~44.36\u00b0N, 28.49\u00b0E) is the primary NATO air policing hub on Romania's Black Sea flank, but C\u00e2mpia Turzii (LRTC, ~46.79\u00b0N, 23.89\u00b0E) has also hosted UK fast jet deployments. 'Operation Biloxi 2026' and 'Eastern Sentry' are not confirmed open-source designations, suggesting a fictional/exercise scenario. Coordinates provided are centred on Romania generally (Bucharest area) as a country-level estimate given ambiguity between the two candidate bases. Confidence is moderate \u2014 Romania is confirmed but the specific airfield is uncertain.",
+    "source_urls": [
+      "https://www.raf.mod.uk/news/articles/raf-typhoons-deploy-to-romania-to-lead-nato-air-policing-mission-under-operation-biloxi-26/"
+    ],
+    "date_observed": "2026-03-18",
+    "last_updated": "2026-04-18T09:45:23.087362+00:00Z"
+  },
+  {
+    "name": "No 34 Squadron",
+    "service": "royal_air_force",
+    "type": "squadron",
+    "class": "RAF Regiment / Counter-drone (Rapid Sentry)",
+    "location_description": "Deployed to Kuwait",
+    "latitude": 29.3375,
+    "longitude": 47.9774,
+    "confidence_score": 0.75,
+    "confidence_rationale": "No 34 Squadron RAF deployed to Kuwait. The primary UK/coalition air base in Kuwait is Ali Al Salem Air Base (approximately 29.34\u00b0N, 47.72\u00b0E) or Ahmed Al Jaber Air Base. Using approximate central Kuwait coordinates near Ali Al Salem Air Base, which has historically been the main operating base for UK military aircraft deployments to Kuwait. Confidence is moderate as the specific base within Kuwait is not confirmed but Kuwait coordinates are well-established.",
+    "source_urls": [
+      "https://www.raf.mod.uk/news/articles/raf-regiment-deploys-rapid-sentry-to-kuwait/"
+    ],
+    "date_observed": "2026-04-18",
+    "last_updated": "2026-04-18T09:45:31.070819+00:00Z"
+  },
+  {
+    "name": "42 (Torpedo Bomber) Squadron",
+    "service": "royal_air_force",
+    "type": "squadron",
+    "class": "Boeing P-8A Poseidon",
+    "location_description": "Iceland (deployed for maritime patrol training)",
+    "latitude": 63.985,
+    "longitude": -22.6056,
+    "confidence_score": 0.62,
+    "confidence_rationale": "42 Squadron RAF (Torpedo Bomber/Maritime Patrol) deployed to Iceland for maritime patrol training. Iceland has been a key NATO maritime patrol hub; the primary aviation base is Keflav\u00edk (Reykjavik-Keflav\u00edk International Airport / former NATO base), coordinates approximately 63.985\u00b0N, 22.606\u00b0W. No specific Icelandic base named, so using Keflav\u00edk as the most historically significant and likely deployment location for RAF maritime patrol operations in Iceland.",
+    "source_urls": [
+      "https://www.raf.mod.uk/news/articles/raf-poseidon-aircraft-return-to-iceland-for-vital-maritime-patrol-training/"
+    ],
+    "date_observed": "2026-03-24",
+    "last_updated": "2026-04-18T09:45:35.374994+00:00Z"
+  },
+  {
+    "name": "8 Squadron",
+    "service": "royal_air_force",
+    "type": "squadron",
+    "class": "Wedgetail AEW1",
+    "location_description": "RAF Lossiemouth",
+    "latitude": 57.7053,
+    "longitude": -3.3389,
+    "confidence_score": 0.99,
+    "confidence_rationale": "RAF Lossiemouth, Moray",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Royal_Air_Force"
+    ],
+    "date_observed": "2026-04-18",
+    "last_updated": "2026-04-18T09:45:35.377198+00:00Z"
+  },
+  {
+    "name": "RAF Coningsby",
+    "service": "royal_air_force",
+    "type": "station",
+    "class": null,
+    "location_description": "Exercise COBRA WARRIOR 26-1, 16-27 March 2026",
+    "latitude": 53.0933,
+    "longitude": -0.1667,
+    "confidence_score": 0.9,
+    "confidence_rationale": "Exercise COBRA WARRIOR is a recurring multi-national air defence exercise hosted by RAF Coningsby in Lincolnshire, England. The asset is explicitly named as RAF Coningsby, and COBRA WARRIOR exercises are conducted from and around RAF Coningsby. Coordinates resolve directly to RAF Coningsby (53.0933\u00b0N, 0.1667\u00b0W). High confidence as this is a named, well-documented RAF station with known coordinates and the exercise is base-hosted rather than a remote deployment.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Royal_Air_Force"
+    ],
+    "date_observed": "2026-03-27",
+    "last_updated": "2026-04-18T09:45:39.572166+00:00Z"
+  },
+  {
+    "name": "RAF Waddington",
+    "service": "royal_air_force",
+    "type": "station",
+    "class": null,
+    "location_description": "Exercise COBRA WARRIOR 26-1, 16-27 March 2026",
+    "latitude": 53.165,
+    "longitude": -0.5237,
+    "confidence_score": 0.92,
+    "confidence_rationale": "Exercise COBRA WARRIOR is a recurring large-force employment exercise hosted at RAF Waddington, Lincolnshire, UK. The exercise is conducted primarily from RAF Waddington itself, involving ISR and EW aircraft. Coordinates resolve directly to RAF Waddington (53.1650\u00b0N, 0.5237\u00b0W). The dates 16-27 March 2026 denote the 26-1 iteration of the exercise series. High confidence as this is the known and established host station for COBRA WARRIOR exercises.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Royal_Air_Force"
+    ],
+    "date_observed": "2026-03-27",
+    "last_updated": "2026-04-18T09:45:49.718840+00:00Z"
+  }
+]

@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OSINT COMMAND CENTRE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+/* ── Design tokens — DEFAULT (cyan on dark) ────────────────────────── */
+:root {
+  --bg-primary:        #0a0e17;
+  --bg-panel:          #0f1520;
+  --bg-inset:          #070b12;
+  --border-accent:     #00e5ff;
+  --border-subtle:     rgba(0,229,255,0.12);
+  --border-mid:        rgba(0,229,255,0.20);
+  --border-faint:      rgba(0,229,255,0.15);
+  --toggle-bg-on:      rgba(0,229,255,0.15);
+  --text-primary:      #c8d6e5;
+  --text-bright:       #e8f0f8;
+  --text-dim:          #4a5568;
+  --status-high:       #00e676;
+  --status-medium:     #ffab00;
+  --status-low:        #ff1744;
+  --accent-glow:       rgba(0,229,255,0.3);
+  --panel-width:       320px;
+  --header-height:     48px;
+  --footer-height:     36px;
+}
+
+/* ── HIGHCON — yellow/white on black ────────────────────────────────── */
+body.theme-highcon {
+  --bg-primary:        #000000;
+  --bg-panel:          #0c0c0c;
+  --bg-inset:          #000000;
+  --border-accent:     #ffe600;
+  --border-subtle:     rgba(255,230,0,0.15);
+  --border-mid:        rgba(255,230,0,0.30);
+  --border-faint:      rgba(255,230,0,0.20);
+  --toggle-bg-on:      rgba(255,230,0,0.18);
+  --text-primary:      #ffffff;
+  --text-bright:       #ffffff;
+  --text-dim:          #888888;
+  --status-high:       #00ff88;
+  --status-medium:     #ffe600;
+  --status-low:        #ff2222;
+  --accent-glow:       rgba(255,230,0,0.35);
+}
+
+/* ── NIGHTVIS — red on very dark ────────────────────────────────────── */
+body.theme-nightvis {
+  --bg-primary:        #070305;
+  --bg-panel:          #0c0608;
+  --bg-inset:          #040204;
+  --border-accent:     #ff2200;
+  --border-subtle:     rgba(255,34,0,0.12);
+  --border-mid:        rgba(255,34,0,0.22);
+  --border-faint:      rgba(255,34,0,0.16);
+  --toggle-bg-on:      rgba(255,34,0,0.15);
+  --text-primary:      #cc8880;
+  --text-bright:       #ffbbaa;
+  --text-dim:          #553333;
+  --status-high:       #ff6600;
+  --status-medium:     #cc3300;
+  --status-low:        #880011;
+  --accent-glow:       rgba(255,34,0,0.30);
+}
+
+/* ── Reset & base ─────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  width: 100%; height: 100%; overflow: hidden;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  font-size: 13px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--border-accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Layout skeleton ──────────────────────────────────────────────── */
+#app {
+  display: grid;
+  grid-template-rows: var(--header-height) 1fr var(--footer-height);
+  grid-template-columns: var(--panel-width) 1fr;
+  grid-template-areas:
+    "header header"
+    "panel  map"
+    "footer footer";
+  width: 100vw; height: 100vh;
+}
+
+/* ── Header ───────────────────────────────────────────────────────── */
+#header {
+  grid-area: header;
+  background: var(--bg-panel);
+  border-bottom: 1px solid var(--border-accent);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  z-index: 1000;
+}
+#header-title {
+  font-size: 16px;
+  letter-spacing: 3px;
+  color: var(--border-accent);
+  text-transform: uppercase;
+}
+#header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.status-dot {
+  width: 8px; height: 8px;
+  border-radius: 0;
+}
+.status-dot.ready   { background: var(--status-high); animation: pulse-dot 2s ease-in-out infinite; }
+.status-dot.running { background: var(--status-medium); animation: pulse-dot 1s ease-in-out infinite; }
+.status-dot.nodata  { background: var(--status-low); }
+@keyframes pulse-dot {
+  0%,100% { opacity: 1; }
+  50%      { opacity: 0.4; }
+}
+#clock {
+  font-size: 13px;
+  color: var(--text-bright);
+  letter-spacing: 1px;
+}
+
+/* ── Leaflet tooltip reset (osint-label class strips default white box) ── */
+.leaflet-tooltip.osint-label {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+.leaflet-tooltip.osint-label::before {
+  display: none;
+}
+
+/* ── Theme toggle ─────────────────────────────────────────────────── */
+#theme-toggle {
+  display: flex;
+  gap: 2px;
+}
+.theme-btn {
+  padding: 4px 10px;
+  background: transparent;
+  border: 1px solid var(--text-dim);
+  color: var(--text-dim);
+  font-family: inherit;
+  font-size: 10px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 0;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+.theme-btn:hover { border-color: var(--border-accent); color: var(--border-accent); }
+.theme-btn.active {
+  border-color: var(--border-accent);
+  color: var(--bg-primary);
+  background: var(--border-accent);
+}
+
+/* ── Left panel ───────────────────────────────────────────────────── */
+#panel {
+  grid-area: panel;
+  background: var(--bg-panel);
+  border-right: 1px solid var(--border-accent);
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-dim) var(--bg-inset);
+}
+#panel::-webkit-scrollbar { width: 4px; }
+#panel::-webkit-scrollbar-thumb { background: var(--text-dim); }
+
+.section {
+  padding: 10px 14px 12px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.section-header {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-dim);
+  border-bottom: 1px solid var(--border-faint);
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+
+/* ── Toggle rows (Intelligence Sources) ────────────────────────────── */
+.toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.toggle-label {
+  font-size: 12px;
+  color: var(--text-primary);
+}
+.toggle-label.dim { color: var(--text-dim); cursor: not-allowed; }
+
+/* Rectangular toggle switch */
+.toggle-switch {
+  position: relative;
+  width: 36px; height: 18px;
+  cursor: pointer;
+}
+.toggle-switch input { display: none; }
+.toggle-track {
+  position: absolute; inset: 0;
+  background: var(--bg-inset);
+  border: 1px solid var(--text-dim);
+  transition: border-color 0.2s, background 0.2s;
+}
+.toggle-switch input:checked + .toggle-track {
+  border-color: var(--border-accent);
+  background: var(--toggle-bg-on);
+}
+.toggle-handle {
+  position: absolute;
+  top: 3px; left: 3px;
+  width: 10px; height: 10px;
+  background: var(--text-dim);
+  transition: left 0.2s, background 0.2s;
+}
+.toggle-switch input:checked + .toggle-track + .toggle-handle {
+  left: 21px;
+  background: var(--border-accent);
+}
+.toggle-switch.disabled { cursor: not-allowed; opacity: 0.4; pointer-events: none; }
+
+/* ── Data source buttons ────────────────────────────────────────────── */
+.datasource-btn {
+  display: block;
+  width: 100%;
+  padding: 7px 10px;
+  background: var(--bg-inset);
+  border: 1px solid var(--text-dim);
+  color: var(--text-dim);
+  font-family: inherit;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 0;
+  margin-bottom: 6px;
+  transition: border-color 0.15s, color 0.15s;
+}
+.datasource-btn.active {
+  border-color: var(--border-accent);
+  color: var(--text-bright);
+}
+.datasource-btn:hover:not(:disabled) {
+  border-color: var(--border-accent);
+  color: var(--text-bright);
+}
+.datasource-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.datasource-meta {
+  font-size: 10px;
+  color: var(--text-dim);
+  margin-top: -4px;
+  margin-bottom: 6px;
+  padding-left: 2px;
+}
+
+/* ── Execute button ─────────────────────────────────────────────────── */
+#execute-btn {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid var(--border-accent);
+  color: var(--border-accent);
+  font-family: inherit;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 0;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+#execute-btn:hover:not(:disabled) {
+  background: var(--border-accent);
+  color: var(--bg-primary);
+}
+#execute-btn:disabled {
+  border-color: var(--text-dim);
+  color: var(--text-dim);
+  cursor: not-allowed;
+}
+#execute-btn.running {
+  border-color: var(--status-medium);
+  color: var(--status-medium);
+  animation: execute-pulse 1.5s ease-in-out infinite;
+}
+@keyframes execute-pulse {
+  0%,100% { border-color: var(--status-medium); color: var(--status-medium); }
+  50%      { border-color: var(--border-accent); color: var(--border-accent); }
+}
+
+/* ── Agent log ──────────────────────────────────────────────────────── */
+#log-wrapper {
+  position: relative;
+}
+#log-box {
+  height: 280px;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-mid);
+  overflow-y: auto;
+  padding: 6px 8px;
+  font-size: 11px;
+  line-height: 1.5;
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-dim) var(--bg-inset);
+}
+#log-box::-webkit-scrollbar { width: 3px; }
+#log-box::-webkit-scrollbar-thumb { background: var(--text-dim); }
+.log-line { white-space: pre-wrap; word-break: break-all; }
+.log-cyan   { color: var(--border-accent); }
+.log-green  { color: var(--status-high); }
+.log-amber  { color: var(--status-medium); }
+.log-red    { color: var(--status-low); }
+.log-white  { color: var(--text-bright); }
+.log-dim    { color: var(--text-dim); }
+#log-clear {
+  position: absolute;
+  top: 2px; right: 2px;
+  padding: 2px 6px;
+  background: transparent;
+  border: 1px solid var(--text-dim);
+  color: var(--text-dim);
+  font-family: inherit;
+  font-size: 10px;
+  cursor: pointer;
+  border-radius: 0;
+}
+#log-clear:hover { border-color: var(--border-accent); color: var(--border-accent); }
+
+/* ── Map controls ───────────────────────────────────────────────────── */
+.control-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+.control-label {
+  font-size: 10px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+select.ctrl-select {
+  width: 100%;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-accent);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 0;
+  appearance: none;
+  cursor: pointer;
+}
+select.ctrl-select option { background: var(--bg-inset); }
+
+.toggle-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+.cb-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+/* Custom checkbox */
+.cb-row input[type="checkbox"] { display: none; }
+.cb-box {
+  width: 14px; height: 14px;
+  border: 1px solid var(--text-dim);
+  background: var(--bg-inset);
+  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  transition: border-color 0.15s, background 0.15s;
+}
+.cb-row input:checked + .cb-box {
+  border-color: var(--border-accent);
+  background: var(--border-accent);
+}
+.cb-row input:checked + .cb-box::after {
+  content: "✓";
+  font-size: 10px;
+  color: var(--bg-primary);
+  line-height: 1;
+}
+
+/* ── Legend ─────────────────────────────────────────────────────────── */
+#legend-items { display: flex; flex-direction: column; gap: 5px; }
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--text-primary);
+}
+.legend-swatch {
+  width: 12px; height: 12px;
+  flex-shrink: 0;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* ── Map area ────────────────────────────────────────────────────────── */
+#map {
+  grid-area: map;
+  background: var(--bg-primary);
+}
+
+/* ── Footer ──────────────────────────────────────────────────────────── */
+#footer {
+  grid-area: footer;
+  background: var(--bg-panel);
+  border-top: 1px solid var(--border-accent);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  font-size: 11px;
+  color: var(--text-dim);
+  letter-spacing: 0.5px;
+}
+#footer-left, #footer-centre, #footer-right { flex: 1; }
+#footer-centre { text-align: center; }
+#footer-right  { text-align: right; }
+#footer-nodata {
+  width: 100%;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* ── Leaflet overrides ──────────────────────────────────────────────── */
+.leaflet-control-zoom a {
+  background: var(--bg-panel) !important;
+  color: var(--border-accent) !important;
+  border: 1px solid var(--border-accent) !important;
+  border-radius: 0 !important;
+  font-family: inherit !important;
+}
+.leaflet-control-zoom a:hover {
+  background: var(--border-accent) !important;
+  color: var(--bg-primary) !important;
+}
+.leaflet-container .leaflet-control-attribution {
+  background: rgba(0,0,0,0.5) !important;
+  color: var(--text-dim) !important;
+  font-size: 9px !important;
+}
+.leaflet-popup-content-wrapper {
+  background: var(--bg-panel) !important;
+  border: 1px solid var(--border-accent) !important;
+  border-radius: 0 !important;
+  box-shadow: 0 0 20px var(--accent-glow) !important;
+  color: var(--text-primary) !important;
+  font-family: "Share Tech Mono", monospace !important;
+  min-width: 350px !important;
+}
+.leaflet-popup-tip-container { display: none !important; }
+.leaflet-popup-close-button {
+  color: var(--border-accent) !important;
+  font-size: 16px !important;
+  top: 4px !important; right: 6px !important;
+}
+.leaflet-popup-content { margin: 14px 16px !important; }
+
+/* ── Popup internals ─────────────────────────────────────────────────── */
+.popup-name {
+  font-size: 14px;
+  color: var(--text-bright);
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+.popup-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+  font-size: 11px;
+}
+.popup-key { color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.5px; }
+.popup-val { color: var(--text-primary); text-align: right; max-width: 200px; }
+.popup-val.high   { color: var(--status-high); }
+.popup-val.medium { color: var(--status-medium); }
+.popup-val.low    { color: var(--status-low); }
+.popup-divider {
+  border: none;
+  border-top: 1px solid rgba(0,229,255,0.2);
+  margin: 8px 0;
+}
+.popup-rationale {
+  font-size: 10px;
+  color: var(--text-dim);
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+.conf-bar-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+.conf-bar-bg {
+  flex: 1;
+  height: 4px;
+  background: var(--bg-inset);
+  border: 1px solid var(--text-dim);
+}
+.conf-bar-fill { height: 100%; background: var(--border-accent); }
+.conf-pct { font-size: 11px; color: var(--border-accent); width: 36px; text-align: right; }
+.cap-bar-row { margin-bottom: 4px; }
+.cap-bar-label { font-size: 10px; color: var(--text-dim); margin-bottom: 2px; }
+.cap-bar-bg { height: 8px; background: var(--bg-inset); border: 1px solid var(--border-subtle); }
+.cap-bar-fill { height: 100%; }
+.popup-sources { margin-top: 8px; font-size: 10px; }
+.popup-sources a { color: var(--border-accent); display: block; }
+</style>
+</head>
+<body>
+<div id="app">
+
+  <!-- ── Header ────────────────────────────────────────────────────────── -->
+  <header id="header">
+    <span id="header-title">🌐 OSINT COMMAND CENTRE</span>
+    <div id="theme-toggle">
+      <button class="theme-btn active" onclick="setTheme('default')" id="btn-theme-default">DEFAULT</button>
+      <button class="theme-btn"        onclick="setTheme('highcon')"  id="btn-theme-highcon">HIGHCON</button>
+      <button class="theme-btn"        onclick="setTheme('nightvis')" id="btn-theme-nightvis">NIGHTVIS</button>
+    </div>
+    <div id="header-right">
+      <div id="status-indicator">
+        <div class="status-dot nodata" id="status-dot"></div>
+        <span id="status-text">NO DATA</span>
+      </div>
+      <div id="clock">—</div>
+    </div>
+  </header>
+
+  <!-- ── Left panel ────────────────────────────────────────────────────── -->
+  <nav id="panel">
+
+    <!-- Section 1: Intelligence Sources -->
+    <div class="section">
+      <div class="section-header">Intelligence Sources</div>
+      <div class="toggle-row">
+        <span id="rn-toggle-label-text" class="toggle-label">⚓ Royal Navy</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="rn-toggle" checked onchange="updateExecuteBtn()">
+          <div class="toggle-track"></div>
+          <div class="toggle-handle"></div>
+        </label>
+      </div>
+      <div class="toggle-row">
+        <span id="ba-toggle-label-text" class="toggle-label">⚔ British Army</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="ba-toggle" checked onchange="updateExecuteBtn()">
+          <div class="toggle-track"></div>
+          <div class="toggle-handle"></div>
+        </label>
+      </div>
+      <div class="toggle-row">
+        <span id="raf-toggle-label-text" class="toggle-label">✈ Royal Air Force</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="raf-toggle" checked onchange="updateExecuteBtn()">
+          <div class="toggle-track"></div>
+          <div class="toggle-handle"></div>
+        </label>
+      </div>
+    </div>
+
+    <!-- Section 2: Data Source -->
+    <div class="section">
+      <div class="section-header">Data Source</div>
+      <button class="datasource-btn" id="btn-existing" onclick="selectDatasource('existing')">
+        ▣ USE EXISTING DATA
+      </button>
+      <div class="datasource-meta" id="existing-meta">Checking…</div>
+      <button class="datasource-btn" id="btn-gather" onclick="selectDatasource('gather')">
+        ▷ GATHER FRESH OSINT
+      </button>
+    </div>
+
+    <!-- Section 3: Operations -->
+    <div class="section">
+      <div class="section-header">Operations</div>
+      <button id="execute-btn" onclick="execute()" disabled>EXECUTE</button>
+    </div>
+
+    <!-- Section 4: Agent Log -->
+    <div class="section">
+      <div class="section-header">Agent Log</div>
+      <div id="log-wrapper">
+        <button id="log-clear" onclick="clearLog()">CLEAR</button>
+        <div id="log-box"></div>
+      </div>
+    </div>
+
+    <!-- Section 5: Map Controls -->
+    <div class="section">
+      <div class="section-header">Map Controls</div>
+      <div class="control-row">
+        <span class="control-label">Colour markers by</span>
+        <select class="ctrl-select" id="colour-by" onchange="updateMap()">
+          <option value="service" selected>Service</option>
+          <option value="readiness">Readiness</option>
+        </select>
+      </div>
+      <div class="toggle-group">
+        <label class="cb-row">
+          <input type="checkbox" id="show-labels" checked onchange="updateMap()">
+          <div class="cb-box"></div>
+          Asset labels
+        </label>
+      </div>
+    </div>
+
+    <!-- Section 6: Filter by Service -->
+    <div class="section">
+      <div class="section-header">Filter by Service</div>
+      <div class="toggle-group">
+        <label class="cb-row">
+          <input type="checkbox" id="filt-svc-rn" checked onchange="updateMap();updateFooter()">
+          <div class="cb-box"></div>
+          <span style="color:#5c6bc0">⚓</span>&nbsp;Royal Navy
+        </label>
+        <label class="cb-row">
+          <input type="checkbox" id="filt-svc-ba" checked onchange="updateMap();updateFooter()">
+          <div class="cb-box"></div>
+          <span style="color:#ef5350">⚔</span>&nbsp;British Army
+        </label>
+        <label class="cb-row">
+          <input type="checkbox" id="filt-svc-raf" checked onchange="updateMap();updateFooter()">
+          <div class="cb-box"></div>
+          <span style="color:#4fc3f7">✈</span>&nbsp;Royal Air Force
+        </label>
+        <label class="cb-row">
+          <input type="checkbox" id="filt-svc-joint" checked onchange="updateMap();updateFooter()">
+          <div class="cb-box"></div>
+          <span style="color:#8e24aa">◆</span>&nbsp;Joint / Other
+        </label>
+      </div>
+    </div>
+
+    <!-- Section 7: Filter by Readiness -->
+    <div class="section">
+      <div class="section-header">Filter by Readiness</div>
+      <div class="toggle-group">
+        <label class="cb-row">
+          <input type="checkbox" id="filt-high" checked onchange="updateMap()">
+          <div class="cb-box"></div>
+          <span style="color:var(--status-high)">■</span>&nbsp;High
+        </label>
+        <label class="cb-row">
+          <input type="checkbox" id="filt-medium" checked onchange="updateMap()">
+          <div class="cb-box"></div>
+          <span style="color:var(--status-medium)">■</span>&nbsp;Medium
+        </label>
+        <label class="cb-row">
+          <input type="checkbox" id="filt-low" checked onchange="updateMap()">
+          <div class="cb-box"></div>
+          <span style="color:var(--status-low)">■</span>&nbsp;Low
+        </label>
+      </div>
+    </div>
+
+    <!-- Section 8: Legend -->
+    <div class="section">
+      <div class="section-header">Legend</div>
+      <div id="legend-items"></div>
+    </div>
+
+  </nav>
+
+  <!-- ── Map ──────────────────────────────────────────────────────────── -->
+  <div id="map"></div>
+
+  <!-- ── Footer ────────────────────────────────────────────────────────── -->
+  <footer id="footer">
+    <div id="footer-nodata">NO DATA LOADED</div>
+  </footer>
+
+</div>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════════════
+   OSINT COMMAND CENTRE — Frontend Logic
+   ═══════════════════════════════════════════════════════════════════════ */
+
+// ── State ────────────────────────────────────────────────────────────────
+let currentData = null;
+let currentDatasource = null;   // 'existing' | 'gather'
+let statusInfo = { existing: false, existingFile: null, existingModified: null, services: {} };
+let isRunning = false;
+let map = null;
+let baseTileLayer = null;
+const TILE_URL = "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png";
+const TILE_PANE_FILTER = {
+  default:  "",
+  nightvis: "",
+  highcon:  "invert(1) grayscale(1) brightness(0.45) contrast(2)",
+};
+let markers = [];
+let circles = [];
+let labelLayers = [];
+let sseConnection = null;
+let currentTheme = "default";
+
+function getLabelStyles() {
+  if (currentTheme === "highcon")  return { bg: "rgba(0,0,0,0.85)",   border: "rgba(255,255,255,0.7)" };
+  if (currentTheme === "nightvis") return { bg: "rgba(20,0,0,0.75)",  border: "rgba(180,0,0,0.8)" };
+  return                                  { bg: "rgba(10,14,23,0.75)", border: "rgba(200,214,229,0.45)" };
+}
+
+// ── Service border colours ────────────────────────────────────────────────
+const SERVICE_COLOURS = {
+  royal_navy:     "#1a237e",
+  british_army:   "#c62828",
+  royal_air_force:"#4fc3f7",
+  joint:          "#8e24aa",
+};
+function getServiceColour(service) {
+  return SERVICE_COLOURS[service] || SERVICE_COLOURS.joint;
+}
+function getServiceLabel(service) {
+  if (service === "royal_navy")     return "NAVY";
+  if (service === "british_army")   return "ARMY";
+  if (service === "royal_air_force")return "RAF";
+  return "JOINT";
+}
+
+// ── Colour palette ────────────────────────────────────────────────────────
+const CATEGORY_COLOURS = {
+  aircraft_carrier:    "#00e5ff",
+  destroyer:           "#448aff",
+  frigate:             "#00bfa5",
+  submarine_fleet:     "#7c4dff",
+  submarine_strategic: "#e040fb",
+  amphibious_assault:  "#ff6e40",
+  patrol_vessel:       "#eeff41",
+  mine_countermeasures:"#ffd740",
+  auxiliary:           "#90a4ae",
+  naval_base:          "#ffffff",
+  air_station:         "#b0bec5",
+  training_unit:       "#80cbc4",
+  other:               "#616161",
+};
+const READINESS_COLOURS = { high: "#00e676", medium: "#ffab00", low: "#ff1744" };
+
+// ── UTC clock ─────────────────────────────────────────────────────────────
+function updateClock() {
+  const now = new Date();
+  const months = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+  const pad = n => String(n).padStart(2,"0");
+  document.getElementById("clock").textContent =
+    `${pad(now.getUTCDate())} ${months[now.getUTCMonth()]} ${now.getUTCFullYear()} ` +
+    `${pad(now.getUTCHours())}:${pad(now.getUTCMinutes())}:${pad(now.getUTCSeconds())}Z`;
+}
+setInterval(updateClock, 1000);
+updateClock();
+
+// ── Map init ──────────────────────────────────────────────────────────────
+function initMap() {
+  map = L.map("map", {
+    center: [54, -2],
+    zoom: 5,
+    zoomControl: true,
+  });
+  baseTileLayer = L.tileLayer(TILE_URL, {
+    attribution: '&copy; <a href="https://carto.com/">CartoDB</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    subdomains: "abcd",
+    maxZoom: 19,
+  }).addTo(map);
+}
+
+// ── Status check on load ──────────────────────────────────────────────────
+async function checkStatus() {
+  try {
+    const res = await fetch("/api/status");
+    const s = await res.json();
+    if (s.services) {
+      // Multi-service response
+      statusInfo.services = s.services;
+      let hasData = false;
+      let latestFile = null, latestMod = null;
+      for (const [svc, info] of Object.entries(s.services)) {
+        if (info.enriched_data_exists || info.osint_data_exists) {
+          hasData = true;
+          const f = info.enriched_data_file || info.osint_data_file;
+          const m = info.enriched_data_modified || info.osint_data_modified;
+          if (!latestMod || (m && m > latestMod)) { latestFile = f; latestMod = m; }
+        }
+      }
+      statusInfo.existing = hasData;
+      statusInfo.existingFile = latestFile;
+      statusInfo.existingModified = latestMod;
+    } else {
+      // Legacy single-service response
+      statusInfo.existing = s.enriched_data_exists || s.osint_data_exists;
+      statusInfo.existingFile = s.enriched_data_file || s.osint_data_file || null;
+      statusInfo.existingModified = s.enriched_data_modified || s.osint_data_modified || null;
+    }
+    updateSourceLabels();
+    updateDatasourceUI();
+  } catch (e) {
+    log("dim", "[STATUS] Could not reach server.");
+  }
+}
+
+function updateSourceLabels() {
+  const svcs = [
+    ["royal_navy",      "rn-toggle-label-text"],
+    ["british_army",    "ba-toggle-label-text"],
+    ["royal_air_force", "raf-toggle-label-text"],
+  ];
+  for (const [key, id] of svcs) {
+    const el = document.getElementById(id);
+    if (!el) continue;
+    const info = statusInfo.services && statusInfo.services[key];
+    el.style.color = (info && (info.enriched_data_exists || info.osint_data_exists))
+      ? "var(--text-primary)" : "var(--text-dim)";
+  }
+}
+
+function updateDatasourceUI() {
+  const btnExisting = document.getElementById("btn-existing");
+  const meta = document.getElementById("existing-meta");
+  if (statusInfo.existing && statusInfo.existingFile) {
+    btnExisting.disabled = false;
+    const modStr = statusInfo.existingModified
+      ? fmtDate(statusInfo.existingModified)
+      : "—";
+    meta.textContent = `${statusInfo.existingFile} — ${modStr}`;
+  } else {
+    btnExisting.disabled = true;
+    meta.textContent = "No data available";
+    if (currentDatasource === "existing") currentDatasource = null;
+  }
+  updateExecuteBtn();
+}
+
+function fmtDate(iso) {
+  const d = new Date(iso);
+  const months = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+  const pad = n => String(n).padStart(2,"0");
+  return `${pad(d.getUTCDate())} ${months[d.getUTCMonth()]} ${d.getUTCFullYear()} ` +
+         `${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())}Z`;
+}
+
+// ── Datasource selection ──────────────────────────────────────────────────
+function selectDatasource(mode) {
+  if (mode === "existing" && document.getElementById("btn-existing").disabled) return;
+  currentDatasource = mode;
+  document.getElementById("btn-existing").classList.toggle("active", mode === "existing");
+  document.getElementById("btn-gather").classList.toggle("active", mode === "gather");
+  updateExecuteBtn();
+}
+
+function updateExecuteBtn() {
+  const btn = document.getElementById("execute-btn");
+  if (isRunning) {
+    btn.disabled = false;
+    btn.classList.add("running");
+    btn.textContent = "EXECUTING...";
+    return;
+  }
+  btn.classList.remove("running");
+  if (!currentDatasource) {
+    btn.disabled = true;
+    btn.textContent = "EXECUTE";
+    return;
+  }
+  const anyOn = document.getElementById("rn-toggle").checked ||
+                document.getElementById("raf-toggle").checked ||
+                document.getElementById("ba-toggle").checked;
+  if (!anyOn) {
+    btn.disabled = true;
+    btn.textContent = "EXECUTE";
+    return;
+  }
+  btn.disabled = false;
+  btn.textContent = "EXECUTE";
+}
+
+// ── Execute ───────────────────────────────────────────────────────────────
+async function execute() {
+  if (isRunning) return;
+  if (currentDatasource === "existing") {
+    await loadExistingData();
+  } else if (currentDatasource === "gather") {
+    await gatherFreshOSINT();
+  }
+}
+
+async function loadExistingData() {
+  log("dim", `Loading existing dataset... ${statusInfo.existingFile || ""}`);
+  try {
+    const res = await fetch("/api/data");
+    if (!res.ok) { log("red", "[ERROR] Failed to load data: " + res.status); return; }
+    const data = await res.json();
+    setData(data);
+    const assets = data.assets || data;
+    const located = Array.isArray(assets) ? assets.filter(a => a.latitude != null).length : 0;
+    const total = Array.isArray(assets) ? assets.length : 0;
+    log("white", `[STATUS] ${total} assets loaded. ${located} geocoded. Map populated.`);
+    setStatus("ready", "SYSTEM READY");
+  } catch (e) {
+    log("red", "[ERROR] " + e.message);
+  }
+}
+
+async function gatherFreshOSINT() {
+  isRunning = true;
+  updateExecuteBtn();
+  setStatus("running", "GATHERING INTEL...");
+  log("white", "[STATUS] Connecting to agent...");
+
+  if (sseConnection) sseConnection.close();
+
+  try {
+    const activeAgents = [];
+    if (document.getElementById("rn-toggle").checked)  activeAgents.push("royal_navy");
+    if (document.getElementById("raf-toggle").checked) activeAgents.push("royal_air_force");
+    if (document.getElementById("ba-toggle").checked)  activeAgents.push("british_army");
+    const res = await fetch("/api/gather", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ agents: activeAgents }),
+    });
+    if (!res.ok) throw new Error("Server returned " + res.status);
+
+    const reader = res.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = "";
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+      const parts = buffer.split("\n\n");
+      buffer = parts.pop();
+      for (const part of parts) {
+        if (!part.startsWith("data: ")) continue;
+        try {
+          const ev = JSON.parse(part.slice(6));
+          handleSSEEvent(ev);
+        } catch (_) {}
+      }
+    }
+  } catch (e) {
+    log("red", "[ERROR] " + e.message);
+  }
+
+  isRunning = false;
+  updateExecuteBtn();
+  setStatus("ready", "SYSTEM READY");
+}
+
+async function handleSSEEvent(ev) {
+  if (ev.type === "log") {
+    log(classifyLine(ev.line), ev.line, ev.source);
+  } else if (ev.type === "status") {
+    log("white", "[STATUS] " + ev.message);
+  } else if (ev.type === "complete") {
+    log("green", "[STATUS] All agents complete. Reloading data...");
+    await checkStatus();
+    await loadExistingData();
+  } else if (ev.type === "error") {
+    log("red", "[ERROR] " + ev.message);
+  }
+}
+
+function classifyLine(line) {
+  if (/\[DECISION\]|\[SEARCH\]/i.test(line))  return "cyan";
+  if (/\[FOUND\]|\[ANALYSIS\]/i.test(line))   return "green";
+  if (/\[WARNING\]|\[RETRY\]/i.test(line))    return "amber";
+  if (/\[ERROR\]/i.test(line))                return "red";
+  return "white";
+}
+
+// ── Log helpers ───────────────────────────────────────────────────────────
+function _escHtml(s) {
+  return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+}
+function _sourceToServiceKey(src) {
+  if (!src) return null;
+  const s = src.toUpperCase();
+  if (s.startsWith("NAVY"))  return "royal_navy";
+  if (s.startsWith("ARMY"))  return "british_army";
+  if (s.startsWith("RAF"))   return "royal_air_force";
+  return null;
+}
+function log(cls, text, source) {
+  const box = document.getElementById("log-box");
+  const line = document.createElement("div");
+  line.className = `log-line log-${cls}`;
+  if (source) {
+    const svcKey = _sourceToServiceKey(source);
+    const col = svcKey ? getServiceColour(svcKey) : "#aaa";
+    line.innerHTML = `<span style="color:${col};font-weight:bold">[${_escHtml(source)}]</span> ${_escHtml(text)}`;
+  } else {
+    line.textContent = text;
+  }
+  box.appendChild(line);
+  box.scrollTop = box.scrollHeight;
+}
+
+function clearLog() {
+  document.getElementById("log-box").innerHTML = "";
+}
+
+// ── Status indicator ──────────────────────────────────────────────────────
+function setStatus(state, text) {
+  const dot = document.getElementById("status-dot");
+  const label = document.getElementById("status-text");
+  dot.className = "status-dot " + (state === "ready" ? "ready" : state === "running" ? "running" : "nodata");
+  label.textContent = text;
+}
+
+// ── Populate map ──────────────────────────────────────────────────────────
+function setData(data) {
+  currentData = data;
+  updateMap();
+  updateFooter();
+}
+
+function clearMapLayers() {
+  markers.forEach(m => { map.removeLayer(m); });
+  circles.forEach(c => { map.removeLayer(c); });
+  labelLayers.forEach(l => { map.removeLayer(l); });
+  markers = []; circles = []; labelLayers = [];
+}
+
+function updateMap() {
+  if (!currentData) return;
+  clearMapLayers();
+
+  const assets = currentData.assets || currentData;
+  if (!Array.isArray(assets)) return;
+
+  const colourBy   = document.getElementById("colour-by").value;
+  const showLabels = document.getElementById("show-labels").checked;
+  const filtHigh   = document.getElementById("filt-high").checked;
+  const filtMed    = document.getElementById("filt-medium").checked;
+  const filtLow    = document.getElementById("filt-low").checked;
+  const filtRN     = document.getElementById("filt-svc-rn").checked;
+  const filtBA     = document.getElementById("filt-svc-ba").checked;
+  const filtRAF    = document.getElementById("filt-svc-raf").checked;
+  const filtJoint  = document.getElementById("filt-svc-joint").checked;
+
+  const BORDER = "#1a1a2e";
+  let hiddenCount = 0;
+
+  assets.forEach(asset => {
+    if (asset.latitude == null || asset.longitude == null) return;
+
+    const svc = asset.service || "royal_navy";
+    const isJoint = svc !== "royal_navy" && svc !== "british_army" && svc !== "royal_air_force";
+
+    // Filter by service checkboxes
+    if (!filtRN    && svc === "royal_navy")      { hiddenCount++; return; }
+    if (!filtBA    && svc === "british_army")    { hiddenCount++; return; }
+    if (!filtRAF   && svc === "royal_air_force") { hiddenCount++; return; }
+    if (!filtJoint && isJoint)                   { hiddenCount++; return; }
+
+    // Filter by readiness
+    const r = (asset.operational_readiness || "").toLowerCase();
+    if (r === "high"   && !filtHigh) return;
+    if (r === "medium" && !filtMed)  return;
+    if (r === "low"    && !filtLow)  return;
+
+    const fillColour = getColour(asset, colourBy);
+    const isFixed = asset.type === "naval_base" || asset.type === "base" ||
+                    asset.type === "air_station" || asset.type === "station" ||
+                    asset.type === "barracks" || asset.type === "training_establishment" ||
+                    asset.type === "headquarters";
+    let marker;
+
+    if (isFixed) {
+      const icon = L.divIcon({
+        html: `<div style="
+          width:14px;height:14px;
+          background:${fillColour};
+          border:1px solid ${BORDER};
+          box-shadow:0 0 6px ${fillColour}88;
+          opacity:0;
+          transition:opacity 0.3s;
+        " class="map-marker-square"></div>`,
+        iconSize: [14, 14],
+        iconAnchor: [7, 7],
+        className: "",
+      });
+      marker = L.marker([asset.latitude, asset.longitude], { icon });
+    } else {
+      marker = L.circleMarker([asset.latitude, asset.longitude], {
+        radius: 8,
+        color: BORDER,
+        weight: 1,
+        fillColor: fillColour,
+        fillOpacity: 0.85,
+        opacity: 0,
+        className: "map-marker-circle",
+      });
+    }
+
+    marker.addTo(map);
+    setTimeout(() => {
+      const el = marker.getElement && marker.getElement();
+      if (el) {
+        el.style.transition = "opacity 0.3s";
+        el.style.opacity = "1";
+        const sq = el.querySelector(".map-marker-square");
+        if (sq) sq.style.opacity = "1";
+      } else if (marker.setStyle) {
+        marker.setStyle({ opacity: 1, fillOpacity: 0.85 });
+      }
+    }, 30);
+
+    marker.bindPopup(() => buildPopup(asset), { maxWidth: 420 });
+    markers.push(marker);
+
+    if (showLabels) {
+      const label = L.tooltip({
+        permanent: true,
+        direction: "right",
+        offset: [12, 0],
+        className: "osint-label",
+      });
+      const ls = getLabelStyles();
+      label.setContent(`<span style="
+        font-family:'Share Tech Mono',monospace;
+        font-size:10px;
+        color:#c8d6e5;
+        background:${ls.bg};
+        padding:1px 3px;
+        border:1px solid ${ls.border};
+        white-space:nowrap;
+      ">${asset.name}</span>`);
+      label.setLatLng([asset.latitude, asset.longitude]);
+      label.addTo(map);
+      labelLayers.push(label);
+    }
+  });
+
+  updateLegend(colourBy);
+}
+
+function getColour(asset, colourBy) {
+  if (colourBy === "service") {
+    return getServiceColour(asset.service || "royal_navy");
+  }
+  if (colourBy === "readiness") {
+    return READINESS_COLOURS[(asset.operational_readiness || "").toLowerCase()] || "#4a5568";
+  }
+  return "#4a5568";
+}
+
+function buildPopup(asset) {
+  const r = (asset.operational_readiness || "").toLowerCase();
+  const rClass = r === "high" ? "high" : r === "medium" ? "medium" : r === "low" ? "low" : "";
+  const rText = r ? r.toUpperCase() : "—";
+  const conf = asset.confidence_score != null
+    ? Math.round(asset.confidence_score * 100)
+    : null;
+  const coords = (asset.latitude != null && asset.longitude != null)
+    ? `${asset.latitude.toFixed(3)}°, ${asset.longitude.toFixed(3)}°`
+    : "—";
+
+  let sourcesHtml = "";
+  if (asset.source_urls && asset.source_urls.length > 0) {
+    sourcesHtml = `<hr class="popup-divider"><div class="popup-sources">`;
+    for (const url of asset.source_urls.slice(0, 3)) {
+      if (url) sourcesHtml += `<a href="${url}" target="_blank" rel="noopener">${url.replace(/https?:\/\//,"")}</a>`;
+    }
+    sourcesHtml += `</div>`;
+  }
+
+  const svc = asset.service || "royal_navy";
+  const svcColour = getServiceColour(svc);
+  const svcLabel  = getServiceLabel(svc);
+
+  // Service-specific optional fields
+  let optionalHtml = "";
+  const optFields = [
+    ["Hull Number",    asset.hull_number],
+    ["Home Port",      asset.home_port],
+    ["Aircraft Type",  asset.aircraft_type],
+    ["Parent Wing",    asset.parent_wing],
+    ["Squadron No.",   asset.squadron_number],
+    ["Parent Brigade", asset.parent_brigade],
+    ["Regt. Identity", asset.regimental_identity],
+    ["Vehicle Fleet",  asset.vehicle_fleet],
+  ];
+  const present = optFields.filter(([, v]) => v);
+  if (present.length > 0) {
+    optionalHtml = `<hr class="popup-divider"><div style="font-size:10px;color:var(--text-dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">Unit Details</div>`;
+    for (const [k, v] of present) {
+      optionalHtml += `<div class="popup-row"><span class="popup-key">${k}</span><span class="popup-val">${truncate(v, 60)}</span></div>`;
+    }
+  }
+
+  return `
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+      <span style="background:${svcColour};color:#fff;font-size:9px;letter-spacing:1px;padding:2px 6px;font-weight:bold">${svcLabel}</span>
+      <div class="popup-name" style="margin:0">${asset.name}</div>
+    </div>
+    <div class="popup-row"><span class="popup-key">Class / Type</span><span class="popup-val">${asset.class || "—"}</span></div>
+    <div class="popup-row"><span class="popup-key">Category</span><span class="popup-val">${fmt(asset.unit_category)}</span></div>
+    <div class="popup-row"><span class="popup-key">Readiness</span><span class="popup-val ${rClass}">${rText}</span></div>
+    ${asset.readiness_rationale ? `<div class="popup-rationale">${truncate(asset.readiness_rationale, 200)}</div>` : ""}
+    <div class="popup-row"><span class="popup-key">Assignment</span><span class="popup-val">${truncate(asset.current_assignment || "—", 80)}</span></div>
+    <hr class="popup-divider">
+    <div class="popup-row"><span class="popup-key">Location</span><span class="popup-val">${asset.location_description || "—"}</span></div>
+    <div class="popup-row"><span class="popup-key">Coordinates</span><span class="popup-val">${coords}</span></div>
+    ${conf !== null ? `
+    <div class="popup-row" style="margin-top:4px">
+      <span class="popup-key">Confidence</span>
+      <span class="popup-val">
+        <div class="conf-bar-wrap">
+          <div class="conf-bar-bg"><div class="conf-bar-fill" style="width:${conf}%"></div></div>
+          <span class="conf-pct">${conf}%</span>
+        </div>
+      </span>
+    </div>` : ""}
+    ${optionalHtml}
+    ${sourcesHtml}
+  `;
+}
+
+function fmt(s) {
+  if (!s) return "—";
+  return s.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+}
+function truncate(s, n) {
+  if (!s || s.length <= n) return s || "—";
+  return s.slice(0, n) + "…";
+}
+
+// ── Legend ────────────────────────────────────────────────────────────────
+function updateLegend(colourBy) {
+  const el = document.getElementById("legend-items");
+  el.innerHTML = "";
+
+  // Marker shapes
+  const shapesHeader = document.createElement("div");
+  shapesHeader.style.cssText = "font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--text-dim);margin-bottom:6px;margin-top:2px";
+  shapesHeader.textContent = "Marker Shape";
+  el.appendChild(shapesHeader);
+
+  const squareRow = document.createElement("div");
+  squareRow.className = "legend-item";
+  squareRow.innerHTML = `<div style="width:12px;height:12px;background:var(--text-dim);border:1px solid rgba(255,255,255,0.2);flex-shrink:0"></div><span>Fixed installation</span>`;
+  el.appendChild(squareRow);
+
+  const circleRow = document.createElement("div");
+  circleRow.className = "legend-item";
+  circleRow.innerHTML = `<div style="width:12px;height:12px;border-radius:50%;background:var(--text-dim);border:1px solid rgba(255,255,255,0.2);flex-shrink:0"></div><span>Mobile unit</span>`;
+  el.appendChild(circleRow);
+
+  // Dynamic colour key
+  const colourHeader = document.createElement("div");
+  colourHeader.style.cssText = "font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--text-dim);margin-bottom:6px;margin-top:10px";
+  colourHeader.textContent = "Colour Key";
+  el.appendChild(colourHeader);
+
+  let entries = [];
+  if (colourBy === "service") {
+    entries = [
+      { colour: SERVICE_COLOURS.royal_navy,     label: "Royal Navy" },
+      { colour: SERVICE_COLOURS.british_army,   label: "British Army" },
+      { colour: SERVICE_COLOURS.royal_air_force,label: "Royal Air Force" },
+      { colour: SERVICE_COLOURS.joint,          label: "Joint / Other" },
+    ];
+  } else if (colourBy === "readiness") {
+    entries = [
+      { colour: READINESS_COLOURS.high,   label: "High" },
+      { colour: READINESS_COLOURS.medium, label: "Medium" },
+      { colour: READINESS_COLOURS.low,    label: "Low" },
+    ];
+  }
+
+  for (const e of entries) {
+    const row = document.createElement("div");
+    row.className = "legend-item";
+    row.innerHTML = `<div class="legend-swatch" style="background:${e.colour};border-color:${e.colour}"></div><span>${e.label}</span>`;
+    el.appendChild(row);
+  }
+}
+
+// ── Footer ────────────────────────────────────────────────────────────────
+function updateFooter() {
+  const footer = document.getElementById("footer");
+  if (!currentData) {
+    footer.innerHTML = `<div id="footer-nodata">NO DATA LOADED</div>`;
+    return;
+  }
+  const assets = Array.isArray(currentData.assets || currentData)
+    ? (currentData.assets || currentData) : [];
+  const meta = currentData.metadata || {};
+
+  const filtRN    = document.getElementById("filt-svc-rn").checked;
+  const filtBA    = document.getElementById("filt-svc-ba").checked;
+  const filtRAF   = document.getElementById("filt-svc-raf").checked;
+  const filtJoint = document.getElementById("filt-svc-joint").checked;
+
+  let navyCount = 0, armyCount = 0, rafCount = 0, hiddenCount = 0;
+  let located = 0;
+  const confs = [];
+
+  for (const a of assets) {
+    const svc = a.service || "royal_navy";
+    if      (svc === "royal_navy")      navyCount++;
+    else if (svc === "british_army")    armyCount++;
+    else if (svc === "royal_air_force") rafCount++;
+
+    const isJoint = svc !== "royal_navy" && svc !== "british_army" && svc !== "royal_air_force";
+    const isHidden = (!filtRN    && svc === "royal_navy") ||
+                     (!filtBA    && svc === "british_army") ||
+                     (!filtRAF   && svc === "royal_air_force") ||
+                     (!filtJoint && isJoint);
+    if (isHidden) { hiddenCount++; continue; }
+
+    if (a.latitude != null) located++;
+    if (a.confidence_score != null) confs.push(a.confidence_score);
+  }
+
+  const avgConf = confs.length ? Math.round((confs.reduce((a,b)=>a+b,0)/confs.length)*100) : 0;
+  const tokens  = meta.total_tokens_used ? meta.total_tokens_used.toLocaleString() : "—";
+  const updated = meta.generated_at ? fmtDate(meta.generated_at) : "—";
+
+  const navyPart  = navyCount  ? `NAVY: ${navyCount} | ` : "";
+  const armyPart  = armyCount  ? `ARMY: ${armyCount} | ` : "";
+  const rafPart   = rafCount   ? `RAF: ${rafCount} | `   : "";
+  const hiddenPart = hiddenCount ? ` | HIDDEN: ${hiddenCount}` : "";
+
+  footer.innerHTML = `
+    <div id="footer-left">TOKENS: ${tokens} | UPDATED: ${updated}</div>
+    <div id="footer-centre">${navyPart}${armyPart}${rafPart}LOCATED: ${located}${hiddenPart} | AVG CONF: ${avgConf}%</div>
+    <div id="footer-right"></div>
+  `;
+}
+
+// ── Theme switching ───────────────────────────────────────────────────────
+function setTheme(name) {
+  document.body.classList.remove("theme-highcon", "theme-nightvis");
+  if (name === "highcon") document.body.classList.add("theme-highcon");
+  if (name === "nightvis") document.body.classList.add("theme-nightvis");
+  ["default","highcon","nightvis"].forEach(t => {
+    document.getElementById("btn-theme-" + t).classList.toggle("active", t === name);
+  });
+  if (map) map.getPanes().tilePane.style.filter = TILE_PANE_FILTER[name] || "";
+  currentTheme = name;
+  if (currentData) updateMap();
+}
+
+// ── Init ──────────────────────────────────────────────────────────────────
+initMap();
+setStatus("nodata", "NO DATA");
+
+// Check status then auto-load most recent enriched data if available
+(async () => {
+  await checkStatus();
+  if (statusInfo.existing) {
+    selectDatasource("existing");
+    await loadExistingData();
+  }
+})();
+</script>
+</body>
+</html>

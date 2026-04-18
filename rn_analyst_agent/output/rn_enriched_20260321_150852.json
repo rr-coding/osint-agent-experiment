@@ -1,0 +1,572 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-21T15:08:52.645649+00:00Z",
+    "source_file": "rn_assets_20260321_150150.json",
+    "agent_model": "claude-opus-4-6",
+    "total_assets_analysed": 15,
+    "total_iterations": 7,
+    "total_tokens_used": 91275,
+    "operation_types": [
+      {
+        "id": "carrier_strike",
+        "name": "Carrier Strike",
+        "description": "Power projection through carrier-based fixed-wing and rotary-wing aviation, enabling strike operations and air superiority from the sea"
+      },
+      {
+        "id": "air_defence",
+        "name": "Air Defence",
+        "description": "Protecting the fleet, task group, and maritime forces from air and missile threats using shipborne radar, Sea Viper, and other organic air defence systems"
+      },
+      {
+        "id": "anti_submarine_warfare",
+        "name": "Anti-Submarine Warfare",
+        "description": "Detection, tracking, and neutralisation of hostile submarines using sonar systems, towed arrays, torpedoes, and Wildcat helicopters equipped with sonobuoys and dipping sonar"
+      },
+      {
+        "id": "amphibious_operations",
+        "name": "Amphibious Operations",
+        "description": "Deploying troops, vehicles, and equipment from sea to shore using landing ship dock auxiliaries and supporting assets for littoral manoeuvre"
+      },
+      {
+        "id": "maritime_patrol_and_surveillance",
+        "name": "Maritime Patrol and Surveillance",
+        "description": "Persistent monitoring of sea areas, choke points, and areas of interest using shipborne sensors, embarked helicopters, and shore-based aviation assets"
+      },
+      {
+        "id": "escort_and_fleet_protection",
+        "name": "Escort and Fleet Protection",
+        "description": "Providing close escort to high-value units such as carriers and auxiliaries, defending against surface, sub-surface, and air threats during transit and task group operations"
+      },
+      {
+        "id": "naval_aviation_operations",
+        "name": "Naval Aviation Operations",
+        "description": "Generation, training, and deployment of rotary-wing assets including Wildcat helicopters from air stations and embarked flights for multi-role maritime tasking"
+      },
+      {
+        "id": "humanitarian_assistance_and_disaster_relief",
+        "name": "Humanitarian Assistance and Disaster Relief",
+        "description": "Provision of aid, logistics, medical support, and helicopter lift in response to natural disasters or humanitarian crises using carriers, landing ships, and embarked aviation"
+      },
+      {
+        "id": "submarine_operations",
+        "name": "Submarine Operations",
+        "description": "Covert intelligence gathering, anti-surface and anti-submarine warfare, and sea denial operations conducted by nuclear-powered fleet submarines"
+      },
+      {
+        "id": "fleet_logistic_support_and_basing",
+        "name": "Fleet Logistic Support and Basing",
+        "description": "Sustainment of naval operations through home port maintenance, ammunition and fuel storage, crew generation, and forward support provided by naval bases and auxiliary vessels"
+      }
+    ]
+  },
+  "assets": [
+    {
+      "name": "HMS Prince of Wales",
+      "type": "ship",
+      "class": "Queen Elizabeth-class aircraft carrier",
+      "location_description": "Deploying across the North Atlantic, Arctic, High North, and Euro-Atlantic; visiting a US port on the North American East Coast (Operation Firecrest)",
+      "latitude": 58.0,
+      "longitude": -20.0,
+      "confidence_score": 0.45,
+      "confidence_rationale": "HMS Prince of Wales was deployed on Operation Firecrest across the North Atlantic, Arctic, High North, and Euro-Atlantic regions, with a visit to a US East Coast port. The deployment spanned a vast area from the Arctic/Norwegian Sea down through the North Atlantic. Given the breadth of the operating area \u2014 encompassing the High North (Norwegian/Barents Sea region around 70\u00b0N), the North Atlantic, and a US East Coast port visit (likely Norfolk, VA area around 36.8\u00b0N, -76.3\u00b0W) \u2014 the approximate geographic centre of this operational theatre is estimated in the mid-North Atlantic around 58\u00b0N, 20\u00b0W. The wide-ranging nature of the deployment across multiple sea areas reduces confidence.",
+      "source_urls": [
+        "https://www.gov.uk/government/news/uk-carrier-strike-group-to-deploy-to-north-atlantic-to-keep-uk-safe",
+        "https://www.forcesnews.com/services/navy/carrier-strike-group-be-deployed-north-face-russian-aggression",
+        "https://www.royalnavy.mod.uk/bases",
+        "https://www.bbc.com/news/articles/c0k1yyg475ko"
+      ],
+      "date_observed": "2026-03-21",
+      "last_updated": "2026-03-21T15:03:40.961334+00:00Z",
+      "unit_category": "aircraft_carrier",
+      "operational_readiness": "high",
+      "readiness_rationale": "HMS Prince of Wales is actively deployed on Operation Firecrest as of early 2026, serving as the centrepiece of a Carrier Strike Group in the North Atlantic and High North. This confirms she is operationally capable and at sea. While a 19FortyFive article noted both QE-class carriers were 'sidelined' in late January 2026, subsequent reporting and the Munich Security Conference announcement in February 2026 confirm she is now actively deployed. Her persistent starboard propeller shaft issues from previous years appear to have been resolved following successful 2025 Indo-Pacific deployment and current active tasking. The limited availability of Type 45 destroyers (only three of six) is a concern for the strike group's air defence umbrella but does not directly degrade the carrier's own readiness. Assessed as HIGH based on confirmed active deployment, though with a caveat that historical mechanical reliability issues could resurface.",
+      "current_assignment": "Lead ship of the 2026 Carrier Strike Group deployment (Operation Firecrest), operating across the North Atlantic, Arctic, High North, and Euro-Atlantic regions with NATO allies, including a port visit to the US East Coast.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 5,
+        "air_defence": 4,
+        "anti_submarine_warfare": 3,
+        "amphibious_operations": 2,
+        "maritime_patrol_and_surveillance": 4,
+        "escort_and_fleet_protection": 2,
+        "naval_aviation_operations": 5,
+        "humanitarian_assistance_and_disaster_relief": 3,
+        "submarine_operations": 0,
+        "fleet_logistic_support_and_basing": 2
+      },
+      "capability_rationale": "As a 65,000-tonne Queen Elizabeth-class STOVL carrier, HMS Prince of Wales is optimised for carrier strike (5) and naval aviation operations (5) \u2014 these are her primary roles, centred on embarking F-35B Lightning II strike fighters and Merlin helicopters. Air defence scores 4: the F-35B provides a potent outer air battle capability and the ship carries Phalanx CIWS for point defence, but she lacks an area air defence missile system and relies on escorting Type 45 destroyers (of which only 3 are currently available fleet-wide) for layered air defence. Anti-submarine warfare scores 3: Merlin HM2 helicopters embarked provide strong ASW capability, and the CSG will include dedicated ASW escorts, but the carrier herself has no hull-mounted sonar or ASW weapons. Maritime patrol and surveillance scores 4: the air wing provides wide-area ISR through F-35B sensor fusion and Merlin Crowsnest AEW, giving excellent situational awareness across a large area. Amphibious operations scores 2: while the QE-class can support helicopter-borne commando operations and has done so in exercises, she is not designed as a dedicated LPH/LPD. Escort and fleet protection scores 2: the carrier is the protected asset rather than the protector, though her aircraft contribute to force protection. HADR scores 3: she has significant deck space, aviation capability, medical facilities, and fresh water generation useful for disaster relief, as demonstrated by other carriers historically. Submarine operations scores 0: not applicable to a surface vessel. Fleet logistic support and basing scores 2: she can serve as a command platform and has some capacity to support other units, but this is not her primary function."
+    },
+    {
+      "name": "HMS Dragon",
+      "type": "ship",
+      "class": "Type 45 destroyer",
+      "location_description": "Command ship of NATO Standing Naval Maritime Group 1, operating in the Euro-Atlantic area",
+      "latitude": 60.0,
+      "longitude": -5.0,
+      "confidence_score": 0.4,
+      "confidence_rationale": "NATO Standing Naval Maritime Group 1 (SNMG1) typically operates in the Euro-Atlantic area, with primary operating zones including the North Sea, Norwegian Sea, and northeastern Atlantic. HMS Dragon (Type 45 destroyer) serving as command ship of SNMG1 would most likely be operating in the northern European waters. The approximate centre of SNMG1's typical operating area is around 60\u00b0N, 5\u00b0W, encompassing the waters between the UK, Norway, and the broader North Atlantic. This is a general estimate as no specific port or precise location is given.",
+      "source_urls": [
+        "https://www.gov.uk/government/news/uk-carrier-strike-group-to-deploy-to-north-atlantic-to-keep-uk-safe",
+        "https://www.navylookout.com",
+        "https://www.forcesnews.com/services/navy/carrier-strike-group-be-deployed-north-face-russian-aggression",
+        "https://www.bbc.com/news/articles/c0k1yyg475ko",
+        "https://www.theguardian.com/world/2026/mar/10/mod-criticised-after-delay-in-sending-hms-dragon-to-cyprus"
+      ],
+      "date_observed": "2026-03-10",
+      "last_updated": "2026-03-21T15:04:18.955538+00:00Z",
+      "unit_category": "destroyer",
+      "operational_readiness": "high",
+      "readiness_rationale": "HMS Dragon is actively deployed and underway, having departed Portsmouth on 10 March 2026 for a specific operational tasking in the Eastern Mediterranean. She was loaded with ammunition prior to departure, conducted a stores replenishment stop in Gibraltar, and has been assigned as command ship of NATO SNMG1 \u2014 all indicators of high operational readiness. The intelligence notes that only three of six Type 45s are currently available for service, making her deployment a deliberate commitment of a scarce high-readiness asset. Three Wildcat helicopters from 815 NAS have been forward-deployed to Cyprus to support her operations, further confirming active, resourced tasking. There is no indication of mechanical issues or reduced capability.",
+      "current_assignment": "Command ship of NATO Standing Naval Maritime Group 1 (SNMG1), deployed to the Eastern Mediterranean to protect RAF Akrotiri, Cyprus, and bolster British air defence posture in the region amid Iran-related tensions.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 1,
+        "air_defence": 5,
+        "anti_submarine_warfare": 2,
+        "amphibious_operations": 0,
+        "maritime_patrol_and_surveillance": 3,
+        "escort_and_fleet_protection": 5,
+        "naval_aviation_operations": 2,
+        "humanitarian_assistance_and_disaster_relief": 1,
+        "submarine_operations": 0,
+        "fleet_logistic_support_and_basing": 1
+      },
+      "capability_rationale": "Air defence (5): The Type 45's primary role is area air defence. The Sea Viper system (SAMPSON/S1850M radars, Aster 15/30 missiles) is specifically designed to counter aircraft, drones, and ballistic missiles \u2014 exactly the threat set described in the Eastern Med tasking. This is the ship's raison d'\u00eatre. Escort and fleet protection (5): Type 45s are optimised as fleet air defence escorts; HMS Dragon's role as SNMG1 command ship and her tasking to protect RAF Akrotiri confirm this as a primary function. Maritime patrol and surveillance (3): The SAMPSON radar provides exceptional air surveillance over a wide area, and the ship's sensors give good surface picture compilation. As SNMG1 flagship she will be coordinating maritime awareness. However, she lacks the endurance and sensor breadth of dedicated patrol platforms. Anti-submarine warfare (2): The Type 45 has a hull-mounted sonar (MFS-7000) and can operate Wildcat helicopters with dipping sonar/sonobuoys, but ASW is a secondary capability \u2014 significantly less capable than a Type 23 frigate with its towed array. The Wildcat helicopters deployed to Cyprus could contribute. Naval aviation operations (2): Can embark and operate a single Wildcat or Merlin helicopter from the flight deck and hangar, and three Wildcats are supporting her mission from Cyprus, but aviation capacity is limited to one organic airframe. Carrier strike (1): Could contribute to a carrier strike group as an air defence escort, but has no organic strike capability beyond limited land-attack potential. Amphibious operations (0) and submarine operations (0): No relevant capability. Humanitarian assistance and disaster relief (1): Has basic medical facilities and boats for limited HADR, but this is not a designed role. Fleet logistic support and basing (1): Minimal; she is a consumer of logistics, not a provider, though as SNMG1 flagship she has some command and coordination capacity."
+    },
+    {
+      "name": "HMS Kent",
+      "type": "ship",
+      "class": "Type 23 frigate",
+      "location_description": "Undergoing planned deep maintenance",
+      "latitude": 50.8,
+      "longitude": -1.11,
+      "confidence_score": 0.85,
+      "confidence_rationale": "HMS Kent is a Type 23 frigate of the Royal Navy. Deep maintenance for Royal Navy frigates is typically conducted at HMNB Portsmouth or at Babcock's facility in Devonport. Portsmouth is the home port for Type 23 frigates, and planned deep maintenance periods are most commonly carried out there. Coordinates reflect HMNB Portsmouth dockyard.",
+      "source_urls": [
+        "https://ukdefencejournal.org.uk/royal-navy-starts-2026-with-seven-frigates/"
+      ],
+      "date_observed": "2026-01-01",
+      "last_updated": "2026-03-21T15:04:32.006486+00:00Z",
+      "unit_category": "frigate",
+      "operational_readiness": "low",
+      "readiness_rationale": "HMS Kent is explicitly stated to be undergoing planned deep maintenance, which for Type 23 frigates typically lasts 12-18 months and renders the vessel unavailable for operational tasking. The intelligence context confirms she is not available for deployment. Deep maintenance involves hull surveys, equipment upgrades, and system refreshes, meaning core combat and propulsion systems are likely partially disassembled or offline. With only six of eight Type 23s available for service, Kent is clearly one of the two non-available units. Readiness is assessed as low rather than zero because she remains a commissioned warship that could theoretically be surged in an extreme national emergency, though at significant cost and delay.",
+      "current_assignment": "Undergoing planned deep maintenance, likely at HMNB Devonport",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 0,
+        "air_defence": 0,
+        "anti_submarine_warfare": 1,
+        "amphibious_operations": 0,
+        "maritime_patrol_and_surveillance": 0,
+        "escort_and_fleet_protection": 0,
+        "naval_aviation_operations": 0,
+        "humanitarian_assistance_and_disaster_relief": 0,
+        "submarine_operations": 0,
+        "fleet_logistic_support_and_basing": 0
+      },
+      "capability_rationale": "All capability scores are suppressed to 0 or near-0 due to HMS Kent's current deep maintenance status, which renders her unable to conduct any operational tasking. When operational, the Type 23 is optimised for ASW (Type 2087 towed array, Type 2050 bow sonar, Merlin HM2 helicopter \u2014 normally warranting a score of 5) and is highly capable in escort/fleet protection (Sea Ceptor, 4.5-inch gun \u2014 normally 4) and maritime patrol/surveillance (normally 3-4). However, none of these capabilities are available during a 12-18 month deep maintenance period. ASW is scored at 1 rather than 0 to reflect that the inherent ASW-optimised design, installed sonar systems, and crew expertise still exist and could be reconstituted faster than building new capability, but the ship cannot currently prosecute any submarine contacts. All other mission areas score 0 as the vessel cannot sail, fight, or support operations in its current state."
+    },
+    {
+      "name": "HMS Glasgow",
+      "type": "ship",
+      "class": "Type 26 frigate",
+      "location_description": "In build at BAE Systems, River Clyde, Scotland",
+      "latitude": 56.0748,
+      "longitude": -4.804,
+      "confidence_score": 0.92,
+      "confidence_rationale": "HMNB Clyde area",
+      "source_urls": [
+        "https://ukdefencejournal.org.uk/royal-navy-starts-2026-with-seven-frigates/"
+      ],
+      "date_observed": "2026-01-01",
+      "last_updated": "2026-03-21T15:04:48.230124+00:00Z",
+      "unit_category": "frigate",
+      "operational_readiness": "low",
+      "readiness_rationale": "HMS Glasgow remains in build at BAE Systems on the River Clyde as of March 2026. While significant milestones have been achieved \u2014 flooding up, inclining experiments (Nov 2024), and first diesel generator activation (Dec 2025) \u2014 the vessel is still in the cable termination and fitting-out phase. Sea trials are anticipated to begin in 2026 but have likely not yet commenced or are imminent. She has not been handed over to the Royal Navy, and full operational capability is not expected until 2028. She is therefore not deployable and has no operational readiness in any meaningful sense.",
+      "current_assignment": "Under construction and fitting out at BAE Systems, Govan/Scotstoun shipyard, River Clyde, Scotland. Currently in the cable termination phase with diesel generators recently activated. Preparing for sea trials expected later in 2026.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 2,
+        "air_defence": 3,
+        "anti_submarine_warfare": 5,
+        "amphibious_operations": 1,
+        "maritime_patrol_and_surveillance": 3,
+        "escort_and_fleet_protection": 4,
+        "naval_aviation_operations": 2,
+        "humanitarian_assistance_and_disaster_relief": 2,
+        "submarine_operations": 0,
+        "fleet_logistic_support_and_basing": 0
+      },
+      "capability_rationale": "Scores reflect the designed capability of the Type 26 class at full operational capability, not current readiness (which is effectively zero since the ship is still in build). ASW scores 5 as the Type 26 is purpose-designed as a premier ASW platform with an acoustically quiet hull, bow-mounted sonar (Type 2150), towed array sonar (Type 2087), and a mission bay optimised for ASW operations including Merlin HM2 helicopter operations. Escort and fleet protection scores 4 as this is the primary operational role \u2014 the Type 26 is designed to escort the carrier strike group and high-value units. Air defence scores 3 reflecting the Sea Ceptor (CAMM) local/area air defence missile system, which provides a capable but not specialist air defence capability (compared to Type 45 destroyers). Carrier strike scores 2 as the Type 26 would contribute as an escort within a carrier strike group but is not a strike platform itself. Maritime patrol and surveillance scores 3 given the advanced sensor suite and mission flexibility. Naval aviation operations scores 2 \u2014 the ship operates a Merlin or Wildcat helicopter from its flight deck and hangar but is not an aviation-centric platform. HADR scores 2 reflecting the mission bay flexibility that could support humanitarian tasks but this is not a primary role. Amphibious operations scores 1 as the ship could provide fire support or escort but has no amphibious capability. Submarine operations and fleet logistic support score 0 as these are not applicable to a surface frigate."
+    },
+    {
+      "name": "HMNB Portsmouth",
+      "type": "base",
+      "class": null,
+      "location_description": "Portsmouth, Hampshire, England",
+      "latitude": 50.7984,
+      "longitude": -1.1082,
+      "confidence_score": 0.97,
+      "confidence_rationale": "Portsmouth Naval Base",
+      "source_urls": [
+        "https://www.royalnavy.mod.uk/bases",
+        "https://www.bbc.com/news/articles/c0k1yyg475ko"
+      ],
+      "date_observed": "2026-03-18",
+      "last_updated": "2026-03-21T15:06:09.137414+00:00Z",
+      "unit_category": "naval_base",
+      "operational_readiness": "high",
+      "readiness_rationale": "HMNB Portsmouth is the Royal Navy's primary surface fleet base and is actively generating operational outputs. Evidence includes: HMS Dragon departed on deployment 10 March 2026, HMS Queen Elizabeth is undergoing post-refit regeneration alongside, and the base continues to function as the principal hub for surface fleet generation, crew training, and deployment staging. BAE Systems maintains an active ship maintenance capability on-site. The only notable limitation cited is the absence of a dry dock large enough for QE-class carriers. Overall, the base is clearly functioning at a high operational tempo with multiple concurrent activities.",
+      "current_assignment": "Supporting HMS Queen Elizabeth post-refit regeneration; serving as the departure and home port for deployed and active surface fleet units including the Type 45 destroyer flotilla; providing fleet generation, crew training, and shore support functions. HMS Dragon recently deployed from here to the Eastern Mediterranean.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 4,
+        "air_defence": 4,
+        "anti_submarine_warfare": 2,
+        "amphibious_operations": 2,
+        "maritime_patrol_and_surveillance": 2,
+        "escort_and_fleet_protection": 4,
+        "naval_aviation_operations": 3,
+        "humanitarian_assistance_and_disaster_relief": 3,
+        "submarine_operations": 0,
+        "fleet_logistic_support_and_basing": 5
+      },
+      "capability_rationale": "Fleet logistic support and basing scores 5 as this is the primary role of HMNB Portsmouth \u2014 it is the Royal Navy's principal surface fleet home port with extensive dockyard, maintenance, shore support, and crew training infrastructure. Carrier strike scores 4 because both QE-class carriers are home-ported here and the base directly supports their regeneration, maintenance, and deployment preparation, though it cannot dry-dock them (requiring Rosyth). Air defence and escort/fleet protection score 4 as the Type 45 destroyer flotilla \u2014 the RN's primary area air defence capability \u2014 is based here, with BAE Systems providing dedicated Type 45 maintenance. Naval aviation operations scores 3: while the base supports carrier air wing generation and there is some aviation infrastructure, it is not a dedicated air station (that role falls to RNAS Yeovilton/Culdrose). HADR scores 3 as the base can stage and deploy surface combatants and logistics for disaster relief, though this is not its primary function. Anti-submarine warfare, amphibious operations, and maritime patrol/surveillance each score 2: while Portsmouth-based ships may contribute to these missions, the base's primary resident units (carriers, Type 45s) are not ASW or amphibious specialists, and dedicated ASW/amphibious assets are more associated with Devonport. Submarine operations scores 0 as Portsmouth does not home-port submarines; HMNB Clyde and HMNB Devonport serve those roles."
+    },
+    {
+      "name": "HMS Queen Elizabeth",
+      "type": "ship",
+      "class": "Queen Elizabeth-class",
+      "location_description": "HMNB Portsmouth, Portsmouth, Hampshire, England",
+      "latitude": 50.7984,
+      "longitude": -1.1082,
+      "confidence_score": 0.99,
+      "confidence_rationale": "HMNB Portsmouth \u2014 fixed base location",
+      "source_urls": [
+        "https://www.royalnavy.mod.uk/bases"
+      ],
+      "date_observed": "2026-03-21",
+      "last_updated": "2026-03-21T15:03:58.061408+00:00Z",
+      "unit_category": "aircraft_carrier",
+      "operational_readiness": "low",
+      "readiness_rationale": "HMS Queen Elizabeth has been undergoing a major refit cycle since mid-2025. She entered Rosyth dry dock around July 2025 for an approximately 7-month period, and as of February 2026 was still reported as sidelined. Her current location at HMNB Portsmouth suggests she has returned from Rosyth dry dock, but the ship is likely in the final stages of regeneration and post-refit trials rather than operationally deployable. She retains only a core ship's company of approximately 500 sailors (well below the full complement of ~700 ship's company plus air group personnel), indicating reduced readiness. The installation of new navigation and propulsion control systems, replacement propeller shafts, and the Bedford Array precision landing aid all require extensive testing and certification before the vessel can be declared fully operational. Until regeneration is complete, air group embarked, and full crew restored, readiness remains low.",
+      "current_assignment": "Post-refit regeneration and work-up period following major upkeep at Rosyth. Currently alongside at HMNB Portsmouth, likely conducting harbour acceptance trials, systems certification, and crew regeneration prior to returning to operational status.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 1,
+        "air_defence": 1,
+        "anti_submarine_warfare": 0,
+        "amphibious_operations": 1,
+        "maritime_patrol_and_surveillance": 1,
+        "escort_and_fleet_protection": 0,
+        "naval_aviation_operations": 1,
+        "humanitarian_assistance_and_disaster_relief": 1,
+        "submarine_operations": 0,
+        "fleet_logistic_support_and_basing": 1
+      },
+      "capability_rationale": "All capability scores are heavily suppressed due to the ship's current low readiness state during post-refit regeneration. At full operational capability, HMS Queen Elizabeth would score 5 for carrier_strike and naval_aviation_operations as her primary roles, operating up to 36 F-35B Lightning II and Merlin helicopters. She would also score strongly for air_defence (organic fighter screen), maritime_patrol_and_surveillance (Crowsnest AEW Merlin capability), and humanitarian_assistance_and_disaster_relief (large deck, medical facilities, helicopter operations). However, in her current state \u2014 no embarked air group, reduced crew of ~500, newly installed systems still requiring full certification (including the Bedford Array landing aid and replacement propeller shafts/propulsion controls) \u2014 she cannot meaningfully execute any of these missions. Carrier_strike and naval_aviation_operations are scored 1 rather than 0 because the physical infrastructure exists and could theoretically support limited helicopter operations at short notice. Anti_submarine_warfare, escort_and_fleet_protection, and submarine_operations score 0 as these are not applicable to her class regardless of readiness. Amphibious_operations and fleet_logistic_support_and_basing receive 1 reflecting the ship's inherent large-deck utility even in degraded readiness, though she is not optimised for these roles."
+    },
+    {
+      "name": "HMNB Devonport",
+      "type": "base",
+      "class": null,
+      "location_description": "Plymouth, Devon, England",
+      "latitude": 50.3714,
+      "longitude": -4.1872,
+      "confidence_score": 0.95,
+      "confidence_rationale": "HMNB Devonport, Plymouth",
+      "source_urls": [
+        "https://www.royalnavy.mod.uk/bases"
+      ],
+      "date_observed": "2026-03-21",
+      "last_updated": "2026-03-21T15:06:24.248644+00:00Z",
+      "unit_category": "naval_base",
+      "operational_readiness": "high",
+      "readiness_rationale": "HMNB Devonport is the largest naval base in Western Europe and remains a fully operational strategic facility. However, the intelligence notes strain on maintenance capacity \u2014 only six of eight Type 23s are available fleet-wide, and HMS Kent is likely in deep maintenance. While the base itself is operational, its ability to generate combat-ready assets is under pressure from the maintenance-to-operational balance. Overall readiness of the base infrastructure is assessed as high, though the readiness of assets hosted there is mixed.",
+      "current_assignment": "Home port for the Type 23 frigate flotilla and the amphibious fleet. Currently managing deep maintenance cycles (including HMS Kent refit), supporting amphibious ready group generation, hosting 3 Commando Brigade Royal Marines, and providing nuclear submarine refuelling/defuelling through Devonport Dockyard (Babcock International). Also supporting RFA vessels and providing logistics, training, and accommodation.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 1,
+        "air_defence": 1,
+        "anti_submarine_warfare": 5,
+        "amphibious_operations": 5,
+        "maritime_patrol_and_surveillance": 2,
+        "escort_and_fleet_protection": 4,
+        "naval_aviation_operations": 1,
+        "humanitarian_assistance_and_disaster_relief": 3,
+        "submarine_operations": 4,
+        "fleet_logistic_support_and_basing": 5
+      },
+      "capability_rationale": "ASW scores 5 as Devonport is the home port of the entire Type 23 frigate flotilla \u2014 the Royal Navy's primary ASW platform \u2014 and is described as a key hub for ASW-focused frigate operations in the Western Approaches and Atlantic. Amphibious operations scores 5 as the base hosts the amphibious fleet and 3 Commando Brigade Royal Marines, forming the core of the UK's amphibious capability. Fleet logistic support and basing scores 5 as the largest naval base in Western Europe with comprehensive dockyard facilities (Babcock International), RFA support, training, accommodation, and deep maintenance/refit capability. Submarine operations scores 4 due to specialised nuclear facilities for submarine refuelling/defuelling and maintenance, though HMNB Clyde is the primary submarine base. Escort and fleet protection scores 4 as the Type 23 flotilla based here provides the bulk of Royal Navy escort capability. HADR scores 3 as amphibious ships and Royal Marines based here are frequently tasked for disaster relief operations. Maritime patrol and surveillance scores 2 \u2014 frigates contribute to this but it is not the base's primary focus. Carrier strike, air defence, and naval aviation operations score 1 as the carriers are based at Portsmouth and Devonport has no significant aviation facilities, though it provides indirect support through frigate maintenance for carrier group escorts."
+    },
+    {
+      "name": "HMNB Clyde",
+      "type": "base",
+      "class": null,
+      "location_description": "Faslane, Scotland",
+      "latitude": 56.0748,
+      "longitude": -4.804,
+      "confidence_score": 0.97,
+      "confidence_rationale": "HMNB Clyde, Faslane",
+      "source_urls": [
+        "https://www.royalnavy.mod.uk/bases"
+      ],
+      "date_observed": "2026-03-21",
+      "last_updated": "2026-03-21T15:06:41.903711+00:00Z",
+      "unit_category": "naval_base",
+      "operational_readiness": "medium",
+      "readiness_rationale": "HMNB Clyde is the UK's sole submarine operating base and is critical national infrastructure supporting the Continuous At Sea Deterrent (CASD). The CASD mission itself maintains high readiness by definition (at least one SSBN is always on patrol). However, overall base operational readiness is assessed as medium due to significant submarine maintenance challenges: intelligence indicates only one in five Astute-class SSNs is reportedly in the water as of early 2026, suggesting severe availability issues affecting the fleet submarines home-ported there. Ongoing investment and expansion for the Dreadnought-class programme also implies transitional infrastructure pressures. The base remains fully functional but is under strain from maintenance backlogs and modernisation demands.",
+      "current_assignment": "Primary operating base for the UK submarine fleet, sustaining the Continuous At Sea Deterrent (CASD) with Vanguard-class SSBNs carrying Trident, home-porting Astute-class SSNs, hosting mine countermeasures and patrol vessels, supporting nuclear warhead storage and handling at RNAD Coulport, and undergoing expansion to support the incoming Dreadnought-class programme.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 0,
+        "air_defence": 1,
+        "anti_submarine_warfare": 4,
+        "amphibious_operations": 0,
+        "maritime_patrol_and_surveillance": 3,
+        "escort_and_fleet_protection": 2,
+        "naval_aviation_operations": 0,
+        "humanitarian_assistance_and_disaster_relief": 1,
+        "submarine_operations": 5,
+        "fleet_logistic_support_and_basing": 4
+      },
+      "capability_rationale": "Submarine operations scores 5 as HMNB Clyde is the UK's sole submarine operating base, home to both the strategic deterrent (Vanguard-class SSBNs) and fleet submarines (Astute-class SSNs), with dedicated nuclear warhead handling at Coulport. Fleet logistic support and basing scores 4 as the base provides comprehensive berthing, maintenance, arming, and shore support infrastructure for the submarine fleet and additional surface vessels, with major investment underway for Dreadnought-class support \u2014 docked from 5 due to the evident maintenance capacity constraints. Anti-submarine warfare scores 4 because the Astute-class SSNs based there are among the world's most capable ASW platforms, though actual deployable availability is severely limited. Maritime patrol and surveillance scores 3 reflecting the intelligence-gathering and patrol capabilities of SSNs and the hosted patrol vessels (e.g., Sandown/Hunt-class MCMVs and OPVs contribute to maritime awareness in Scottish waters). Escort and fleet protection scores 2 as SSNs can provide fleet escort but the base does not host dedicated escort surface combatants. Air defence scores 1 reflecting only basic point-defence of the installation itself; no dedicated air defence assets are based there. HADR scores 1 as the base could theoretically support limited humanitarian operations but this is not a core role. Carrier strike, amphibious operations, and naval aviation operations score 0 as HMNB Clyde hosts no carriers, amphibious ships, or aviation squadrons."
+    },
+    {
+      "name": "RNAS Culdrose",
+      "type": "air_station",
+      "class": null,
+      "location_description": "Near Helston, Cornwall",
+      "latitude": 50.0861,
+      "longitude": -5.2571,
+      "confidence_score": 0.97,
+      "confidence_rationale": "RNAS Culdrose is a well-known Royal Naval Air Station located near Helston in Cornwall, England. Its coordinates are precisely known at approximately 50.0861\u00b0N, 5.2571\u00b0W.",
+      "source_urls": [
+        "https://www.royalnavy.mod.uk/bases"
+      ],
+      "date_observed": "2026-03-21",
+      "last_updated": "2026-03-21T15:06:58.432674+00:00Z",
+      "unit_category": "air_station",
+      "operational_readiness": "high",
+      "readiness_rationale": "RNAS Culdrose is the Royal Navy's largest helicopter base and a critical enabler for fleet ASW and AEW capability. The intelligence context describes it as actively hosting multiple front-line Merlin HM2 squadrons (814 NAS, 820 NAS, 824 NAS), Merlin Crowsnest AEW flights, training units, and the Maritime Operations Centre. As a permanent shore establishment with infrastructure for generating embarked flights for Type 23 frigates and the carrier strike group, it is assessed as maintaining high readiness. No reports of significant infrastructure degradation or capability gaps were noted, though specific aircraft serviceability rates are not available; the assessment defaults to high given its strategic importance and active squadron presence.",
+      "current_assignment": "Generating and sustaining Merlin HM2 ASW helicopter squadrons and Merlin Crowsnest AEW flights for deployment across the fleet, including embarked flights for Type 23 frigates and QE-class carriers. Also hosting training units, the Maritime Operations Centre, and Search and Rescue capability.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 4,
+        "air_defence": 3,
+        "anti_submarine_warfare": 5,
+        "amphibious_operations": 1,
+        "maritime_patrol_and_surveillance": 4,
+        "escort_and_fleet_protection": 4,
+        "naval_aviation_operations": 5,
+        "humanitarian_assistance_and_disaster_relief": 2,
+        "submarine_operations": 0,
+        "fleet_logistic_support_and_basing": 3
+      },
+      "capability_rationale": "ASW is scored 5 as Culdrose's primary role: it is the home base for Merlin HM2 ASW squadrons (814, 820, 824 NAS) which are the Royal Navy's principal rotary-wing ASW asset, generating embarked flights for the fleet. Naval aviation operations is also scored 5 as the base is the RN's largest helicopter station and the centre of rotary-wing crew training, maintenance, and operational generation. Carrier strike scores 4 because Culdrose generates the Merlin Crowsnest AEW capability and ASW escorts that are integral to the carrier strike group, though it is not the carrier itself. Escort and fleet protection scores 4 as Merlin HM2 embarked flights are a core element of frigate escort ASW screening. Maritime patrol and surveillance scores 4 reflecting the Merlin HM2's maritime patrol role and the Crowsnest AEW surveillance function. Air defence scores 3 due to the Merlin Crowsnest providing organic airborne early warning \u2014 a key enabler for fleet air defence \u2014 though the base does not operate fighter aircraft or air defence weapons systems directly. Fleet logistic support and basing scores 3 as a major shore establishment providing maintenance, training, and sustainment functions. HADR scores 2 reflecting the SAR capability and potential for helicopter-based disaster relief, though this is a secondary role. Amphibious operations scores 1 as helicopters could theoretically support amphibious tasks but this is not a Culdrose mission. Submarine operations scores 0 as the base has no submarine-related function."
+    },
+    {
+      "name": "RNAS Yeovilton",
+      "type": "air_station",
+      "class": null,
+      "location_description": "Somerset",
+      "latitude": 51.0094,
+      "longitude": -2.6384,
+      "confidence_score": 0.97,
+      "confidence_rationale": "RNAS Yeovilton is a well-known Royal Naval Air Station located near the village of Yeovilton in Somerset, England. Its coordinates are precisely known.",
+      "source_urls": [
+        "https://www.royalnavy.mod.uk/bases"
+      ],
+      "date_observed": "2026-03-21",
+      "last_updated": "2026-03-21T15:07:14.763395+00:00Z",
+      "unit_category": "air_station",
+      "operational_readiness": "high",
+      "readiness_rationale": "RNAS Yeovilton is described as a major operational air station and the primary generation base for the Royal Navy's light helicopter capability. The intelligence confirms active squadrons (815 NAS, 847 NAS) are based here, with three Wildcat HMA2 helicopters from 815 NAS currently forward-deployed to Cyprus in support of HMS Dragon, demonstrating active operational output. The presence of extensive maintenance and training facilities further supports high readiness. There is no indication of degraded capability or infrastructure issues.",
+      "current_assignment": "Serving as the primary Royal Navy rotary-wing generation base, hosting 815 NAS (maritime Wildcat HMA2) and 847 NAS (Commando Wildcat), Commando Helicopter Force elements, and training units. Currently supporting forward deployment of three Wildcat helicopters to Cyprus for HMS Dragon's Eastern Mediterranean operations.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 1,
+        "air_defence": 1,
+        "anti_submarine_warfare": 4,
+        "amphibious_operations": 4,
+        "maritime_patrol_and_surveillance": 4,
+        "escort_and_fleet_protection": 4,
+        "naval_aviation_operations": 5,
+        "humanitarian_assistance_and_disaster_relief": 3,
+        "submarine_operations": 0,
+        "fleet_logistic_support_and_basing": 3
+      },
+      "capability_rationale": "Naval aviation operations scores 5 as this is the station's primary role \u2014 it is the Royal Navy's principal light helicopter base, generating embarked flights and housing multiple operational squadrons. Anti-submarine warfare scores 4 because 815 NAS operates the AW159 Wildcat HMA2, which is equipped with dipping sonar and lightweight torpedoes and is the primary embarked ASW helicopter for frigates and destroyers. Escort and fleet protection scores 4 as Wildcat HMA2 flights are routinely embarked on Type 23 frigates and Type 45 destroyers, providing surface search, anti-surface warfare (Sea Venom/Martlet missiles), and ASW capability integral to escort operations. Maritime patrol and surveillance scores 4 because the Wildcat HMA2's sensors (radar, EO/IR, ESM) make it a key maritime surveillance asset, and the forward deployment to Cyprus for Eastern Med operations exemplifies this role. Amphibious operations scores 4 due to the presence of 847 NAS Commando Wildcat and Commando Helicopter Force elements, which directly support Royal Marines amphibious and littoral manoeuvre. HADR scores 3 as rotary-wing assets are frequently tasked for disaster relief and humanitarian operations, though this is not the station's primary mission. Fleet logistic support and basing scores 3 reflecting the station's role as a major shore establishment with maintenance, logistics, and training infrastructure supporting fleet aviation. Carrier strike scores 1 \u2014 while Wildcat can embark on carriers, the station does not host fixed-wing strike aircraft or directly generate carrier air wings. Air defence scores 1 as Wildcat has limited self-defence capability but is not an air defence platform. Submarine operations scores 0 as the station has no submarine-related role."
+    },
+    {
+      "name": "815 Naval Air Squadron",
+      "type": "unit",
+      "class": "Wildcat helicopters",
+      "location_description": "Assigned to support HMS Dragon; three Wildcat helicopters arrived in Cyprus",
+      "latitude": 34.59,
+      "longitude": 32.94,
+      "confidence_score": 0.82,
+      "confidence_rationale": "The description states three Wildcat helicopters arrived in Cyprus, which is a specific named location. The most likely destination for military aircraft arriving in Cyprus in support of Royal Navy operations is RAF Akrotiri, a British Sovereign Base Area on the southern coast of Cyprus (approximately 34.59\u00b0N, 32.94\u00b0E). This is the primary British military airfield on the island and the standard staging point for naval aviation assets in the Eastern Mediterranean.",
+      "source_urls": [
+        "https://www.bbc.com/news/articles/c0k1yyg475ko"
+      ],
+      "date_observed": "2026-03-21",
+      "last_updated": "2026-03-21T15:07:31.362869+00:00Z",
+      "unit_category": "air_station",
+      "operational_readiness": "high",
+      "readiness_rationale": "Three Wildcat HMA2 helicopters have been forward-deployed to Cyprus as of March 2026, indicating active operational commitment. The deployment to support HMS Dragon's Eastern Mediterranean mission protecting RAF Akrotiri is a confirmed, current tasking. Forward deployment of multiple airframes to a theatre of operations is strong evidence of high readiness. The squadron's core function is generating and sustaining embarked flights, and the ability to project three aircraft to an overseas location demonstrates operational capability. However, this significant commitment of assets may reduce the squadron's capacity to support other fleet units simultaneously.",
+      "current_assignment": "Forward deployment of three Wildcat HMA2 helicopters to Cyprus (likely RAF Akrotiri) to support HMS Dragon's Eastern Mediterranean mission protecting RAF Akrotiri. Operating in a surveillance, maritime patrol, and force multiplication role, potentially from a shore base rather than embarked.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 1,
+        "air_defence": 1,
+        "anti_submarine_warfare": 3,
+        "amphibious_operations": 1,
+        "maritime_patrol_and_surveillance": 5,
+        "escort_and_fleet_protection": 4,
+        "naval_aviation_operations": 5,
+        "humanitarian_assistance_and_disaster_relief": 2,
+        "submarine_operations": 0,
+        "fleet_logistic_support_and_basing": 1
+      },
+      "capability_rationale": "815 NAS is a frontline naval aviation squadron and naval_aviation_operations is its primary role (5). Maritime_patrol_and_surveillance scores 5 as the Wildcat HMA2's surface search radar, EO/IR sensors, and endurance make wide-area surveillance a core mission \u2014 reinforced by the current Cyprus deployment specifically for area surveillance and force multiplication. Escort_and_fleet_protection scores 4 as the squadron's principal function is providing embarked helicopter flights to frigates and destroyers, extending their sensor and weapons reach; the Wildcat carries Sea Venom and Martlet missiles for anti-surface warfare and can prosecute surface threats. Anti_submarine_warfare scores 3: the Wildcat HMA2 has a dipping sonar and sonobuoy capability but is considered 'light ASW' compared to the Merlin HM2, making it a useful but not primary ASW platform. Humanitarian_assistance_and_disaster_relief scores 2 as helicopters inherently provide utility lift and reconnaissance in HADR scenarios but Wildcat is a small, lightly-loaded platform. Carrier_strike and air_defence both score 1: Wildcat can contribute marginally to carrier group operations in a screening/surveillance role and has no meaningful air defence capability beyond self-defence. Amphibious_operations scores 1 as Wildcat can provide limited reconnaissance support but is not optimised for amphibious warfare. Submarine_operations scores 0 as this is entirely inapplicable. Fleet_logistic_support_and_basing scores 1 as the squadron has no logistic role beyond minor utility transport."
+    },
+    {
+      "name": "HMS Duncan",
+      "type": "ship",
+      "class": "Type 45 destroyer",
+      "location_description": "Rumoured to be sent to Cyprus; had just done training exercises",
+      "latitude": 34.6,
+      "longitude": 33.0,
+      "confidence_score": 0.5,
+      "confidence_rationale": "HMS Duncan is rumoured to be sent to Cyprus, suggesting a deployment to the Eastern Mediterranean near the British Sovereign Base Areas. Cyprus's main naval facility used by the Royal Navy is at Limassol/Akrotiri. Given the vessel had just completed training exercises (possibly in the Mediterranean or en route), the most likely position is in the waters near Cyprus. Using approximate coordinates off the southern coast of Cyprus near the Akrotiri Sovereign Base Area.",
+      "source_urls": [
+        "https://www.theguardian.com/world/2026/mar/10/mod-criticised-after-delay-in-sending-hms-dragon-to-cyprus"
+      ],
+      "date_observed": "2026-03-10",
+      "last_updated": "2026-03-21T15:07:51.127400+00:00Z",
+      "unit_category": "destroyer",
+      "operational_readiness": "high",
+      "readiness_rationale": "HMS Duncan has recently completed training exercises, which typically indicates a ship working up to or maintaining a high readiness state. The rumoured tasking to Cyprus suggests she is being considered for near-term operational deployment, which would require high readiness. However, there is some uncertainty: the 'rumoured' nature of the Cyprus deployment means formal tasking orders may not yet have been issued, and she could still be transitioning from training to formal operational readiness. On balance, the completion of training exercises and the apparent intent to deploy her imminently supports a 'high' assessment rather than 'medium', but this carries moderate confidence given the reliance on rumour rather than confirmed tasking.",
+      "current_assignment": "Recently completed training exercises; rumoured to be preparing for deployment to Cyprus. No confirmed operational tasking identified.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 3,
+        "air_defence": 5,
+        "anti_submarine_warfare": 2,
+        "amphibious_operations": 1,
+        "maritime_patrol_and_surveillance": 3,
+        "escort_and_fleet_protection": 5,
+        "naval_aviation_operations": 1,
+        "humanitarian_assistance_and_disaster_relief": 2,
+        "submarine_operations": 0,
+        "fleet_logistic_support_and_basing": 0
+      },
+      "capability_rationale": "The Type 45 Daring-class destroyer is purpose-built as an area air defence platform, making air_defence its primary role (score 5). The Sea Viper system (SAMPSON and S1850M radars paired with Aster 15 and Aster 30 missiles) provides world-class air defence capability against aircraft, cruise missiles, and ballistic threats. Escort_and_fleet_protection scores 5 as this is the Type 45's core operational function \u2014 protecting carrier strike groups and high-value units from air and missile threats. Duncan's 2019 Strait of Hormuz escort mission directly evidences this capability. Carrier_strike scores 3: while Type 45s are integral to carrier strike group composition as the primary air defence escort, the ship itself does not deliver strike; the score reflects her enabling role. Maritime_patrol_and_surveillance scores 3: the SAMPSON and S1850M radars provide exceptional air surveillance over vast areas, and the ship can conduct surface surveillance, but she is not optimised for dedicated patrol/surveillance tasking. Anti_submarine_warfare scores 2: Type 45s carry a Merlin-capable flight deck and hull-mounted sonar (MFS-7000), providing a limited ASW self-defence capability, but they lack towed array sonar and dedicated ASW weapons suites \u2014 this is not their primary role. Humanitarian_assistance_and_disaster_relief scores 2: as a large warship she can provide limited HADR (helicopter platform, medical facilities, freshwater generation), but she is not designed or optimised for this. Naval_aviation_operations scores 1: she has a flight deck and hangar for one Wildcat or Merlin helicopter, but this is an enabling capability, not a primary aviation platform. Amphibious_operations scores 1: minimal relevance beyond potential gunfire support or air defence cover for an amphibious force. Submarine_operations and fleet_logistic_support_and_basing score 0 as completely outside her role and capability."
+    },
+    {
+      "name": "HMS Diamond",
+      "type": "ship",
+      "class": "Type 45 destroyer",
+      "location_description": "River Thames, London",
+      "latitude": 51.5074,
+      "longitude": -0.0763,
+      "confidence_score": 0.85,
+      "confidence_rationale": "The River Thames in London is a well-defined location. HMS Diamond (D34), a Type 45 destroyer, when described as being on the River Thames in London, is most likely moored in the central London stretch of the Thames, potentially near Greenwich (home of the Old Royal Naval College and a common berth for visiting warships) or near the Pool of London/Tower Bridge area, which is a traditional location for Royal Navy vessels visiting London. Coordinates approximate the central navigable stretch of the Thames near Greenwich/Canary Wharf area.",
+      "source_urls": [
+        "https://www.theguardian.com/world/2026/mar/10/mod-criticised-after-delay-in-sending-hms-dragon-to-cyprus"
+      ],
+      "date_observed": "2026-03-10",
+      "last_updated": "2026-03-21T15:08:12.222173+00:00Z",
+      "unit_category": "destroyer",
+      "operational_readiness": "high",
+      "readiness_rationale": "HMS Diamond is identified as one of only three Type 45 destroyers currently available for service, and her presence in London on a port visit \u2014 rather than in refit, maintenance, or dry dock at a naval base \u2014 strongly suggests she is in an operational or deployable state. Her recent Red Sea deployment (Operation Prosperity Guardian, late 2023/2024) demonstrates she has completed a demanding operational cycle and has been sustained in service since. A London Thames visit is consistent with a ship between deployments but fully operational. There is no intelligence suggesting mechanical deficiency or extended maintenance. However, some uncertainty remains: the Type 45 class has historically suffered from propulsion reliability issues (the Power Improvement Project), and without confirmation that Diamond has received her PIP upgrade, there is a residual risk to sustained high-tempo readiness. On balance, assessed as high readiness given available evidence.",
+      "current_assignment": "High-profile port visit and public engagement duty on the River Thames, London. Likely tasked for diplomatic, ceremonial, or recruitment purposes.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 3,
+        "air_defence": 5,
+        "anti_submarine_warfare": 2,
+        "amphibious_operations": 1,
+        "maritime_patrol_and_surveillance": 3,
+        "escort_and_fleet_protection": 5,
+        "naval_aviation_operations": 2,
+        "humanitarian_assistance_and_disaster_relief": 2,
+        "submarine_operations": 0,
+        "fleet_logistic_support_and_basing": 0
+      },
+      "capability_rationale": "The Type 45 Daring-class is purpose-built as an area air defence destroyer, making air_defence its primary role (5). The Sea Viper system (Aster 15/30 missiles), SAMPSON multi-function radar, and S1850M long-range search radar represent one of the most capable naval air defence suites in the world \u2014 combat-proven by HMS Diamond herself in the Red Sea against Houthi drones and ballistic missiles. Escort and fleet protection scores equally high (5) as the Type 45's core doctrinal role is to provide air defence screening for carrier strike groups and high-value units. Carrier strike scores moderate (3) because while Diamond is not a strike platform herself, she is a critical enabler of carrier strike operations as the primary air defence escort for HMS Queen Elizabeth or Prince of Wales. Maritime patrol and surveillance scores moderate (3) due to her powerful radar suite (SAMPSON/S1850M provide exceptional air and surface surveillance), command facilities, and ability to operate a Wildcat or Merlin helicopter for extended maritime awareness. Anti-submarine warfare scores limited (2); while she can embark a Merlin HM2 ASW helicopter and carries a hull-mounted sonar, the Type 45 is not optimised for ASW \u2014 that role falls to Type 23/Type 26 frigates. Naval aviation operations scores limited (2) as she has a flight deck and hangar for one medium helicopter (Wildcat HMA2 or Merlin) but is not an aviation-focused platform. Humanitarian assistance scores limited (2); she has medical facilities, helicopter capability, and crew capacity that could support HADR tasks, but she is not designed or optimised for this. Amphibious operations scores minimal (1) as she could provide air defence cover to an amphibious task group but has no organic amphibious capability. Submarine operations and fleet logistic support score 0 as these are entirely outside her design and role."
+    },
+    {
+      "name": "RFA Lyme Bay",
+      "type": "auxiliary",
+      "class": "Bay-class landing ship dock auxiliary",
+      "location_description": "Gibraltar, on heightened readiness to deploy to the eastern Mediterranean",
+      "latitude": 36.1408,
+      "longitude": -5.3536,
+      "confidence_score": 0.97,
+      "confidence_rationale": "Gibraltar \u2014 Royal Navy facility",
+      "source_urls": [
+        "https://www.bbc.com/news/articles/c0k1yyg475ko"
+      ],
+      "date_observed": "2026-03-21",
+      "last_updated": "2026-03-21T15:08:30.447974+00:00Z",
+      "unit_category": "auxiliary",
+      "operational_readiness": "high",
+      "readiness_rationale": "The intelligence context explicitly states RFA Lyme Bay is at Gibraltar on 'heightened readiness to deploy to the eastern Mediterranean.' This language indicates she is crewed, stored, and materially ready for tasking at short notice. Gibraltar is a well-equipped forward staging point with full logistics support, reinforcing that she is in a high readiness posture. There is no indication of maintenance periods, defects, or reduced manning. The deliberate positioning at Gibraltar as a contingency asset strongly implies high operational readiness.",
+      "current_assignment": "Forward-staged at Gibraltar on heightened readiness, held as a contingency asset for potential deployment to the eastern Mediterranean in support of ongoing Eastern Med crisis operations, potentially to complement HMS Dragon or provide amphibious/logistic capability.",
+      "assignment_source": null,
+      "capability_scores": {
+        "carrier_strike": 0,
+        "air_defence": 0,
+        "anti_submarine_warfare": 0,
+        "amphibious_operations": 4,
+        "maritime_patrol_and_surveillance": 1,
+        "escort_and_fleet_protection": 0,
+        "naval_aviation_operations": 3,
+        "humanitarian_assistance_and_disaster_relief": 5,
+        "submarine_operations": 0,
+        "fleet_logistic_support_and_basing": 4
+      },
+      "capability_rationale": "The Bay-class LSD(A) is purpose-built as an amphibious support and logistics platform rather than a warfighting combatant. AMPHIBIOUS_OPERATIONS scores 4: the well dock can launch landing craft (LCVP/LCU), she can carry 356 troops and vehicles, and has a large vehicle deck \u2014 she is a strong amphibious asset, though she lacks the full command and assault capabilities of an Albion-class LPD, hence 4 rather than 5. HUMANITARIAN_ASSISTANCE_AND_DISASTER_RELIEF scores 5: this is arguably the Bay-class's most proven primary role; RFA Lyme Bay and her sisters have been repeatedly deployed for Caribbean hurricane relief (HADR), and her large vehicle deck, well dock, troop capacity, and helicopter platform make her optimised for this mission set. FLEET_LOGISTIC_SUPPORT_AND_BASING scores 4: she provides significant logistic resupply capability, vehicle and stores transport, and can act as a sea-basing platform for sustained operations, though she is not a dedicated replenishment vessel (like a Tide-class tanker or Fort-class stores ship). NAVAL_AVIATION_OPERATIONS scores 3: her flight deck is Merlin and Chinook capable and she can support helicopter operations, but she has no hangar facilities for sustained independent aviation maintenance, limiting her to moderate capability. MARITIME_PATROL_AND_SURVEILLANCE scores 1: she has basic radar and communications and could contribute to a maritime picture in a permissive environment, but she has no dedicated sensors or surveillance systems. CARRIER_STRIKE, AIR_DEFENCE, ANTI_SUBMARINE_WARFARE, ESCORT_AND_FLEET_PROTECTION, and SUBMARINE_OPERATIONS all score 0: the Bay-class carries no significant weapons systems (only light self-defence guns), no ASW sensors or weapons, no area air defence systems, and has no relevance to submarine or carrier strike operations."
+    },
+    {
+      "name": "HMS Anson",
+      "type": "submarine",
+      "class": "Astute-class",
+      "location_description": "Departed from Australia, likely deployed to the Arabian Sea",
+      "latitude": 15.0,
+      "longitude": 65.0,
+      "confidence_score": 0.4,
+      "confidence_rationale": "HMS Anson is an Astute-class submarine. The description states she departed from Australia and is likely deployed to the Arabian Sea. The Arabian Sea lies between the Indian subcontinent, the Arabian Peninsula, and the Horn of Africa. Using the approximate centre of the Arabian Sea (15\u00b0N, 65\u00b0E) as the best estimate for a vessel transiting from Australia westward into this general operational area. Confidence is low due to the speculative nature of the deployment location.",
+      "source_urls": [
+        "https://www.navylookout.com/if-called-upon-what-assets-could-the-royal-navy-send-to-the-gulf/"
+      ],
+      "date_observed": "2026-03-21",
+      "last_updated": "2026-03-21T15:08:52.308969+00:00Z",
+      "unit_category": "submarine_fleet",
+      "operational_readiness": "high",
+      "readiness_rationale": "HMS Anson (S123) was commissioned in 2023 and is the fifth Astute-class SSN. As a recently commissioned boat, she is expected to be in a high state of operational readiness. The intelligence indicates she has departed Australia and is likely deployed to the Arabian Sea, suggesting she is on an active operational patrol. Departure from Australia is consistent with participation in AUKUS-related engagement or transit through the Indo-Pacific, followed by tasking to the Middle East \u2014 a common Royal Navy SSN deployment pattern. No reports of maintenance issues or work-up status are available, so high readiness is assessed with moderate confidence based on her recent commissioning and apparent active deployment.",
+      "current_assignment": "Likely deployed on operational patrol in or transiting to the Arabian Sea, possibly following a port call or exercise period in Australia. This is consistent with a standard East-of-Suez SSN deployment, potentially supporting coalition maritime security operations in the Indian Ocean / Middle East region.",
+      "assignment_source": null,
+      "capability_scores": {
+        "anti_submarine_warfare": 5,
+        "anti_surface_warfare": 4,
+        "land_attack": 4,
+        "intelligence_surveillance_reconnaissance": 5,
+        "mine_warfare": 0,
+        "air_defence": 0,
+        "carrier_strike": 3,
+        "amphibious_operations": 1,
+        "maritime_security_patrol": 3,
+        "special_forces_support": 4,
+        "escort_duty": 3,
+        "humanitarian_disaster_relief": 0,
+        "electronic_warfare": 4,
+        "naval_gunfire_support": 0,
+        "strategic_deterrence": 0
+      },
+      "capability_rationale": "Astute-class SSNs are the Royal Navy's most capable fleet submarines. ASW is a primary role (score 5): the class carries Spearfish heavyweight torpedoes and is equipped with the Thales Sonar 2076 suite \u2014 one of the most advanced submarine sonar systems in the world, optimised for detecting and tracking hostile submarines. ISR scores 5 as covert intelligence gathering, signals intelligence, and persistent surveillance are core SSN missions, particularly in contested regions like the Arabian Sea. Land attack scores 4: Astute-class boats are equipped to fire Tomahawk Land Attack Cruise Missiles (TLAM), providing a significant conventional strike capability against shore targets. Anti-surface warfare scores 4: Spearfish torpedoes and the ability to employ TLAM against surface targets (in certain configurations) give strong ASuW capability, though this is secondary to ASW. Special forces support scores 4: the class has a dedicated capability to deploy and recover Special Boat Service (SBS) personnel via a dry deck shelter or lock-out trunk. Electronic warfare scores 4: passive and active EW/ESM capabilities are integral to the sensor suite. Carrier strike scores 3: an Astute-class SSN commonly operates as a forward screen or escort for a carrier strike group, sanitising the area of submarine and surface threats. Escort duty scores 3: can provide covert escort to high-value units. Maritime security patrol scores 3: capable of contributing to maritime domain awareness, though overt patrol is not an SSN's primary role. Amphibious operations scores 1: minimal direct contribution beyond SF insertion. Air defence, mine warfare, naval gunfire support, humanitarian/disaster relief, and strategic deterrence all score 0: the Astute class carries no air defence systems, no mine countermeasures capability, no naval guns, is not designed for humanitarian tasks, and is an SSN \u2014 not an SSBN \u2014 so has no strategic nuclear deterrent role."
+    }
+  ]
+}

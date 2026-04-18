@@ -1,0 +1,308 @@
+{
+  "metadata": {
+    "generated_at": "2026-04-18T09:49:58.450240+00:00Z",
+    "source_file": "raf_assets_20260418_094550.json",
+    "service": "royal_air_force",
+    "agent_model": "claude-sonnet-4-6",
+    "total_assets_analysed": 8,
+    "total_iterations": 5,
+    "total_tokens_used": 50199,
+    "operation_types": [
+      {
+        "id": "air_policing",
+        "name": "Air Policing / QRA",
+        "description": "Quick Reaction Alert scrambles to identify and intercept unknown or hostile aircraft in UK and NATO airspace, primarily conducted by Typhoon FGR4 units"
+      },
+      {
+        "id": "air_superiority",
+        "name": "Air Superiority",
+        "description": "Offensive and defensive counter-air operations to establish and maintain control of the battlespace, led by Typhoon FGR4 squadrons with AEW support from Wedgetail"
+      },
+      {
+        "id": "maritime_patrol",
+        "name": "Maritime Patrol & Anti-Submarine Warfare",
+        "description": "Long-range maritime surveillance, anti-submarine warfare, and surface vessel tracking operations conducted by Boeing P-8A Poseidon aircraft"
+      },
+      {
+        "id": "aew_battlespace_management",
+        "name": "Airborne Early Warning & Battlespace Management",
+        "description": "Provision of long-range radar surveillance and command and control of air assets using the Wedgetail AEW1 to build and maintain an air recognised picture"
+      },
+      {
+        "id": "air_to_air_refuelling",
+        "name": "Air-to-Air Refuelling",
+        "description": "In-flight refuelling of fixed-wing aircraft to extend range and endurance on operations, delivered by Voyager tanker aircraft from RAF Brize Norton"
+      },
+      {
+        "id": "strategic_lift",
+        "name": "Strategic Air Transport & Lift",
+        "description": "Long-range movement of personnel, equipment, and materiel in support of deployed operations and humanitarian tasking, conducted by Voyager from RAF Brize Norton"
+      },
+      {
+        "id": "isr",
+        "name": "Intelligence, Surveillance & Reconnaissance",
+        "description": "Persistent collection and exploitation of intelligence from air and ground platforms, including maritime ISR by P-8A Poseidon and wider sensor assets at RAF Waddington"
+      },
+      {
+        "id": "counter_drone",
+        "name": "Counter-Drone / C-UAS Operations",
+        "description": "Detection, tracking, and neutralisation of hostile unmanned aerial systems using ground-based capabilities, primarily delivered by No 34 Squadron RAF Regiment Counter-drone Rapid Sentry"
+      },
+      {
+        "id": "ground_based_air_defence",
+        "name": "Ground-Based Air Defence",
+        "description": "Protection of airfields, key installations, and deployed operating bases against air and missile threats, conducted by RAF Regiment units including No 34 Squadron"
+      },
+      {
+        "id": "expeditionary_air_operations",
+        "name": "Expeditionary & Deployed Air Operations",
+        "description": "Projection of air power from deployed locations overseas, integrating Typhoon FGR4, P-8A, Wedgetail, and Voyager in support of NATO or coalition taskings away from home bases"
+      }
+    ]
+  },
+  "assets": [
+    {
+      "name": "RAF Lossiemouth",
+      "service": "royal_air_force",
+      "type": "station",
+      "class": "Typhoon FGR4",
+      "location_description": "Lossiemouth, Scotland",
+      "latitude": 57.7053,
+      "longitude": -3.3389,
+      "confidence_score": 0.97,
+      "confidence_rationale": "RAF Lossiemouth, Moray",
+      "source_urls": [
+        "https://airlive.net/military/2026/04/14/raf-typhoons-and-voyager-refuelling-jet-were-were-scrambled-towards-shetland/",
+        "https://en.wikipedia.org/wiki/Royal_Air_Force"
+      ],
+      "date_observed": "2026-04-18",
+      "last_updated": "2026-04-18T09:48:15.325063+00:00Z",
+      "unit_category": "Multi-Role Air Defence Station (Fighter/Bomber, Maritime Patrol, AEW)",
+      "operational_readiness": "high",
+      "readiness_rationale": "RAF Lossiemouth is at sustained high readiness as evidenced by a confirmed QRA scramble on 14 April 2026 \u2014 just four days before this assessment \u2014 intercepting a Russian long-range bomber approaching the northern FIR near Shetland. The station maintains a 24/7/365 QRA(I) North posture with Typhoon FGR4 crews and aircraft at constant alert. Four frontline Typhoon squadrons (1, 2, 6, and IX(B)) are assigned, with 3 Squadron's Romania deployment (Op Biloxi 2026) noted but correctly attributed to RAF Coningsby, not Lossiemouth, so it does not degrade the station's organic QRA capability. The \u00a375 million runway upgrade sustains infrastructure readiness. The Wedgetail AEW1 transition via 8 Squadron is progressing with the E-7 Operational Flight Trainer now conducting first aircrew training, indicating growing but not yet fully operationalised AEW capability. P-8A Poseidon MRA1 squadrons provide mature maritime patrol readiness. No indicators of degraded readiness identified.",
+      "current_assignment": "QRA(I) North \u2014 continuous Quick Reaction Alert (North) air defence commitment; Op Biloxi 2026 (supporting via wider Typhoon force posture); Wedgetail AEW1 transition (8 Squadron standup); P-8A Poseidon MRA1 maritime patrol operations",
+      "assignment_source": null,
+      "capability_scores": {
+        "air_policing": 5,
+        "air_superiority": 4,
+        "maritime_patrol": 5,
+        "aew_battlespace_management": 3,
+        "isr": 4,
+        "expeditionary_air_operations": 3
+      },
+      "capability_rationale": "Air policing scores 5 as the primary role of the station \u2014 QRA(I) North is its core mission, confirmed live by the 14 April 2026 scramble; Typhoon FGR4 is optimised for this task. Air superiority scores 4 rather than 5 because while the Typhoon FGR4 is a capable BVR and WVR air superiority platform with MBDA Meteor and ASRAAM, the station's tasking emphasis is defensive QRA/air policing rather than offensive counter-air; full offensive air superiority projection would require additional enablers. Maritime patrol scores 5 reflecting three dedicated P-8A Poseidon MRA1 squadrons conducting the UK's primary fixed-wing MPA mission in the North Atlantic and Norwegian Sea. AEW and battlespace management scores 3 because 8 Squadron's Wedgetail AEW1 transition is actively underway with the OFT training first aircrew as of March/April 2026, but the capability is not yet declared fully operational \u2014 it is emerging and transitioning rather than mature. ISR scores 4 because the P-8A Poseidon has a strong multi-domain ISR capability (SIGINT, acoustic, surface search, ISAR), and Typhoon carries Litening III targeting pod for tactical ISR; however, no dedicated strategic ISR platform is assigned. Expeditionary air operations scores 3 reflecting the station's ability to surge Typhoon squadrons forward (as demonstrated by Op Biloxi 2026 with Typhoon deployment to Romania, albeit from Coningsby), the P-8A's deployable nature, and Lossiemouth's role as a major Main Operating Base \u2014 but the station itself is a home base rather than a deployed expeditionary hub, moderating the score.",
+      "aircraft_type": "Typhoon FGR4 (primary); P-8A Poseidon MRA1 (maritime patrol); E-7A Wedgetail AEW1 (transitioning in)",
+      "parent_wing": "No single parent wing \u2014 Lossiemouth is a Main Operating Base hosting multiple squadrons across different wings/commands",
+      "squadron_number": "1 Sqn, 2 Sqn, 6 Sqn, IX(B) Sqn (Typhoon FGR4); 120 Sqn, 201 Sqn, 203 Sqn (P-8A Poseidon MRA1); 8 Sqn (Wedgetail AEW1, transitioning)"
+    },
+    {
+      "name": "RAF Brize Norton",
+      "service": "royal_air_force",
+      "type": "station",
+      "class": "Voyager",
+      "location_description": "Brize Norton, Oxfordshire",
+      "latitude": 51.7594,
+      "longitude": -1.5834,
+      "confidence_score": 0.97,
+      "confidence_rationale": "RAF Brize Norton, Oxfordshire",
+      "source_urls": [
+        "https://airlive.net/military/2026/04/14/raf-typhoons-and-voyager-refuelling-jet-were-were-scrambled-towards-shetland/"
+      ],
+      "date_observed": "2026-04-14",
+      "last_updated": "2026-04-18T09:48:33.350830+00:00Z",
+      "unit_category": "Strategic Lift / Tanker",
+      "operational_readiness": "high",
+      "readiness_rationale": "Multiple converging indicators confirm RAF Brize Norton is at high operational readiness. On 14 April 2026 \u2014 just four days prior to the assessment date \u2014 a Voyager tanker was scrambled in direct support of a live QRA intercept near Shetland, demonstrating the station's ability to generate aircraft at short notice for time-critical tasking. The station is described as notionally open 24/7 for emergency airlift taskings, indicating a sustained alert posture. Participation as a support node in Cobra Warrior 26-1 (March 2026) further evidences recent exercise activity and readiness generation. The breadth of the fleet \u2014 Voyager, C-17, A400M \u2014 and the underpinning AirTanker PFI contract providing contracted availability for 14 Voyagers reinforces a structural high-readiness baseline. No degradation indicators, maintenance groundings, or operational pauses are noted in the gathered intelligence.",
+      "current_assignment": "Supporting live QRA operations (Voyager tanker scrambled 14 April 2026 in support of Typhoon FGR4 QRA intercept near Shetland); ongoing strategic air transport and air-to-air refuelling taskings; recently supported Cobra Warrior 26-1 (16\u201327 March 2026) as exercise support node.",
+      "assignment_source": null,
+      "capability_scores": {
+        "air_to_air_refuelling": 5,
+        "strategic_lift": 5,
+        "expeditionary_air_operations": 4,
+        "air_policing": 3
+      },
+      "capability_rationale": "Air-to-air refuelling scores 5 as the Voyager KC2 is the RAF's dedicated strategic AAR platform and the station's 14-aircraft fleet under the FSTA/AirTanker contract represents the UK's entire Voyager tanker capability, confirmed active by the 14 April 2026 QRA scramble. Strategic lift also scores 5; Brize Norton is the RAF's primary strategic air transport hub, co-locating C-17 Globemaster III and A400M Atlas alongside the Voyager CC2 transport variant, providing the full spectrum of heavy and medium strategic airlift. Expeditionary air operations scores 4 \u2014 the station routinely projects force globally, supports a wide range of overseas operations, and enables rapid deployment of personnel and materiel; it is not itself a forward-operating base, which caps the score below the maximum. Air policing scores 3; while Brize Norton does not conduct QRA intercepts directly (that role belongs to Typhoon units at Lossiemouth and Coningsby), the confirmed live scramble of a Voyager in direct support of a QRA event on 14 April 2026 demonstrates a meaningful and active enabling contribution to UK air policing, justifying a moderate score rather than a minimal or not-applicable rating.",
+      "aircraft_type": "Airbus A330 MRTT (Voyager KC2/CC2)",
+      "parent_wing": "No RAF Wing designation identified in gathered intelligence; aircraft operated under AirTanker Services FSTA PFI contract with RAF oversight"
+    },
+    {
+      "name": "3 (Fighter) Squadron",
+      "service": "royal_air_force",
+      "type": "squadron",
+      "class": "Typhoon",
+      "location_description": "Deploying to Romania for NATO Air Policing mission (Operation Biloxi 2026), Eastern Sentry vigilance activity on NATO's eastern flank",
+      "latitude": 44.5225,
+      "longitude": 26.104,
+      "confidence_score": 0.62,
+      "confidence_rationale": "Asset is 3 (Fighter) Squadron deploying to Romania for a NATO Air Policing mission. Romania hosts NATO enhanced Air Policing at Mihail Kog\u0103lniceanu Air Base (near Constan\u021ba) and C\u00e2mpia Turzii (Cluj area). Mihail Kog\u0103lniceanu (LRCK, ~44.36\u00b0N, 28.49\u00b0E) is the primary NATO air policing hub on Romania's Black Sea flank, but C\u00e2mpia Turzii (LRTC, ~46.79\u00b0N, 23.89\u00b0E) has also hosted UK fast jet deployments. 'Operation Biloxi 2026' and 'Eastern Sentry' are not confirmed open-source designations, suggesting a fictional/exercise scenario. Coordinates provided are centred on Romania generally (Bucharest area) as a country-level estimate given ambiguity between the two candidate bases. Confidence is moderate \u2014 Romania is confirmed but the specific airfield is uncertain.",
+      "source_urls": [
+        "https://www.raf.mod.uk/news/articles/raf-typhoons-deploy-to-romania-to-lead-nato-air-policing-mission-under-operation-biloxi-26/"
+      ],
+      "date_observed": "2026-03-18",
+      "last_updated": "2026-04-18T09:48:47.309641+00:00Z",
+      "unit_category": "Air Superiority / Multi-Role Fighter",
+      "operational_readiness": "high",
+      "readiness_rationale": "3 (Fighter) Squadron is actively deployed on Operation Biloxi 2026, conducting live QRA duties at Borcea Air Base, Romania, under NATO's enhanced Air Policing mission. This confirms the unit is combat-ready and operationally tasked as of the assessment date (2026-04-18). The squadron completed Exercise Cobra Warrior 26-1 (16\u201327 March 2026) immediately prior to deployment, indicating recent multi-role training currency. Operating under 121 Expeditionary Air Wing confirms an established command and support structure is in place. No degradation indicators are present in the available intelligence; readiness is assessed as high based on confirmed live operational activity rather than inference.",
+      "current_assignment": "Operation Biloxi 2026 \u2014 NATO enhanced Air Policing, Borcea Air Base, Romania (under 121 Expeditionary Air Wing). Home base: RAF Coningsby, Lincolnshire.",
+      "assignment_source": null,
+      "capability_scores": {
+        "air_policing": 5,
+        "air_superiority": 4,
+        "expeditionary_air_operations": 4
+      },
+      "capability_rationale": "Air Policing (5): This is the squadron's primary tasking on Op Biloxi 2026. QRA duties on NATO's eastern flank represent the optimised application of the Typhoon FGR4's air policing capability \u2014 rapid intercept, identification and deterrence. This is the fourth such RAF commitment since 2017, indicating deep institutional experience in this role. Air Superiority (4): The Typhoon FGR4 is a highly capable air superiority platform, equipped with AMRAAM and ASRAAM and supported by advanced sensors. While the current tasking is air policing rather than a contested air superiority environment, the underlying platform and crew training are optimised for air-to-air combat; scored 4 rather than 5 as the current operational context does not place the unit in a live air superiority fight. Expeditionary Air Operations (4): The unit has successfully deployed from RAF Coningsby to Romania under an expeditionary wing structure (121 EAW), demonstrating proven power projection and sustainment capability. The four-month deployment timeline and integration with Romanian Air Force counterparts further evidence strong expeditionary competency. Scored 4 rather than 5 as the deployment is within the NATO framework with established basing infrastructure rather than a bare-base or high-threat expeditionary scenario.",
+      "aircraft_type": "Eurofighter Typhoon FGR4",
+      "parent_wing": "121 Expeditionary Air Wing (deployed); home wing not explicitly stated in source intelligence",
+      "squadron_number": "3"
+    },
+    {
+      "name": "No 34 Squadron",
+      "service": "royal_air_force",
+      "type": "squadron",
+      "class": "RAF Regiment / Counter-drone (Rapid Sentry)",
+      "location_description": "Deployed to Kuwait",
+      "latitude": 29.3375,
+      "longitude": 47.9774,
+      "confidence_score": 0.75,
+      "confidence_rationale": "No 34 Squadron RAF deployed to Kuwait. The primary UK/coalition air base in Kuwait is Ali Al Salem Air Base (approximately 29.34\u00b0N, 47.72\u00b0E) or Ahmed Al Jaber Air Base. Using approximate central Kuwait coordinates near Ali Al Salem Air Base, which has historically been the main operating base for UK military aircraft deployments to Kuwait. Confidence is moderate as the specific base within Kuwait is not confirmed but Kuwait coordinates are well-established.",
+      "source_urls": [
+        "https://www.raf.mod.uk/news/articles/raf-regiment-deploys-rapid-sentry-to-kuwait/"
+      ],
+      "date_observed": "2026-04-18",
+      "last_updated": "2026-04-18T09:49:00.999314+00:00Z",
+      "unit_category": "Ground-Based Air Defence",
+      "operational_readiness": "high",
+      "readiness_rationale": "No 34 Squadron RAF Regiment is confirmed as actively deployed and operational in Kuwait as of April 2026, with the Rapid Sentry C-UAS system operational since late February 2026. The deployment was confirmed by both the UK MoD and RAF, triggered by a specific threat event (drone attack on a Kuwaiti oil refinery), indicating the unit was brought to readiness and deployed at pace. Personnel are also supporting operations at RAF Akrotiri (Cyprus) and in Iraq, demonstrating a broad, concurrent, multi-theatre posture. The three-layer Rapid Sentry system \u2014 combining early-warning sensors, electronic warfare, and hard-kill interceptors \u2014 is described as proven and operational, with no reporting of system failures or readiness degradation. The dispersed deployment posture across multiple theatres does imply logistical strain, but the confirmed operational status in the primary theatre (Kuwait) sustains a 'high' readiness assessment.",
+      "current_assignment": "Deployed to Kuwait in response to drone threats to Kuwaiti oil infrastructure; supporting defensive operations at RAF Akrotiri (Cyprus) and unspecified locations in Iraq. Home base: RAF Honington, Suffolk. Logistics support node: RAF Brize Norton.",
+      "assignment_source": null,
+      "capability_scores": {
+        "counter_drone": 5,
+        "ground_based_air_defence": 5,
+        "expeditionary_air_operations": 3
+      },
+      "capability_rationale": "Counter-drone (5): This is the squadron's primary role. Rapid Sentry is a purpose-built, three-layer C-UAS system with a 5-mile detection and engagement range, integrating early-warning sensors, electronic warfare (soft-kill) and hard-kill interceptors. The unit is actively employed against Iranian UAV threats in the Gulf \u2014 this is its optimised and demonstrated mission. Ground-based air defence (5): Rapid Sentry functions as a ground-based air defence system in all but name; the hard-kill interceptor layer and layered sensor/EW architecture place this squarely within GBAD doctrine. The deployment forms part of a wider layered defensive architecture in-theatre, indicating integration with broader GBAD structures. Expeditionary_air_operations (3): The unit is deployed expeditionary across three theatres simultaneously (Kuwait, Cyprus, Iraq), demonstrating a genuine power-projection and force-generation capacity consistent with expeditionary air operations doctrine. However, the squadron is not an air platform operator \u2014 its expeditionary contribution is enabling and force-protection in nature, making a score above 3 inappropriate.",
+      "parent_wing": "RAF Regiment",
+      "squadron_number": "34"
+    },
+    {
+      "name": "42 (Torpedo Bomber) Squadron",
+      "service": "royal_air_force",
+      "type": "squadron",
+      "class": "Boeing P-8A Poseidon",
+      "location_description": "Iceland (deployed for maritime patrol training)",
+      "latitude": 63.985,
+      "longitude": -22.6056,
+      "confidence_score": 0.62,
+      "confidence_rationale": "42 Squadron RAF (Torpedo Bomber/Maritime Patrol) deployed to Iceland for maritime patrol training. Iceland has been a key NATO maritime patrol hub; the primary aviation base is Keflav\u00edk (Reykjavik-Keflav\u00edk International Airport / former NATO base), coordinates approximately 63.985\u00b0N, 22.606\u00b0W. No specific Icelandic base named, so using Keflav\u00edk as the most historically significant and likely deployment location for RAF maritime patrol operations in Iceland.",
+      "source_urls": [
+        "https://www.raf.mod.uk/news/articles/raf-poseidon-aircraft-return-to-iceland-for-vital-maritime-patrol-training/"
+      ],
+      "date_observed": "2026-03-24",
+      "last_updated": "2026-04-18T09:49:16.175725+00:00Z",
+      "unit_category": "Maritime Patrol / Operational Conversion Unit",
+      "operational_readiness": "medium",
+      "readiness_rationale": "42 Squadron is functioning as the Poseidon and Wedgetail OCU/OTU, meaning its primary role is the generation and training of crews rather than frontline operational tasking. The current Iceland deployment to Keflavik is described explicitly as training-focused, exposing student and instructor crews to an unfamiliar but operationally relevant environment. While the unit is actively flying P-8A Poseidon MRA1 aircraft in a high-value maritime patrol environment \u2014 indicating real aircraft availability and a degree of operational competence \u2014 it is not assessed as a frontline combat-ready squadron in the conventional sense. Readiness is rated medium: the aircraft and experienced instructor cadre are capable, but the unit's output is readiness generation for 120 and 201 Squadrons rather than direct operational commitments. The deployment does demonstrate expeditionary capability and organisational coherence.",
+      "current_assignment": "Deployed to Keflavik Air Base, Iceland for maritime patrol operational training exercise (April 2026); home station RAF Lossiemouth, Scotland",
+      "assignment_source": null,
+      "capability_scores": {
+        "maritime_patrol": 4,
+        "isr": 3,
+        "expeditionary_air_operations": 3
+      },
+      "capability_rationale": "Maritime patrol scores 4: the P-8A Poseidon MRA1 is a highly capable, purpose-built maritime patrol and anti-submarine warfare aircraft, and the Iceland deployment places the unit in the operationally significant GIUK gap \u2014 the primary chokepoint for Russian submarine and surface vessel activity in the North Atlantic. Even in a training context, the platform retains its full sensor and weapons fit, and the operational environment is directly analogous to a wartime tasking. The score is 4 rather than 5 because 42 Squadron's mandate is training generation, not frontline operational patrol; 120 and 201 Squadrons hold that primary role. ISR scores 3: the P-8A carries advanced sensors including radar, electro-optical/infrared, and signals intelligence capabilities suited to wide-area maritime surveillance and surface vessel tracking. However, the OCU role means crews are in earlier stages of qualification, and the unit is not optimised for or tasked with dedicated ISR collection in the way a frontline ISR asset would be. Expeditionary air operations scores 3: the successful deployment of two P-8A aircraft to Keflavik on a multi-week training deployment demonstrates meaningful expeditionary logistics, planning, and sustainment capability. The unit has shown it can operate away from its home base in a NATO partner nation environment. Score is moderated from higher because the deployment is training-led with a limited force package and without a persistent combat operational mandate.",
+      "aircraft_type": "Boeing P-8A Poseidon MRA1",
+      "parent_wing": "No. 1 Group RAF (inferred; RAF Lossiemouth maritime patrol force)",
+      "squadron_number": "42"
+    },
+    {
+      "name": "8 Squadron",
+      "service": "royal_air_force",
+      "type": "squadron",
+      "class": "Wedgetail AEW1",
+      "location_description": "RAF Lossiemouth",
+      "latitude": 57.7053,
+      "longitude": -3.3389,
+      "confidence_score": 0.99,
+      "confidence_rationale": "RAF Lossiemouth, Moray",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Royal_Air_Force"
+      ],
+      "date_observed": "2026-04-18",
+      "last_updated": "2026-04-18T09:49:30.487582+00:00Z",
+      "unit_category": "Airborne Early Warning & Control (AEW&C)",
+      "operational_readiness": "low",
+      "readiness_rationale": "As of 18 April 2026, 8 Squadron has not achieved frontline operational capability with the E-7 Wedgetail AEW1. Aircraft deliveries have suffered repeated delays (originally 2024, then 2025, now 2026), and the three-aircraft fleet remains undergoing modification at STS Aviation Services in Birmingham. No aircraft have yet been formally delivered to the RAF for operational use. Aircrew are currently conducting simulator and Operational Flight Trainer (OFT) training on Indra's E-7 Wedgetail OFT at the newly designated Aden Wing, RAF Lossiemouth. The unit is assessed as being firmly in a pre-operational/work-up phase with no declared Initial Operating Capability. Operational readiness is therefore assessed as LOW.",
+      "current_assignment": "Pre-operational work-up and OFT simulator training, Aden Wing, RAF Lossiemouth. No operational assignment identified.",
+      "assignment_source": null,
+      "capability_scores": {
+        "aew_battlespace_management": 3,
+        "air_superiority": 1,
+        "isr": 3,
+        "expeditionary_air_operations": 1,
+        "air_policing": 2
+      },
+      "capability_rationale": "Scores reflect the E-7 Wedgetail AEW1's inherent platform potential moderated significantly by current pre-operational status. AEW & battlespace management (3): This is the squadron's primary designed role \u2014 the Boeing E-7 with its MESA sensor providing 360-degree coverage is optimised for AEW&C and battlespace management; however, the score is capped at 3 rather than 5 because the aircraft are not yet delivered and IOC has not been declared, meaning this capability cannot currently be exercised operationally. ISR (3): The MESA radar and associated mission systems (up to 10 mission crew) confer a strong inherent ISR capability once operational; again scored at 3 pending delivery and IOC. Air policing (2): The platform can contribute to air policing through radar picture compilation and coordination, but cannot directly intercept; scored low-moderate reflecting potential contribution once operational but no current capability. Air superiority (1): The E-7 has no organic air-to-air weapons; its contribution to air superiority is indirect via C2 and battlespace awareness. Scored minimal. Expeditionary air operations (1): The E-7 is expeditionary-capable in principle, but with only three aircraft, no declared IOC, and the unit in work-up, no expeditionary tasking is feasible at present. Scored minimal.",
+      "aircraft_type": "Boeing E-7 Wedgetail AEW1",
+      "parent_wing": "Aden Wing, RAF Lossiemouth",
+      "squadron_number": "8"
+    },
+    {
+      "name": "RAF Coningsby",
+      "service": "royal_air_force",
+      "type": "station",
+      "class": null,
+      "location_description": "Exercise COBRA WARRIOR 26-1, 16-27 March 2026",
+      "latitude": 53.0933,
+      "longitude": -0.1667,
+      "confidence_score": 0.9,
+      "confidence_rationale": "Exercise COBRA WARRIOR is a recurring multi-national air defence exercise hosted by RAF Coningsby in Lincolnshire, England. The asset is explicitly named as RAF Coningsby, and COBRA WARRIOR exercises are conducted from and around RAF Coningsby. Coordinates resolve directly to RAF Coningsby (53.0933\u00b0N, 0.1667\u00b0W). High confidence as this is a named, well-documented RAF station with known coordinates and the exercise is base-hosted rather than a remote deployment.",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Royal_Air_Force"
+      ],
+      "date_observed": "2026-03-27",
+      "last_updated": "2026-04-18T09:49:43.396742+00:00Z",
+      "unit_category": "Multi-Role Fighter / Air Superiority / QRA Station",
+      "operational_readiness": "medium",
+      "readiness_rationale": "RAF Coningsby is post-Exercise Cobra Warrior 26-1 (concluded 27 March 2026) and is returning to routine QRA and training operations. However, 3 (Fighter) Squadron has deployed to Romania on Op Biloxi 2026, reducing the station's frontline strength to a single resident combat-ready squadron (XI (Fighter) Squadron). QRA South obligations are being maintained by XI Sqn, and the Typhoon OCU continues its training pipeline. The station is not at degraded readiness \u2014 QRA South is actively held \u2014 but the absence of 3 Sqn on expeditionary deployment means the station is operating below its full two-squadron frontline capacity. Overall readiness is assessed as medium: QRA commitments are met, but surge and redundancy capacity is temporarily reduced.",
+      "current_assignment": "QRA South (standing task, XI (Fighter) Squadron); Op Biloxi 2026 (3 (Fighter) Squadron deployed to Romania); Typhoon OCU training pipeline (ongoing); post-Cobra Warrior 26-1 recuperation",
+      "assignment_source": null,
+      "capability_scores": {
+        "air_policing": 5,
+        "air_superiority": 4,
+        "expeditionary_air_operations": 3
+      },
+      "capability_rationale": "Air policing scores 5 as RAF Coningsby is one of only two RAF QRA stations and holds primary responsibility for QRA South as a standing, optimised role \u2014 this is the station's core peacetime mission. Air superiority scores 4: the Typhoon FGR4 is a highly capable fourth-generation multi-role fighter optimised for air superiority, and two frontline squadrons are normally assigned; however, with 3 Sqn currently deployed and only XI Sqn resident, full-surge air superiority capacity is temporarily reduced from its peak, warranting a score of 4 rather than 5. Expeditionary air operations scores 3: 3 Squadron's active deployment to Romania on Op Biloxi 2026 demonstrates a real and current expeditionary capability, and Coningsby regularly contributes to NATO deployments and exercises such as Cobra Warrior; however, the station itself is not an expeditionary asset \u2014 its primary role is home-based QRA and training \u2014 and with one squadron already deployed, further expeditionary commitment from the station is constrained in the near term.",
+      "aircraft_type": "Typhoon FGR4"
+    },
+    {
+      "name": "RAF Waddington",
+      "service": "royal_air_force",
+      "type": "station",
+      "class": null,
+      "location_description": "Exercise COBRA WARRIOR 26-1, 16-27 March 2026",
+      "latitude": 53.165,
+      "longitude": -0.5237,
+      "confidence_score": 0.92,
+      "confidence_rationale": "Exercise COBRA WARRIOR is a recurring large-force employment exercise hosted at RAF Waddington, Lincolnshire, UK. The exercise is conducted primarily from RAF Waddington itself, involving ISR and EW aircraft. Coordinates resolve directly to RAF Waddington (53.1650\u00b0N, 0.5237\u00b0W). The dates 16-27 March 2026 denote the 26-1 iteration of the exercise series. High confidence as this is the known and established host station for COBRA WARRIOR exercises.",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Royal_Air_Force"
+      ],
+      "date_observed": "2026-03-27",
+      "last_updated": "2026-04-18T09:49:58.134898+00:00Z",
+      "unit_category": "ISR / Battlespace Management",
+      "operational_readiness": "high",
+      "readiness_rationale": "RAF Waddington has demonstrably sustained high operational readiness through its role as primary exercise control node and host station for Cobra Warrior 26-1 (16\u201327 March 2026), the UK's largest multinational air exercise of the year. The station coordinated multinational assets including Polish F-16s, Finnish F-18s, ISTAR platforms and tankers, with exercise directing staff drawn from across the RAF enterprise. Post-exercise, the station is assessed as returning to standing ISR and battlespace management roles with no confirmed degradation of capability. The ongoing 8 Squadron transition to Wedgetail at RAF Lossiemouth introduces some organisational flux and a degree of platform-level uncertainty regarding permanently based assets, which prevents a definitive 'fully optimised' assessment, but the station's infrastructure, personnel, and command functions remain intact and active.",
+      "current_assignment": "Standing ISR and battlespace management station role; post-Cobra Warrior 26-1 reconstitution and support to 8 Squadron Wedgetail transition (RAF Lossiemouth)",
+      "assignment_source": null,
+      "capability_scores": {
+        "isr": 5,
+        "aew_battlespace_management": 5,
+        "air_superiority": 1,
+        "expeditionary_air_operations": 3
+      },
+      "capability_rationale": "ISR (5): Waddington is the RAF's designated primary ISR and ISTAR hub. Its identity, infrastructure, and personnel are optimised for this mission, and it has hosted ISTAR platforms during major exercises. This is its core institutional role. AEW/Battlespace Management (5): Waddington was the home of 8 Squadron's E-3D Sentry fleet and retains deep battlespace management expertise and infrastructure. It served as the exercise control node for CW 26-1, directly managing multinational airspace and ISR coordination. Transition to Wedgetail at Lossiemouth does not diminish Waddington's established battlespace management identity in the near term. Air Superiority (1): Waddington does not permanently base fighter or air superiority assets. Allied F-16s and F-18s were hosted transiently during Cobra Warrior but are not organic to the station. The score reflects minimal, transient association only. Expeditionary Air Operations (3): Waddington has demonstrated a credible ability to plan, host, and direct complex multinational air operations, including logistics, force generation, and exercise direction for CW 26-1. However, it is not a dedicated expeditionary wing and its primary posture is fixed-base ISR and command support, warranting a moderate rather than strong score.",
+      "aircraft_type": "Mixed ISR / transitional (E-3D Sentry retired; Wedgetail transition in progress at Lossiemouth; resident ISR platforms not fully confirmed from open sources)",
+      "squadron_number": "8"
+    }
+  ]
+}

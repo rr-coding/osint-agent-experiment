@@ -1,0 +1,235 @@
+[
+  {
+    "name": "HMS Prince of Wales",
+    "type": "ship",
+    "class": "Queen Elizabeth-class aircraft carrier",
+    "location_description": "Deploying across the North Atlantic, Arctic, High North, and Euro-Atlantic; visiting a US port on the North American East Coast (Operation Firecrest)",
+    "latitude": 58.0,
+    "longitude": -20.0,
+    "confidence_score": 0.45,
+    "confidence_rationale": "HMS Prince of Wales was deployed on Operation Firecrest across the North Atlantic, Arctic, High North, and Euro-Atlantic regions, with a visit to a US East Coast port. The deployment spanned a vast area from the Arctic/Norwegian Sea down through the North Atlantic. Given the breadth of the operating area \u2014 encompassing the High North (Norwegian/Barents Sea region around 70\u00b0N), the North Atlantic, and a US East Coast port visit (likely Norfolk, VA area around 36.8\u00b0N, -76.3\u00b0W) \u2014 the approximate geographic centre of this operational theatre is estimated in the mid-North Atlantic around 58\u00b0N, 20\u00b0W. The wide-ranging nature of the deployment across multiple sea areas reduces confidence.",
+    "source_urls": [
+      "https://www.gov.uk/government/news/uk-carrier-strike-group-to-deploy-to-north-atlantic-to-keep-uk-safe",
+      "https://www.forcesnews.com/services/navy/carrier-strike-group-be-deployed-north-face-russian-aggression",
+      "https://www.royalnavy.mod.uk/bases",
+      "https://www.bbc.com/news/articles/c0k1yyg475ko"
+    ],
+    "date_observed": "2026-03-21",
+    "last_updated": "2026-03-21T14:58:11.342406+00:00Z"
+  },
+  {
+    "name": "HMS Dragon",
+    "type": "ship",
+    "class": "Type 45 destroyer",
+    "location_description": "Command ship of NATO Standing Naval Maritime Group 1, operating in the Euro-Atlantic area",
+    "latitude": 60.0,
+    "longitude": -5.0,
+    "confidence_score": 0.4,
+    "confidence_rationale": "NATO Standing Naval Maritime Group 1 (SNMG1) typically operates in the Euro-Atlantic area, with primary operating zones including the North Sea, Norwegian Sea, and northeastern Atlantic. HMS Dragon (Type 45 destroyer) serving as command ship of SNMG1 would most likely be operating in the northern European waters. The approximate centre of SNMG1's typical operating area is around 60\u00b0N, 5\u00b0W, encompassing the waters between the UK, Norway, and the broader North Atlantic. This is a general estimate as no specific port or precise location is given.",
+    "source_urls": [
+      "https://www.gov.uk/government/news/uk-carrier-strike-group-to-deploy-to-north-atlantic-to-keep-uk-safe",
+      "https://www.navylookout.com",
+      "https://www.forcesnews.com/services/navy/carrier-strike-group-be-deployed-north-face-russian-aggression",
+      "https://www.bbc.com/news/articles/c0k1yyg475ko",
+      "https://www.theguardian.com/world/2026/mar/10/mod-criticised-after-delay-in-sending-hms-dragon-to-cyprus"
+    ],
+    "date_observed": "2026-03-10",
+    "last_updated": "2026-03-21T14:58:16.150907+00:00Z"
+  },
+  {
+    "name": "HMS Kent",
+    "type": "ship",
+    "class": "Type 23 frigate",
+    "location_description": "Undergoing planned deep maintenance",
+    "latitude": 50.8,
+    "longitude": -1.11,
+    "confidence_score": 0.85,
+    "confidence_rationale": "HMS Kent is a Type 23 frigate of the Royal Navy. Deep maintenance for Royal Navy frigates is typically conducted at HMNB Portsmouth or at Babcock's facility in Devonport. Portsmouth is the home port for Type 23 frigates, and planned deep maintenance periods are most commonly carried out there. Coordinates reflect HMNB Portsmouth dockyard.",
+    "source_urls": [
+      "https://ukdefencejournal.org.uk/royal-navy-starts-2026-with-seven-frigates/"
+    ],
+    "date_observed": "2026-01-01",
+    "last_updated": "2026-03-21T14:56:33.843274+00:00Z"
+  },
+  {
+    "name": "HMS Glasgow",
+    "type": "ship",
+    "class": "Type 26 frigate",
+    "location_description": "In build at BAE Systems, River Clyde, Scotland",
+    "latitude": 56.0748,
+    "longitude": -4.804,
+    "confidence_score": 0.92,
+    "confidence_rationale": "HMNB Clyde area",
+    "source_urls": [
+      "https://ukdefencejournal.org.uk/royal-navy-starts-2026-with-seven-frigates/"
+    ],
+    "date_observed": "2026-01-01",
+    "last_updated": "2026-03-21T14:56:33.867235+00:00Z"
+  },
+  {
+    "name": "HMNB Portsmouth",
+    "type": "base",
+    "class": null,
+    "location_description": "Portsmouth, Hampshire, England",
+    "latitude": 50.7984,
+    "longitude": -1.1082,
+    "confidence_score": 0.97,
+    "confidence_rationale": "Portsmouth Naval Base",
+    "source_urls": [
+      "https://www.royalnavy.mod.uk/bases",
+      "https://www.bbc.com/news/articles/c0k1yyg475ko"
+    ],
+    "date_observed": "2026-03-18",
+    "last_updated": "2026-03-21T14:58:11.344458+00:00Z"
+  },
+  {
+    "name": "HMS Queen Elizabeth",
+    "type": "ship",
+    "class": "Queen Elizabeth-class",
+    "location_description": "HMNB Portsmouth, Portsmouth, Hampshire, England",
+    "latitude": 50.7984,
+    "longitude": -1.1082,
+    "confidence_score": 0.99,
+    "confidence_rationale": "HMNB Portsmouth \u2014 fixed base location",
+    "source_urls": [
+      "https://www.royalnavy.mod.uk/bases"
+    ],
+    "date_observed": "2026-03-21",
+    "last_updated": "2026-03-21T14:57:02.572864+00:00Z"
+  },
+  {
+    "name": "HMNB Devonport",
+    "type": "base",
+    "class": null,
+    "location_description": "Plymouth, Devon, England",
+    "latitude": 50.3714,
+    "longitude": -4.1872,
+    "confidence_score": 0.95,
+    "confidence_rationale": "HMNB Devonport, Plymouth",
+    "source_urls": [
+      "https://www.royalnavy.mod.uk/bases"
+    ],
+    "date_observed": "2026-03-21",
+    "last_updated": "2026-03-21T14:57:02.578575+00:00Z"
+  },
+  {
+    "name": "HMNB Clyde",
+    "type": "base",
+    "class": null,
+    "location_description": "Faslane, Scotland",
+    "latitude": 56.0748,
+    "longitude": -4.804,
+    "confidence_score": 0.97,
+    "confidence_rationale": "HMNB Clyde, Faslane",
+    "source_urls": [
+      "https://www.royalnavy.mod.uk/bases"
+    ],
+    "date_observed": "2026-03-21",
+    "last_updated": "2026-03-21T14:57:02.589483+00:00Z"
+  },
+  {
+    "name": "RNAS Culdrose",
+    "type": "air_station",
+    "class": null,
+    "location_description": "Near Helston, Cornwall",
+    "latitude": 50.0861,
+    "longitude": -5.2571,
+    "confidence_score": 0.97,
+    "confidence_rationale": "RNAS Culdrose is a well-known Royal Naval Air Station located near Helston in Cornwall, England. Its coordinates are precisely known at approximately 50.0861\u00b0N, 5.2571\u00b0W.",
+    "source_urls": [
+      "https://www.royalnavy.mod.uk/bases"
+    ],
+    "date_observed": "2026-03-21",
+    "last_updated": "2026-03-21T14:57:05.898017+00:00Z"
+  },
+  {
+    "name": "RNAS Yeovilton",
+    "type": "air_station",
+    "class": null,
+    "location_description": "Somerset",
+    "latitude": 51.0094,
+    "longitude": -2.6384,
+    "confidence_score": 0.97,
+    "confidence_rationale": "RNAS Yeovilton is a well-known Royal Naval Air Station located near the village of Yeovilton in Somerset, England. Its coordinates are precisely known.",
+    "source_urls": [
+      "https://www.royalnavy.mod.uk/bases"
+    ],
+    "date_observed": "2026-03-21",
+    "last_updated": "2026-03-21T14:57:10.202273+00:00Z"
+  },
+  {
+    "name": "815 Naval Air Squadron",
+    "type": "unit",
+    "class": "Wildcat helicopters",
+    "location_description": "Assigned to support HMS Dragon; three Wildcat helicopters arrived in Cyprus",
+    "latitude": 34.59,
+    "longitude": 32.94,
+    "confidence_score": 0.82,
+    "confidence_rationale": "The description states three Wildcat helicopters arrived in Cyprus, which is a specific named location. The most likely destination for military aircraft arriving in Cyprus in support of Royal Navy operations is RAF Akrotiri, a British Sovereign Base Area on the southern coast of Cyprus (approximately 34.59\u00b0N, 32.94\u00b0E). This is the primary British military airfield on the island and the standard staging point for naval aviation assets in the Eastern Mediterranean.",
+    "source_urls": [
+      "https://www.bbc.com/news/articles/c0k1yyg475ko"
+    ],
+    "date_observed": "2026-03-21",
+    "last_updated": "2026-03-21T14:58:16.143269+00:00Z"
+  },
+  {
+    "name": "HMS Duncan",
+    "type": "ship",
+    "class": "Type 45 destroyer",
+    "location_description": "Rumoured to be sent to Cyprus; had just done training exercises",
+    "latitude": 34.6,
+    "longitude": 33.0,
+    "confidence_score": 0.5,
+    "confidence_rationale": "HMS Duncan is rumoured to be sent to Cyprus, suggesting a deployment to the Eastern Mediterranean near the British Sovereign Base Areas. Cyprus's main naval facility used by the Royal Navy is at Limassol/Akrotiri. Given the vessel had just completed training exercises (possibly in the Mediterranean or en route), the most likely position is in the waters near Cyprus. Using approximate coordinates off the southern coast of Cyprus near the Akrotiri Sovereign Base Area.",
+    "source_urls": [
+      "https://www.theguardian.com/world/2026/mar/10/mod-criticised-after-delay-in-sending-hms-dragon-to-cyprus"
+    ],
+    "date_observed": "2026-03-10",
+    "last_updated": "2026-03-21T14:58:21.228923+00:00Z"
+  },
+  {
+    "name": "HMS Diamond",
+    "type": "ship",
+    "class": "Type 45 destroyer",
+    "location_description": "River Thames, London",
+    "latitude": 51.5074,
+    "longitude": -0.0763,
+    "confidence_score": 0.85,
+    "confidence_rationale": "The River Thames in London is a well-defined location. HMS Diamond (D34), a Type 45 destroyer, when described as being on the River Thames in London, is most likely moored in the central London stretch of the Thames, potentially near Greenwich (home of the Old Royal Naval College and a common berth for visiting warships) or near the Pool of London/Tower Bridge area, which is a traditional location for Royal Navy vessels visiting London. Coordinates approximate the central navigable stretch of the Thames near Greenwich/Canary Wharf area.",
+    "source_urls": [
+      "https://www.theguardian.com/world/2026/mar/10/mod-criticised-after-delay-in-sending-hms-dragon-to-cyprus"
+    ],
+    "date_observed": "2026-03-10",
+    "last_updated": "2026-03-21T14:58:26.807486+00:00Z"
+  },
+  {
+    "name": "RFA Lyme Bay",
+    "type": "auxiliary",
+    "class": "Bay-class landing ship dock auxiliary",
+    "location_description": "Gibraltar, on heightened readiness to deploy to the eastern Mediterranean",
+    "latitude": 36.1408,
+    "longitude": -5.3536,
+    "confidence_score": 0.97,
+    "confidence_rationale": "Gibraltar \u2014 Royal Navy facility",
+    "source_urls": [
+      "https://www.bbc.com/news/articles/c0k1yyg475ko"
+    ],
+    "date_observed": "2026-03-21",
+    "last_updated": "2026-03-21T14:58:57.100725+00:00Z"
+  },
+  {
+    "name": "HMS Anson",
+    "type": "submarine",
+    "class": "Astute-class",
+    "location_description": "Departed from Australia, likely deployed to the Arabian Sea",
+    "latitude": 15.0,
+    "longitude": 65.0,
+    "confidence_score": 0.4,
+    "confidence_rationale": "HMS Anson is an Astute-class submarine. The description states she departed from Australia and is likely deployed to the Arabian Sea. The Arabian Sea lies between the Indian subcontinent, the Arabian Peninsula, and the Horn of Africa. Using the approximate centre of the Arabian Sea (15\u00b0N, 65\u00b0E) as the best estimate for a vessel transiting from Australia westward into this general operational area. Confidence is low due to the speculative nature of the deployment location.",
+    "source_urls": [
+      "https://www.navylookout.com/if-called-upon-what-assets-could-the-royal-navy-send-to-the-gulf/"
+    ],
+    "date_observed": "2026-03-21",
+    "last_updated": "2026-03-21T15:01:49.862276+00:00Z"
+  }
+]

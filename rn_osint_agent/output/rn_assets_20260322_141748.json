@@ -1,0 +1,365 @@
+[
+  {
+    "name": "HMS Anson",
+    "type": "submarine",
+    "class": "Astute-class",
+    "location_description": "Departed from Australia, likely deployed to the Arabian Sea",
+    "latitude": 15.0,
+    "longitude": 65.0,
+    "confidence_score": 0.4,
+    "confidence_rationale": "HMS Anson is an Astute-class submarine. The description states she departed from Australia and is likely deployed to the Arabian Sea. The Arabian Sea lies between the Indian subcontinent, the Arabian Peninsula, and the Horn of Africa. Using the approximate centre of the Arabian Sea (15\u00b0N, 65\u00b0E) as the best estimate for a likely deployment area. Confidence is low due to the speculative nature of the deployment location ('likely deployed').",
+    "source_urls": [
+      "https://www.navylookout.com/if-called-upon-what-assets-could-the-royal-navy-send-to-the-gulf/",
+      "https://www.navylookout.com/defence-funding-chaos-puts-royal-navy-future-fleet-programmes-at-risk/"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T14:14:29.477021+00:00Z"
+  },
+  {
+    "name": "HMS Dragon",
+    "type": "ship",
+    "class": "Type 45 destroyer",
+    "location_description": "Being prepared at Portsmouth, sailing to the eastern Mediterranean to protect Cyprus",
+    "latitude": 50.7984,
+    "longitude": -1.1082,
+    "confidence_score": 0.97,
+    "confidence_rationale": "Portsmouth Naval Base",
+    "source_urls": [
+      "https://www.navylookout.com/type-45-destroyer-to-be-sent-to-the-eastern-mediterranean/",
+      "https://www.navylookout.com/defence-funding-chaos-puts-royal-navy-future-fleet-programmes-at-risk/"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T14:14:29.479221+00:00Z"
+  },
+  {
+    "name": "HMS Duncan",
+    "type": "ship",
+    "class": "Type 45 destroyer",
+    "location_description": "Available but earmarked for other duties",
+    "latitude": 50.8,
+    "longitude": -1.1,
+    "confidence_score": 0.4,
+    "confidence_rationale": "HMS Duncan is a Type 45 destroyer of the Royal Navy. The description 'available but earmarked for other duties' suggests the vessel is not currently deployed but is in a ready state, most likely at her home port. HMS Duncan's home port is Portsmouth Naval Base. Without specific deployment information, the most reasonable estimate is that she is alongside or near Portsmouth.",
+    "source_urls": [
+      "https://www.navylookout.com/type-45-destroyer-to-be-sent-to-the-eastern-mediterranean/",
+      "https://www.navylookout.com/defence-funding-chaos-puts-royal-navy-future-fleet-programmes-at-risk/"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T14:14:29.481181+00:00Z"
+  },
+  {
+    "name": "HMS Diamond",
+    "type": "ship",
+    "class": "Type 45 destroyer",
+    "location_description": "Red Sea",
+    "latitude": 20.0,
+    "longitude": 38.5,
+    "confidence_score": 0.55,
+    "confidence_rationale": "The Red Sea is a well-defined body of water between Africa and the Arabian Peninsula. Its approximate centre is around 20\u00b0N, 38.5\u00b0E. HMS Diamond has been known to operate in the Red Sea, particularly in the context of Houthi threat response operations in the southern Red Sea near the Bab-el-Mandeb strait, but without more specific positioning data, the geographic centre of the Red Sea is used.",
+    "source_urls": [
+      "https://www.navylookout.com/type-45-destroyer-to-be-sent-to-the-eastern-mediterranean/"
+    ],
+    "date_observed": "2024-01-01",
+    "last_updated": "2026-03-22T14:11:07.467751+00:00Z"
+  },
+  {
+    "name": "Fleet Air Arm Wildcat Helicopters",
+    "type": "unit",
+    "class": "Wildcat helicopter",
+    "location_description": "Being sent to RAF Akrotiri, Cyprus",
+    "latitude": 34.59,
+    "longitude": 32.9872,
+    "confidence_score": 0.97,
+    "confidence_rationale": "RAF Akrotiri, Cyprus SBA",
+    "source_urls": [
+      "https://www.navylookout.com/type-45-destroyer-to-be-sent-to-the-eastern-mediterranean/"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T14:11:07.491417+00:00Z"
+  },
+  {
+    "name": "HM Naval Base Clyde",
+    "type": "base",
+    "class": null,
+    "location_description": "Faslane, home to the UK nuclear submarine fleet",
+    "latitude": 56.0748,
+    "longitude": -4.804,
+    "confidence_score": 0.97,
+    "confidence_rationale": "HMNB Clyde, Faslane",
+    "source_urls": [
+      "https://ukdefencejournal.org.uk"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T14:11:29.587280+00:00Z"
+  },
+  {
+    "name": "HMS Hurworth",
+    "type": "ship",
+    "class": "Hunt-class Mine Counter Measures Vessel",
+    "location_description": "Historically deployed to the Gulf region / Strait of Hormuz",
+    "latitude": 26.56,
+    "longitude": 56.25,
+    "confidence_score": 0.45,
+    "confidence_rationale": "HMS Hurworth is a Hunt-class mine countermeasures vessel historically deployed to the Gulf region, often operating in or near the Strait of Hormuz as part of UK mine countermeasures forces. The Strait of Hormuz, connecting the Persian Gulf to the Gulf of Oman, is centred approximately at 26.56\u00b0N, 56.25\u00b0E. Given the description references a general region rather than a specific port or precise location, confidence is moderate-low.",
+    "source_urls": [
+      "https://www.navylookout.com/forty-years-of-royal-navy-mine-warfare-in-the-gulf/"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T14:12:16.086045+00:00Z"
+  },
+  {
+    "name": "HMNB Clyde",
+    "type": "base",
+    "class": null,
+    "location_description": "Near Helensburgh",
+    "latitude": 56.0633,
+    "longitude": -4.8175,
+    "confidence_score": 0.95,
+    "confidence_rationale": "HMNB Clyde (also known as Faslane) is the Royal Navy's submarine base located on the eastern shore of Gare Loch, near the town of Helensburgh in Argyll and Bute, Scotland. The coordinates correspond to the known location of the base at Faslane.",
+    "source_urls": [
+      "https://ukdefencejournal.org.uk/iranian-arrested-attempting-to-enter-british-nuke-sub-base/"
+    ],
+    "date_observed": "2026-03-19",
+    "last_updated": "2026-03-22T14:12:58.985272+00:00Z"
+  },
+  {
+    "name": "Vanguard-class submarines",
+    "type": "submarine",
+    "class": "Vanguard-class",
+    "location_description": "HMNB Clyde, near Helensburgh",
+    "latitude": 56.0748,
+    "longitude": -4.804,
+    "confidence_score": 0.99,
+    "confidence_rationale": "HMNB Clyde (Faslane) \u2014 fixed base location",
+    "source_urls": [
+      "https://ukdefencejournal.org.uk/iranian-arrested-attempting-to-enter-british-nuke-sub-base/"
+    ],
+    "date_observed": "2026-03-19",
+    "last_updated": "2026-03-22T14:12:59.008607+00:00Z"
+  },
+  {
+    "name": "HMS Stirling Castle",
+    "type": "ship",
+    "class": "Mine countermeasures mothership",
+    "location_description": "May deploy to Portsmouth, Faslane or overseas",
+    "latitude": 50.7984,
+    "longitude": -1.1082,
+    "confidence_score": 0.97,
+    "confidence_rationale": "Portsmouth Naval Base",
+    "source_urls": [
+      "https://www.navylookout.com/up-close-with-the-royal-navys-uncrewed-minehunting-programme/"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T14:12:59.025806+00:00Z"
+  },
+  {
+    "name": "HMNB Portsmouth",
+    "type": "base",
+    "class": null,
+    "location_description": "Portsmouth",
+    "latitude": 50.7984,
+    "longitude": -1.1082,
+    "confidence_score": 0.97,
+    "confidence_rationale": "Portsmouth Naval Base",
+    "source_urls": [
+      "https://www.royalnavy.mod.uk/news"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T14:17:20.204682+00:00Z"
+  },
+  {
+    "name": "HMS Queen Elizabeth",
+    "type": "ship",
+    "class": "Queen Elizabeth-class aircraft carrier",
+    "location_description": "Portsmouth (home port)",
+    "latitude": 50.7984,
+    "longitude": -1.1082,
+    "confidence_score": 0.97,
+    "confidence_rationale": "Portsmouth Naval Base",
+    "source_urls": [
+      "https://www.royalnavy.mod.uk/news"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T14:17:20.225755+00:00Z"
+  },
+  {
+    "name": "HMS Prince of Wales",
+    "type": "ship",
+    "class": "Queen Elizabeth-class aircraft carrier",
+    "location_description": "Portsmouth (home port)",
+    "latitude": 50.7984,
+    "longitude": -1.1082,
+    "confidence_score": 0.97,
+    "confidence_rationale": "Portsmouth Naval Base",
+    "source_urls": [
+      "https://www.royalnavy.mod.uk/news"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T14:17:20.246505+00:00Z"
+  },
+  {
+    "name": "HMNB Devonport",
+    "type": "base",
+    "class": null,
+    "location_description": "Plymouth",
+    "latitude": 50.3714,
+    "longitude": -4.1872,
+    "confidence_score": 0.95,
+    "confidence_rationale": "HMNB Devonport, Plymouth",
+    "source_urls": [
+      "https://www.royalnavy.mod.uk/news"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T14:17:20.264982+00:00Z"
+  },
+  {
+    "name": "HMS Albion",
+    "type": "ship",
+    "class": "Albion-class amphibious transport dock",
+    "location_description": "HMNB Devonport, Plymouth",
+    "latitude": 50.3714,
+    "longitude": -4.1872,
+    "confidence_score": 0.99,
+    "confidence_rationale": "HMNB Devonport \u2014 fixed base location",
+    "source_urls": [
+      "https://www.royalnavy.mod.uk/news"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T14:17:20.278340+00:00Z"
+  },
+  {
+    "name": "HMS Bulwark",
+    "type": "ship",
+    "class": "Albion-class amphibious transport dock",
+    "location_description": "HMNB Devonport, Plymouth",
+    "latitude": 50.3714,
+    "longitude": -4.1872,
+    "confidence_score": 0.99,
+    "confidence_rationale": "HMNB Devonport \u2014 fixed base location",
+    "source_urls": [
+      "https://www.royalnavy.mod.uk/news"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T14:17:20.285890+00:00Z"
+  },
+  {
+    "name": "RNAS Culdrose",
+    "type": "air_station",
+    "class": null,
+    "location_description": "Cornwall",
+    "latitude": 50.0861,
+    "longitude": -5.2558,
+    "confidence_score": 0.97,
+    "confidence_rationale": "RNAS Culdrose is a well-known Royal Naval Air Station located near Helston in Cornwall, England. Its coordinates are precisely known at approximately 50.0861\u00b0N, 5.2558\u00b0W.",
+    "source_urls": [
+      "https://www.royalnavy.mod.uk/news"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T14:17:23.904720+00:00Z"
+  },
+  {
+    "name": "RNAS Yeovilton",
+    "type": "air_station",
+    "class": null,
+    "location_description": "Somerset",
+    "latitude": 51.0094,
+    "longitude": -2.6384,
+    "confidence_score": 0.97,
+    "confidence_rationale": "RNAS Yeovilton is a well-known Royal Naval Air Station located near the village of Yeovilton in Somerset, England. Its coordinates are precisely known.",
+    "source_urls": [
+      "https://www.royalnavy.mod.uk/news"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T14:17:27.172406+00:00Z"
+  },
+  {
+    "name": "Commando Helicopter Force",
+    "type": "unit",
+    "class": null,
+    "location_description": "RNAS Yeovilton, Somerset",
+    "latitude": 51.0094,
+    "longitude": -2.6386,
+    "confidence_score": 0.99,
+    "confidence_rationale": "RNAS Yeovilton \u2014 fixed station location",
+    "source_urls": [
+      "https://www.royalnavy.mod.uk/news"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T14:17:27.193469+00:00Z"
+  },
+  {
+    "name": "HMS Forth",
+    "type": "ship",
+    "class": "River-class Batch 2",
+    "location_description": "Falkland Islands, based at East Cove Military Port near Mare Harbour",
+    "latitude": -51.693,
+    "longitude": -57.777,
+    "confidence_score": 0.9,
+    "confidence_rationale": "Falkland Islands",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T14:17:27.211291+00:00Z"
+  },
+  {
+    "name": "HMS Spey",
+    "type": "ship",
+    "class": "River-class Batch 2",
+    "location_description": "Indo-Pacific region, typically operating from ports in Southeast Asia and the Pacific",
+    "latitude": 1.27,
+    "longitude": 103.83,
+    "confidence_score": 0.35,
+    "confidence_rationale": "HMS Spey is a Batch 2 River-class offshore patrol vessel permanently forward-deployed to the Indo-Pacific. She typically operates from ports in Southeast Asia and the Pacific, with Singapore being a frequent port of call and logistical hub for Royal Navy vessels in the region. Given the vague description of 'Indo-Pacific region' with Southeast Asia emphasis, Singapore (Changi Naval Base area) is used as the most likely central operating point, though the vessel could be anywhere across a vast operational area spanning from the Malay Peninsula to the Pacific islands.",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T14:17:32.913846+00:00Z"
+  },
+  {
+    "name": "HMS Tamar",
+    "type": "ship",
+    "class": "River-class Batch 2",
+    "location_description": "Indo-Pacific region, typically operating from ports in Southeast Asia and the Pacific",
+    "latitude": 1.27,
+    "longitude": 103.83,
+    "confidence_score": 0.45,
+    "confidence_rationale": "HMS Tamar is a Royal Navy offshore patrol vessel permanently forward-deployed to the Indo-Pacific region. She is typically based out of Singapore's Sembawang naval facility (Sembawang Wharves) as her primary operating port in Southeast Asia. Given the description mentions Southeast Asia and the Pacific without a specific current location, Singapore serves as the most likely home port and central operating hub. Confidence is moderate due to the vague operational description \u2014 she could be anywhere across the Indo-Pacific \u2014 but Sembawang, Singapore is the best default estimate.",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T14:17:38.132172+00:00Z"
+  },
+  {
+    "name": "HMS Trent",
+    "type": "ship",
+    "class": "River-class Batch 2",
+    "location_description": "Mediterranean Sea",
+    "latitude": 35.0,
+    "longitude": 18.0,
+    "confidence_score": 0.5,
+    "confidence_rationale": "HMS Trent is a Batch 2 River-class offshore patrol vessel frequently deployed to the Mediterranean. The location description 'Mediterranean Sea' is a general sea area. Coordinates represent the approximate centre of the Mediterranean Sea. HMS Trent is known to operate frequently in this region, often conducting patrols and exercises across the central Mediterranean.",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T14:17:42.637580+00:00Z"
+  },
+  {
+    "name": "HMS Protector",
+    "type": "ship",
+    "class": "Ice patrol ship",
+    "location_description": "Antarctica and the South Atlantic",
+    "latitude": -60.0,
+    "longitude": -45.0,
+    "confidence_score": 0.45,
+    "confidence_rationale": "HMS Protector is the Royal Navy's ice patrol ship, primarily operating in Antarctic waters and the South Atlantic. The description covers a vast area spanning Antarctica and the South Atlantic. A central estimate is placed near the Scotia Sea, which lies between the Falkland Islands, South Georgia, and the Antarctic Peninsula \u2014 the most common operating area for HMS Protector during the Antarctic patrol season.",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-03-22",
+    "last_updated": "2026-03-22T14:17:47.549675+00:00Z"
+  }
+]

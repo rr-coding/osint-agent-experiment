@@ -1,0 +1,7 @@
+anthropic
+requests
+beautifulsoup4
+pydantic
+rich
+trafilatura
+python-dotenv

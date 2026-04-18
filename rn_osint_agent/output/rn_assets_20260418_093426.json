@@ -1,0 +1,274 @@
+[
+  {
+    "name": "HMS Dragon",
+    "service": "royal_navy",
+    "type": "ship",
+    "class": "Type 45 destroyer",
+    "location_description": "Eastern Mediterranean, off Cyprus defending Cyprus/RAF Akrotiri; later docked in eastern Mediterranean port for repairs",
+    "latitude": 34.59,
+    "longitude": 32.9872,
+    "confidence_score": 0.97,
+    "confidence_rationale": "RAF Akrotiri, Cyprus SBA",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-04-07",
+    "last_updated": "2026-04-18T09:33:14.524887+00:00Z"
+  },
+  {
+    "name": "HMS Prince of Wales",
+    "service": "royal_navy",
+    "type": "ship",
+    "class": "Queen Elizabeth-class aircraft carrier",
+    "location_description": "Portsmouth Naval Base, 5 days notice to sail; planned deployment to Atlantic, High North, and eastern seaboard of North America (Operation FIRECREST)",
+    "latitude": 50.7984,
+    "longitude": -1.1082,
+    "confidence_score": 0.97,
+    "confidence_rationale": "Portsmouth Naval Base",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-03-31",
+    "last_updated": "2026-04-18T09:33:14.556381+00:00Z"
+  },
+  {
+    "name": "HMS Queen Elizabeth",
+    "service": "royal_navy",
+    "type": "ship",
+    "class": "Queen Elizabeth-class aircraft carrier",
+    "location_description": "Rosyth, undergoing extended maintenance/dry dock; airspace restrictions over Firth of Forth ahead of sailing",
+    "latitude": 56.0245,
+    "longitude": -3.4355,
+    "confidence_score": 0.97,
+    "confidence_rationale": "Rosyth Dockyard, Firth of Forth",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-04-01",
+    "last_updated": "2026-04-18T09:33:14.575539+00:00Z"
+  },
+  {
+    "name": "HMS Sutherland",
+    "service": "royal_navy",
+    "type": "ship",
+    "class": "Type 23 frigate",
+    "location_description": "Outbound from Devonport; shadowing Russian ships in UK waters",
+    "latitude": 50.3714,
+    "longitude": -4.1872,
+    "confidence_score": 0.97,
+    "confidence_rationale": "HMNB Devonport, Plymouth",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-04-18",
+    "last_updated": "2026-04-18T09:33:14.584699+00:00Z"
+  },
+  {
+    "name": "HMS Mersey",
+    "service": "royal_navy",
+    "type": "ship",
+    "class": "River-class OPV",
+    "location_description": "Portsmouth-based; activated to monitor Russian warships in UK waters",
+    "latitude": 50.7984,
+    "longitude": -1.1082,
+    "confidence_score": 0.97,
+    "confidence_rationale": "Portsmouth Naval Base",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-04-07",
+    "last_updated": "2026-04-18T09:33:14.591527+00:00Z"
+  },
+  {
+    "name": "RFA Tideforce",
+    "service": "royal_navy",
+    "type": "auxiliary",
+    "class": "Tide-class tanker",
+    "location_description": "UK waters monitoring Russian ships with HMS Mersey; also reported in the Mediterranean",
+    "latitude": 50.5,
+    "longitude": -3.5,
+    "confidence_score": 0.4,
+    "confidence_rationale": "RFA Tideforce is described as operating in UK waters monitoring Russian ships alongside HMS Mersey, which typically occurs in the English Channel or approaches to the North Sea \u2014 common areas for shadowing Russian naval vessels transiting near the UK. A secondary report places her in the Mediterranean, but the primary tasking with HMS Mersey (an OPV frequently assigned to home waters) suggests UK waters as the more likely current position. Coordinates are estimated for the western English Channel area, a frequent interception zone for Russian warships passing through UK waters. Confidence is low due to the ambiguity between two widely separated possible locations.",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-04-07",
+    "last_updated": "2026-04-18T09:33:20.992554+00:00Z"
+  },
+  {
+    "name": "RFA Lyme Bay",
+    "service": "royal_navy",
+    "type": "auxiliary",
+    "class": "Bay-class landing ship dock",
+    "location_description": "Mediterranean",
+    "latitude": 35.0,
+    "longitude": 18.0,
+    "confidence_score": 0.5,
+    "confidence_rationale": "The Mediterranean Sea spans roughly from 30\u00b0N to 46\u00b0N and from 6\u00b0W to 36\u00b0E. The approximate geographic centre of the Mediterranean is around 35\u00b0N, 18\u00b0E. RFA Lyme Bay is a Bay-class landing ship dock auxiliary of the Royal Fleet Auxiliary. With no further specificity beyond 'Mediterranean', the centre of the sea is used as the best estimate.",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-04-18",
+    "last_updated": "2026-04-18T09:33:25.703485+00:00Z"
+  },
+  {
+    "name": "HMS Daring",
+    "service": "royal_navy",
+    "type": "ship",
+    "class": "Type 45 destroyer",
+    "location_description": "In long refit, set to return to service in 2026",
+    "latitude": null,
+    "longitude": null,
+    "confidence_score": null,
+    "confidence_rationale": null,
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-04-18",
+    "last_updated": "2026-04-18T09:33:25.709530+00:00Z"
+  },
+  {
+    "name": "HMS Active",
+    "service": "royal_navy",
+    "type": "ship",
+    "class": "Type 31 frigate",
+    "location_description": "Rosyth, float-off completed, under construction",
+    "latitude": 56.0245,
+    "longitude": -3.4355,
+    "confidence_score": 0.97,
+    "confidence_rationale": "Rosyth Dockyard, Firth of Forth",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-04-18",
+    "last_updated": "2026-04-18T09:33:33.711382+00:00Z"
+  },
+  {
+    "name": "HMS Somerset",
+    "service": "royal_navy",
+    "type": "ship",
+    "class": "Type 23 frigate",
+    "location_description": "On trials and patrols recently",
+    "latitude": 50.4,
+    "longitude": -4.2,
+    "confidence_score": 0.3,
+    "confidence_rationale": "HMS Somerset is a Type 23 frigate based at HMNB Devonport, Plymouth. 'On trials and patrols' suggests she is likely operating in waters near her home port, possibly in the English Channel or Western Approaches, which are common areas for Royal Navy trials and routine patrols. Without more specific information, the best estimate places her in the general vicinity of the southwestern UK approaches near Devonport.",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-04-18",
+    "last_updated": "2026-04-18T09:33:38.604514+00:00Z"
+  },
+  {
+    "name": "HMS Portland",
+    "service": "royal_navy",
+    "type": "ship",
+    "class": "Type 23 frigate",
+    "location_description": "Entered maintenance period last month",
+    "latitude": 50.3984,
+    "longitude": -4.1884,
+    "confidence_score": 0.85,
+    "confidence_rationale": "HMS Portland is a Type 23 frigate of the Royal Navy. Maintenance periods for Royal Navy frigates are typically conducted at Devonport Royal Dockyard in Plymouth, which is HMS Portland's home port. The coordinates correspond to HMNB Devonport. While Babcock's facilities at Devonport or potentially Rosyth could be used, Devonport is the most likely location for a Type 23 refit/maintenance period.",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-03-18",
+    "last_updated": "2026-04-18T09:33:44.257409+00:00Z"
+  },
+  {
+    "name": "RFA Tidesurge",
+    "service": "royal_navy",
+    "type": "auxiliary",
+    "class": "Tide-class tanker",
+    "location_description": "Dock in Birkenhead, Merseyside for maintenance",
+    "latitude": 53.3827,
+    "longitude": -3.0075,
+    "confidence_score": 0.95,
+    "confidence_rationale": "Birkenhead, Merseyside is home to the Cammell Laird shipyard, the primary dockyard facility in Birkenhead used for naval and RFA vessel maintenance and refit. Coordinates correspond to the Cammell Laird shipyard location on the River Mersey.",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-04-18",
+    "last_updated": "2026-04-18T09:33:48.034841+00:00Z"
+  },
+  {
+    "name": "HMS Tyne",
+    "service": "royal_navy",
+    "type": "ship",
+    "class": "River-class Batch I OPV",
+    "location_description": "Still in service; offered for sale to Uruguay",
+    "latitude": null,
+    "longitude": null,
+    "confidence_score": null,
+    "confidence_rationale": null,
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-04-18",
+    "last_updated": "2026-04-18T09:33:48.041498+00:00Z"
+  },
+  {
+    "name": "HMS Severn",
+    "service": "royal_navy",
+    "type": "ship",
+    "class": "River-class Batch I OPV",
+    "location_description": "Still in service; offered for sale to Uruguay",
+    "latitude": 50.38,
+    "longitude": -4.14,
+    "confidence_score": 0.45,
+    "confidence_rationale": "HMS Severn is a River-class offshore patrol vessel still in Royal Navy service but offered for sale to Uruguay. While the sale process is underway, the vessel would most likely be based at or near its home port of HMNB Devonport in Plymouth, UK, which is the typical base for River-class OPVs. Without specific deployment information, Devonport is the best estimate for her current location.",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-04-18",
+    "last_updated": "2026-04-18T09:34:03.487208+00:00Z"
+  },
+  {
+    "name": "815 Naval Air Squadron",
+    "service": "royal_navy",
+    "type": "unit",
+    "class": "Wildcat helicopter squadron",
+    "location_description": "Based at RNAS Yeovilton; provided Wildcat helicopter for Russian ship monitoring in UK waters",
+    "latitude": 51.0094,
+    "longitude": -2.6386,
+    "confidence_score": 0.99,
+    "confidence_rationale": "RNAS Yeovilton \u2014 fixed station location",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-04-07",
+    "last_updated": "2026-04-18T09:34:03.505277+00:00Z"
+  },
+  {
+    "name": "RNAS Yeovilton",
+    "service": "royal_navy",
+    "type": "air_station",
+    "class": null,
+    "location_description": "Yeovilton, Somerset; home base of 815 Naval Air Squadron",
+    "latitude": 51.0094,
+    "longitude": -2.6386,
+    "confidence_score": 0.97,
+    "confidence_rationale": "RNAS Yeovilton, Somerset",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-04-18",
+    "last_updated": "2026-04-18T09:34:03.518582+00:00Z"
+  },
+  {
+    "name": "HMNB Portsmouth",
+    "service": "royal_navy",
+    "type": "base",
+    "class": null,
+    "location_description": "Portsmouth; home port of HMS Prince of Wales and HMS Mersey",
+    "latitude": 50.7984,
+    "longitude": -1.1082,
+    "confidence_score": 0.97,
+    "confidence_rationale": "Portsmouth Naval Base",
+    "source_urls": [
+      "https://www.navylookout.com"
+    ],
+    "date_observed": "2026-04-18",
+    "last_updated": "2026-04-18T09:34:03.531669+00:00Z"
+  }
+]

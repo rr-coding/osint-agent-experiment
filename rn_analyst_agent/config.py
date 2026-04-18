@@ -1,0 +1,11 @@
+import os
+
+MODEL = "claude-opus-4-6"
+ASSESS_MODEL = "claude-opus-4-6"
+MAX_ITERATIONS = 15
+MAX_TEXT_PER_PAGE = 4000
+REQUEST_TIMEOUT = 10
+MAX_OPERATION_TYPES = 10
+
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+BRAVE_SEARCH_API_KEY = os.environ.get("BRAVE_SEARCH_API_KEY", "")
